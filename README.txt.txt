@@ -1,0 +1,1 @@
+Jeg er fornøyd med det meste ikke så glad i stilen/rammeverket, men om jeg skulle lage dette for å publisere ting så hadde jeg organisert css filen i flere, en for posisjon og skala, en for animasjon, en for text stil(p, h1-h6, a etc) i hvert fall i større prosjekt

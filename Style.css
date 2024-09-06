@@ -1,0 +1,125 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    background-image: linear-gradient( #b2bee1, #8698ce);
+}
+
+/* Title style, margin/s */
+h1, h2, h3, h4, h5, h6 {
+    font-family:  arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+    
+} 
+p {
+    margin: 1%;
+    font-family: arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14pt;
+    
+}
+
+/* Upper boxes for links and titles */
+.topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #cad7ff;
+
+}
+
+/* UnOrdered List pos / style */
+.uList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Ordered List pos / style */
+.oList {
+    list-style: none;
+}
+
+
+
+/* Logo placement */
+.logoSpot {
+    display: flex;
+    justify-content: center;
+}
+/* logoSize */
+.logoImgStyle {
+    margin: 5px;
+    width: 256px;
+    height: auto;
+    transition: .2s;
+}
+
+/* Logo animation on mouse hover */
+.logoImgStyle:hover {
+    transform: scale(1.1);
+  
+}
+.logoImgStyle:active {
+    transform: scale(1.2);
+    
+}
+
+
+
+/* Portfolio image syle pos scale */
+.portfolioStandardFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolioStandardScale {
+    width: 256px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+
+/* list margin / Decor */
+li, a {
+    font-family: arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* Main bounds */
+main {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+/* ContentBounds */
+.middleContent {
+    width: 100%;
+    height: 100%;
+
+    background-color: #8c95b1;
+    /* border: 5px solid rgb(50, 50, 50); */
+}
+
+
+/* ABOUT description 1, and tldr*/
+.bottomDescription {
+    height: 100%;
+}
+
+/* Position of the video on page2*/
+.vidPosition {
+    display: flex;
+    justify-content: center;
+}
