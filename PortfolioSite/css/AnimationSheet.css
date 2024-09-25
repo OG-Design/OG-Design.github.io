@@ -1,0 +1,42 @@
+/* mastHead animation --START */
+
+.mastHead{
+/* animation transition length*/
+    transition: .1s;
+}
+
+/* animation properties --START */
+.mastHead:hover {
+    /* shadow light effect */
+    
+    box-shadow: 0px 20px 40px -30px hsl(0, 0%, 100%, 50%);
+}
+/* animation properties --END */
+
+/* masthead animation --END */
+
+/* welcomeCard animation --START */
+
+.welcomeCard {
+    transition: .1s;
+}
+
+.welcomeCard:hover {
+
+    box-shadow: 0 2px 20px -5px hsl(0, 0%, 100%, 20%);
+    
+}
+
+.logo {
+    opacity: 0;
+    transition: .1s;
+    
+}
+.welcomeCard:hover .logo {
+    opacity: 100%;
+    
+}
+
+
+
+/* welcomeCard animation --END */

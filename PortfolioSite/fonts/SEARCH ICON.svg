@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #80807e;
+        stroke-miterlimit: 10;
+        stroke-width: 72px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="SEARCH_x5F_ICON1">
+        <path class="cls-1" d="M871.8,855.6l-29.9,29.9c-11.3,11.3-29.5,11.3-40.8,0l-329.1-329.1c-39.2,26.2-86,41.9-136.4,43-147.8,3.3-268.4-120.3-261.5-268,6.1-131.8,111.9-237.5,243.6-243.6,147.7-6.9,271.3,113.7,268,261.5-1.1,50.4-16.8,97.2-43,136.4l329.1,329.1c11.3,11.3,11.3,29.5,0,40.8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
