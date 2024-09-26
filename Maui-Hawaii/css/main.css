@@ -84,7 +84,7 @@ ul {
 
 }
 
-li, a{
+li, a, button{
     /* removes unwanted standards from li / a */
     list-style: none;
     text-decoration-line: none;
@@ -93,6 +93,9 @@ li, a{
     /* alignment */
     text-align: left;
     
+    /* style */
+    
+
 }
 
 ul li {
@@ -104,6 +107,26 @@ ul li {
     padding: .2em;
     padding-left: 1em;
     
+    
+}
+
+.button {
+    width: fit-content;
+    height: fit-content;
+
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+
+
+
+    /* Style */
+    
+    border: none;
+    background-color:  hsl(186, 40%, 74%);
+    text-align: center;
+    text-decoration: none;
+    
 }
 
 /* indicates unselected items */
@@ -113,7 +136,7 @@ ul li {
 
 /* indicates selected items */
 .activePageIndicator {
-    background-color: hsl(186, 30%, 64%);
+    background-color: hsl(186, 20%, 54%);
 }
 
 .block {
