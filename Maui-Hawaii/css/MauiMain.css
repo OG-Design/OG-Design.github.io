@@ -15,6 +15,13 @@ main{
     padding-top: 0em;
 }
 
+aside{
+    position: sticky;
+    width: fit-content;
+    height: 100%;
+}
+
+
 /* fonts */
 @import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
 
@@ -26,13 +33,14 @@ main{
 }
 
 /* font selection */
-h1 {
+h1, p{
     font-family: RokkittBold;
 }
 
 .universalBoxShadow {
     box-shadow: 0em 0em 5em .25em hsl(186, 5%, 10%, .25);
 }
+
 
 .mastheadTop {
     width: 100%;
@@ -62,6 +70,7 @@ h1 {
     color: hsl(186, 8%, 30%);
 }
 
+/* unordered list properties --START */
 ul {
     
     /* shape */
@@ -69,6 +78,8 @@ ul {
     width: fit-content;
     
     /* position */
+position: sticky;
+
     display: flex;
     flex-direction: column;
 
@@ -98,6 +109,8 @@ li, a, button{
 
 }
 
+
+
 ul li {
     /* shape */
     width: 100%;
@@ -110,10 +123,13 @@ ul li {
     
 }
 
+
 .button {
+    /* shape */
     width: fit-content;
     height: fit-content;
 
+    /* position */
     padding: 1em;
     padding-left: 5em;
     padding-right: 5em;
@@ -121,23 +137,26 @@ ul li {
 
 
     /* Style */
-    
     border: none;
     background-color:  hsl(186, 40%, 74%);
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     
 }
 
 /* indicates unselected items */
 .deactivatedPageIndicator {
+    /* style */
     background-color: hsl(186, 40%, 74%);
 }
 
 /* indicates selected items */
 .activePageIndicator {
+    /* style */
     background-color: hsl(186, 20%, 54%);
 }
+/* unordered list properties --END */
+
 
 .block {
     width: 100px;
@@ -147,4 +166,28 @@ ul li {
     border-style: solid;
 
     background-color: beige;
+}
+
+
+footer {
+    /* shape */
+    width: 100%;
+    height: 2em;
+
+    /* position */
+    bottom: 0px;
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    
+    /* style */
+    background-color: hsl(186, 15%, 34%);
+}
+
+footer h1, p, a{
+    color: hsl(186, 58%, 90%);
 }
