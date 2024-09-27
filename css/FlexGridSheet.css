@@ -221,7 +221,7 @@ footer{
 
 .previewBox {
     width: 50%;
-    height: 25em;
+    height: fit-content;
     border-radius: .5em;
 
     padding: 1em;
@@ -230,3 +230,4 @@ footer{
     background-color: hsl(0, 0%, 10%);
 
 }
+

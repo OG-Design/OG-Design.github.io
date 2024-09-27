@@ -5,3 +5,13 @@
 
     
 }
+
+img {
+    /* shape */
+    width: 100%;
+    height: auto;
+
+    /* style */
+    border-radius: .5em;
+}
+/* img standards --START */
