@@ -6,12 +6,17 @@
     
 }
 
+/* img standards --START */
 img {
     /* shape */
-    width: 100%;
-    height: auto;
+    width: 90%;
+    
 
     /* style */
     border-radius: .5em;
+    
+    /* position */
+    padding: 0;
+    margin: 0;
 }
-/* img standards --START */
+/* img standards --END */

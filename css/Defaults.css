@@ -159,4 +159,165 @@ footer a {
 
 
 
+
+
+
+
+/* mobile content --START */
+
+@media screen and (max-width: 800px) {
+
+
+
+    /* default properties html, body --START */
+    html, body, aside {
+        /* position */
+        position: static;
+
+
+        /* shape */
+        width: 100%;
+        height: fit-content;
+        
+        
+        margin: 0;
+        padding: 0;
+        
+        /* style */
+        background-color: hsl(0, 0%, 0%);
+
+    
+    
+
+}
+/* default properties html, body --END */
+
+
+
+
+
+
+    
+    /* default texts --START */
+    h1, h2, h3, h4, h5, h6, p, a{
+
+        /* style */
+        color: hsl(0, 0%, 100%);
+        list-style: none;
+
+    }
+
+    h1 {
+        font-family: "Pacifico";
+        font-size: 2em;
+    }
+
+    h2 {
+        font-family: "RokkittBold";
+        font-size: 2em;
+    }
+
+    p   {
+
+        /* shape */
+        font-size: 1.5em;
+
+        font-family: "RokkittNormal";
+    }
+
+
+
+    a {
+        /* removes underline */
+        text-decoration: none;
+        font-family: "RokkittBold";
+    }
+    /* default texts --END */
+
+    aside {
+        width: 80%;
+        height: 5em;
+
+        /* position */
+        
+        /* position child */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        /* position parent */
+        position: sticky;
+        
+        top: 4em;
+        margin: 0% auto;
+        padding: 1em;
+        
+
+        z-index: 1;
+
+        /* style fix */
+        background-color:  hsl(0, 0%, 10%);
+
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: .5em;
+        border-bottom-right-radius: .5em;
+        
+    }
+
+
+
+
+    /* welcomeCard spesific FONT --START*/
+    .welcomeCard h2 {
+        font-family: "RokkittNormal";
+    }
+
+
+
+    .welcomeCard li {
+        font-family: "RokkittNormal";
+        font-size: 2em;
+
+        text-align: left;
+        margin: 0;
+    }
+    /* welcomeCard spesific FONT --END*/
+
+    /* asideMenu spesific properties --START */
+    .asideMenu a {
+        font-size: 1em;
+    }
+
+    .asideMenu h1 {
+        margin: 0;
+        font-size: 2em;
+        
+    }
+    /* asideMenu spesific properties --END */
+
+    footer p {
+        color: hsl(0, 0%, 25%);
+    }
+    footer a {
+        color: hsl(0, 0%, 25%);
+    }
+
+
+
+    /* NA WIP --START */
+
+    .wip {
+        color: grey;
+        opacity: .3;
+    }
+
+
+    /* NA WIP --END */
+}
+
+/* mobile content --END */
+
+
+
 /* default properties text --END */
