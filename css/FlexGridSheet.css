@@ -227,7 +227,7 @@ footer{
 
     /* position children */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     
     /* alignment */
@@ -244,6 +244,27 @@ footer{
 
 }
 
+.imageBox {
+    
+    
+    /* shape */
+    width: 100%;
+    height: auto;
+    
+    
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* alignment */
+    justify-content: center;
+
+    gap: 2em;
+
+
+}
 
 
 
@@ -262,266 +283,261 @@ footer{
 
 
 
-    /* mastHead --START */
-.mastHeadPosition {
+        /* mastHead --START */
+    .mastHeadPosition {
 
-    /* sticks to page bounds */
-    position: sticky;
-    position: -webkit-sticky;
+        /* sticks to page bounds */
+        position: sticky;
+        position: -webkit-sticky;
 
-    /* positioning vertical */
-    transform: translate(0em, 5em);
+        /* positioning vertical */
+        transform: translate(0em, 5em);
 
-    
-    /* sticks at -10em vertical */
-    top: -5em;
+        
+        /* sticks at -10em vertical */
+        top: -5em;
 
 
-    /* z-index to fix asideMenu covering mastHead */
-    z-index: +2;
+        /* z-index to fix asideMenu covering mastHead */
+        z-index: +2;
+    }
+
+    .mastHead {
+        
+        /* shape */
+        width: 100%;
+        height: 4em;
+        
+        /* flex properties */
+        display: flex;
+        flex-direction: row;
+
+        /* child position */
+        justify-content: center;
+        align-items: center;
+
+        /* parent position */
+        position: static;
+
+        /* style */
+        background-color: hsl(0, 0%, 0%);   
+
+        z-index: +1;
+        
+
+    }
+
+    .contentBox {
+        /* shape */
+        width: 100%;
+        height: fit-content;
+
+        /* position */
+        /* child position */
+        display: flex;
+        flex-direction: column;
+
+
+        padding-top: 5em;
+    }
+
+    /* mastHead --END */
+
+    /* main --START */
+    main {
+        
+        /* shape */
+        
+        width: 100%;
+        height: 100%;
+
+        /* flex properties */
+        display: flex;
+        
+        /* position */
+        /* parent position */
+        position: relative;
+
+        top: 1em;
+        /* child position */
+        /* horizontal alignment*/
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1em;
+
+    }
+    /* main --END */
+
+
+    .textBox {
+        /* shape */
+        width: 80%;
+        
+        border-radius: .5em;
+        padding: 1em;
+
+
+        /* flex properties */
+        display: flex;
+        
+        flex-direction: column;
+
+        /* child position */
+        text-align: left;
+
+        /* parent position */
+        
+        /* style */
+        background-color: hsl(0, 0%, 20%);
+    }
+
+    /* welcomeCard --START */
+    .welcomeCard {
+        /* shape */
+        width: 80%;
+        height: fit-content;
+
+        border-radius: .5em;
+        
+        /* position parent */
+        top: 100em;
+
+
+        /* position child */
+        padding: 1em;
+
+
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        /* alignment */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        
+        /* style */
+        background-color: hsl(0, 0%, 10%);
+        background-image: url(/img/4k\ blur.webp);
+        background-size: 100%;
+        
+
+        margin: 0em;
+
+        /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
+
+        
 }
-
-.mastHead {
-    
-    /* shape */
-    width: 100%;
-    height: 4em;
-    
-    /* flex properties */
-    display: flex;
-    flex-direction: row;
-
-    /* child position */
-    justify-content: center;
-    align-items: center;
-
-    /* parent position */
-    position: static;
-
-    /* style */
-    background-color: hsl(0, 0%, 0%);   
-
-    z-index: +1;
-    
-
-}
-
-.contentBox {
-    /* shape */
-    width: 100%;
-    height: fit-content;
-
-    /* position */
-    /* child position */
-    display: flex;
-    flex-direction: column;
+    /* welcomeCard --END */
 
 
-    padding-top: 5em;
-}
+    /* asideMenu --START */
+    .asideMenu {
+        /* shape */
+        width: fit-content;
+        height: 3em;
+        
+        border-radius: .5em;
 
-/* mastHead --END */
-
-/* main --START */
-main {
-    
-    /* shape */
-    
-    width: 100%;
-    height: 100%;
-
-    /* flex properties */
-    display: flex;
-    
-    /* position */
-    /* parent position */
-    position: relative;
-
-    top: 1em;
-    /* child position */
-    /* horizontal alignment*/
-    align-items: center;
-    flex-direction: column;
-
-    gap: 1em;
-
-}
-/* main --END */
-
-
-.textBox {
-    /* shape */
-    width: 80%;
-    
-    border-radius: .5em;
-    padding: 1em;
-
-
-    /* flex properties */
-    display: flex;
-    
-    flex-direction: column;
-
-    /* child position */
-    text-align: left;
-
-    /* parent position */
-    
-    /* style */
-    background-color: hsl(0, 0%, 20%);
-}
-
-/* welcomeCard --START */
-.welcomeCard {
-    /* shape */
-    width: 80%;
-    height: fit-content;
-
-    border-radius: .5em;
-    
-    /* position parent */
-    top: 100em;
-
-
-    /* position child */
-    padding: 1em;
-
-
-    /* flex properties */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    /* alignment */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    
-    /* style */
-    background-color: hsl(0, 0%, 10%);
-    background-image: url(/img/4k\ blur.webp);
-    background-size: 100%;
-    
-
-    margin: 0em;
-
-    /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
-
-    
-}
-/* welcomeCard --END */
-
-
-/* asideMenu --START */
-.asideMenu {
-    /* shape */
-    width: fit-content;
-    height: 3em;
-    
-    border-radius: .5em;
-
-    /* style */
-    background-color: hsl(0, 0%, 10%);
+        /* style */
+        background-color: hsl(0, 0%, 10%);
 
 
 
-    /* position */
-    position: static;
-    
-    
+        /* position */
+        position: static;
+        
+        
 
-    /* flex properties */
-    display: flex;
-    flex-direction: column;
-    
-    /* alignment */
-    justify-content: center;
-    align-items: center;
-    
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        
+        /* alignment */
+        justify-content: center;
+        align-items: center;
+        
 
-    
+        
 
-    
-    
-    margin: 0%;
-    padding: 1em;
-    
-    
+        
+        
+        margin: 0%;
+        padding: 1em;
+        
+        
+
+    }
+
+    .asideMenuButtonGroup {
+        /* shape */
+        width: fit-content;
+        height: fit-content;
+        padding: 1em;
+
+        /* position child */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+        /* shape check */
+        /* background-color: aqua; */
+    }
+
+    .asideMenuButton {
+        /* shape */
+        width: fit-content;
+        height: fit-content;
+        padding: .3em;
+
+        /* shape check */
+        /* background-color: rgb(255, 106, 106); */
+    }
+    /* asideMenu --END */
+
+
+
+
+    footer {
+        /* shape */
+        width: 100%;
+        height: 2em;
+
+        background-color: black;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .previewBox {
+        /* shape */
+        width: 80%;
+        height: fit-content;
+        border-radius: .5em;
+
+        /* position children */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        /* alignment */
+        justify-content: center;
+        align-items: center;
+
+        /* used this alignment, only one that would position img in centre */
+        text-align: center;
+
+        padding: 1em;
+        
+        
+        background-color: hsl(0, 0%, 10%);
 
 }
-
-.asideMenuButtonGroup {
-    /* shape */
-    width: fit-content;
-    height: fit-content;
-    padding: 1em;
-
-    /* position child */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-    /* shape check */
-    /* background-color: aqua; */
-}
-
-.asideMenuButton {
-    /* shape */
-    width: fit-content;
-    height: fit-content;
-    padding: .3em;
-
-    /* shape check */
-    /* background-color: rgb(255, 106, 106); */
-}
-/* asideMenu --END */
-
-
-
-
-footer {
-    /* shape */
-    width: 100%;
-    height: 2em;
-
-    background-color: black;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.previewBox {
-    /* shape */
-    width: 80%;
-    height: fit-content;
-    border-radius: .5em;
-
-    /* position children */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    
-    /* alignment */
-    justify-content: center;
-    align-items: center;
-
-    /* used this alignment, only one that would position img in centre */
-    text-align: center;
-
-    padding: 1em;
-    
-    
-    background-color: hsl(0, 0%, 10%);
-
-}
-
-
-
-
-
 
 }
 

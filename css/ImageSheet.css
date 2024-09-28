@@ -9,7 +9,8 @@
 /* img standards --START */
 img {
     /* shape */
-    width: 90%;
+    min-width: 10em;
+    max-width: 20em;
     
 
     /* style */
@@ -20,3 +21,4 @@ img {
     margin: 0;
 }
 /* img standards --END */
+
