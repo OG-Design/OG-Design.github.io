@@ -134,7 +134,7 @@ a {
 .asideMenu h1 {
     margin: 0;
     font-size: 3em;
-    
+    color: hsl(0, 0%, 100%);
 }
 /* asideMenu spesific properties --END */
 
