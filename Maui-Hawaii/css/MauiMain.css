@@ -12,6 +12,9 @@ main{
     width: fit-content;
     height: fit-content;
 
+    display: flex;
+    flex-direction: row;
+
     padding-top: 0em;
 }
 
@@ -20,6 +23,13 @@ aside{
     width: fit-content;
     height: 100%;
 }
+
+
+
+
+
+/* text properties --START */
+
 
 
 /* fonts */
@@ -36,6 +46,57 @@ aside{
 h1, p{
     font-family: RokkittBold;
 }
+
+h2 {
+    font-family: RokkittBold;
+    color: hsl(186, 8%, 20%);
+
+    font-size: 4em;
+}
+
+
+.contentBox p {
+    font-size: 2em;
+    color: hsl(186, 8%, 10%);
+}
+
+
+.mastheadTop h1 {
+    
+    font-size: 5rem;
+
+    color: hsl(186, 8%, 30%);
+}
+
+
+
+li, a, button{
+    /* removes unwanted standards from li / a */
+    list-style: none;
+    text-decoration-line: none;
+    color: hsl(186, 8%, 30%);
+    
+    /* alignment */
+    text-align: left;
+    
+    /* style */
+    
+
+}
+
+
+footer h1, p, a{
+    color: hsl(186, 58%, 90%);
+    font-size: 1em;
+}
+
+
+
+/* text properties --END */
+
+
+
+
 
 .universalBoxShadow {
     box-shadow: 0em 0em 5em .25em hsl(186, 5%, 10%, .25);
@@ -60,15 +121,10 @@ h1, p{
 
     background-color: hsl(186, 58%, 90%);
 
-    
+    z-index: 1;
 }
 
-.mastheadTop h1 {
-    
-    font-size: 5rem;
 
-    color: hsl(186, 8%, 30%);
-}
 
 /* unordered list properties --START */
 ul {
@@ -78,11 +134,15 @@ ul {
     width: fit-content;
     
     /* position */
-position: sticky;
+    position: sticky;
+    /* when sticky activates */
+    top: 10em;
 
+    /* position child */
     display: flex;
     flex-direction: column;
 
+    /* alignment */
     justify-content: center;
     align-items: center;
 
@@ -95,19 +155,7 @@ position: sticky;
 
 }
 
-li, a, button{
-    /* removes unwanted standards from li / a */
-    list-style: none;
-    text-decoration-line: none;
-    color: hsl(186, 8%, 30%);
-    
-    /* alignment */
-    text-align: left;
-    
-    /* style */
-    
 
-}
 
 
 
@@ -188,6 +236,34 @@ footer {
     background-color: hsl(186, 15%, 34%);
 }
 
-footer h1, p, a{
-    color: hsl(186, 58%, 90%);
+
+
+
+/* activities --Start */
+
+.contentBox {
+    /* shape */
+    width: 100%;
+
+    height: 2000px;
+    
+
+
+    /* position */
+
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    margin: 2em;
+
+    z-index: 0;
+}
+
+.backgroundImagePosition {
+    position: absolute;
+    width: 100%;
+
+    z-index: 0;
 }
