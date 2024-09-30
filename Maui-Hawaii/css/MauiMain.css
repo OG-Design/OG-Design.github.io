@@ -115,6 +115,8 @@ footer h1, p, a{
     justify-content: center;
     align-items: center;
 
+
+    /* sticky activation */
     position: sticky;
     top: -20em;
     padding-top: 20em;
@@ -245,7 +247,7 @@ footer {
     /* shape */
     width: 100%;
 
-    height: 2000px;
+    height: fit-content;
     
 
 
