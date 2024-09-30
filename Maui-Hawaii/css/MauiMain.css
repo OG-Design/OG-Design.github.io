@@ -24,6 +24,8 @@ nav {
     padding: 0;
     width: fit-content;
     height: fit-content;
+
+    
 }
 
 
@@ -98,9 +100,7 @@ h2 {
 
 
 
-.backgroundImagePosition {
-    position: absolute;
-    width: 100%;
-
-    z-index: 0;
+.backgroundImageActivities {
+    background-image: url(/Maui-Hawaii/images/jeremy-bishop-7g5juwG5jrQ-unsplash.jpg);
+    
 }

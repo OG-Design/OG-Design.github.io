@@ -1,7 +1,10 @@
 
 .contentBox h1 {
-    font-size: 3em;
+    font-size: 3rem;
     color: hsl(186, 8%, 10%);
+
+    margin: 0;
+    padding: 1rem;
 }
 
 .contentBox p {
@@ -11,9 +14,8 @@
 
 .contentBox {
     /* shape */
-    width: 100%;
-
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
     
 
 
@@ -32,21 +34,48 @@
 
     z-index: 0;
 
-    background-color: ;
+    /* background-color: red; */
 }
 
 
 /* contentBox child */
-.box {
-    width: 90%;
+.boxRow {
+    /* shape */
+    width: 100%;
     height: 100%;
 
+    /* position child */
     display: flex;
     flex-direction: row;
+
+    /* alignment */
+    justify-content: space-between;
+}
+
+.boxColumn {
+    /* shape */
+    width: 100%;
+    height: 100%;
+    
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    /* alignment */
+    justify-content: space-between;
+    
 }
 
 .item {
     
-    width: 100%;
+    width: 70%;
+    height: fit-content;
 
+    margin: 1em;
+
+}
+
+.itemImg {
+    width: 30em;
+    margin: 1em;
 }
