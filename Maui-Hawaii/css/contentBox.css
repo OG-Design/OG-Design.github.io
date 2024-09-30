@@ -1,0 +1,52 @@
+
+.contentBox h1 {
+    font-size: 3em;
+    color: hsl(186, 8%, 10%);
+}
+
+.contentBox p {
+    font-size: 2em;
+}
+
+
+.contentBox {
+    /* shape */
+    width: 100%;
+
+    height: 100%;
+    
+
+
+    /* position */
+
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    /* alignment */
+    justify-content: center;
+    align-items: left;
+
+    margin: 2em;
+
+    z-index: 0;
+
+    background-color: ;
+}
+
+
+/* contentBox child */
+.box {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    
+    width: 100%;
+
+}

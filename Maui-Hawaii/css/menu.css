@@ -1,0 +1,92 @@
+/* unordered list properties --START */
+.menu {
+    
+    /* shape */
+    height: fit-content;
+    width: fit-content;
+    
+    /* position */
+    position: sticky;
+    /* when sticky activates */
+    top: 10em;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+    margin: 0;
+
+    background-color: hsl(186, 40%, 74%);
+
+    
+
+}
+
+
+
+
+
+ul li {
+    /* shape */
+    width: 100%;
+    height: 100%;
+    
+    /* position */
+    padding: .2em;
+    padding-left: 1em;
+    
+    
+}
+
+
+.button {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+
+    /* position */
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+
+
+
+    /* Style */
+    border: none;
+    background-color:  hsl(186, 40%, 74%);
+    text-align: left;
+    text-decoration: none;
+    
+}
+
+/* indicates unselected items */
+.deactivatedPageIndicator {
+    /* style */
+    background-color: hsl(186, 40%, 74%);
+}
+
+/* indicates selected items */
+.activePageIndicator {
+    /* style */
+    background-color: hsl(186, 20%, 54%);
+}
+/* unordered list properties --END */
+
+li, a, button{
+    /* removes unwanted standards from li / a */
+    list-style: none;
+    text-decoration-line: none;
+    color: hsl(186, 8%, 30%);
+    
+    /* alignment */
+    text-align: left;
+    
+    /* style */
+    
+
+}

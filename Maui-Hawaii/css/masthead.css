@@ -1,0 +1,29 @@
+.mastheadTop h1 {
+    
+    font-size: 5rem;
+
+    color: hsl(186, 8%, 30%);
+}
+
+.mastheadTop {
+    width: 100%;
+    height: 10em;
+
+    /* position */
+    display: flex;
+    flex-direction: row;
+    
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+
+
+    /* sticky activation */
+    position: sticky;
+    top: -10em;
+    padding-top: 10em;
+
+    background-color: hsl(186, 58%, 90%);
+
+    z-index: 1;
+}
