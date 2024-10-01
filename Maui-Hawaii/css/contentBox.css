@@ -4,7 +4,7 @@
     color: hsl(186, 8%, 10%);
 
     margin: 0;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .contentBox p {
@@ -31,6 +31,7 @@
     align-items: left;
 
     margin: 2em;
+    padding: 1em;
 
     z-index: 0;
 
@@ -63,6 +64,8 @@
 
     /* alignment */
     justify-content: space-between;
+
+    
     
 }
 
@@ -71,11 +74,16 @@
     width: 70%;
     height: fit-content;
 
-    margin: 1em;
+    margin: 2em;
 
 }
 
 .itemImg {
     width: 30em;
-    margin: 1em;
+    margin: 0em;
 }
+
+.itemSpacer {
+    margin: 2em;
+}
+

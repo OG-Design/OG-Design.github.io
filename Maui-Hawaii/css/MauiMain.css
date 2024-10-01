@@ -81,6 +81,11 @@ h2 {
     box-shadow: 0em 0em 5em .25em hsl(186, 5%, 10%, .25);
 }
 
+.backdropFilter {
+    backdrop-filter: blur(4px);
+    background-color: hsla(0, 0%, 100%, 0.054);
+}
+
 
 
 
@@ -101,6 +106,11 @@ h2 {
 
 
 .backgroundImageActivities {
-    background-image: url(/Maui-Hawaii/images/jeremy-bishop-7g5juwG5jrQ-unsplash.jpg);
-    
+    background-image: url(/Maui-Hawaii/images/jeremy-bishop-7g5juwG5jrQ-unsplash.jpg);   
+
+}
+
+.backgroundImageIndex {
+    background-image: url(/Maui-Hawaii/images/napili-bay-maui-hawaii-maui.jpg);   
+
 }
