@@ -1,0 +1,16 @@
+
+/* contentBox --END */
+.contentBox {
+    /* shape */
+    width: 100%;
+    height: fit-content;
+
+    /* position */
+    /* child position */
+    display: flex;
+    flex-direction: column;
+
+
+    padding-top: 12em;
+}
+/* contentBox --END */
