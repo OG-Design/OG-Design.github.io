@@ -93,7 +93,7 @@ li, a, button{
 
 
 /* mobile content --START */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     
 
 
@@ -102,7 +102,7 @@ li, a, button{
     
     /* shape */
     height: fit-content;
-    width: fit-content;
+    width: 100%;
     
     /* position */
     position: sticky;
@@ -112,12 +112,14 @@ li, a, button{
     /* position child */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     /* alignment */
     justify-content: center;
     align-items: center;
 
     padding: 1em;
+    padding-bottom: 2em;
     margin: 0;
 
     background-color: hsl(186, 40%, 74%);
@@ -132,8 +134,8 @@ li, a, button{
 
 ul li {
     /* shape */
-    width: 100%;
-    height: 100%;
+    width: 10em;
+    height: 5em;
     
     /* position */
     padding: .2em;

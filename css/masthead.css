@@ -42,8 +42,16 @@
 
 }
 
-.mastHead img {
+.mastHeadLogo {
+    /* shape */
     width: 5em;
+
+
+    /* position */
+    position: absolute;
+    left: 0;
+
+    margin: 1em;
 }
 /* mastHead --END */
 
@@ -97,11 +105,14 @@
 
     }
 
+    .mastHeadLogo {
+        width: 2em;
+    }
+
+
 }
 
-.mastHead img {
-    width: 5em;
-}
+
 /* mastHead --END */
 
 

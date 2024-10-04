@@ -48,6 +48,7 @@ nav {
 /* font selection */
 h1, p{
     font-family: RokkittBold;
+    font-size: 2em;
 }
 
 h2 {
@@ -118,7 +119,7 @@ h2 {
 }
 
 /* mobile content --START */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
 
     body, html {
