@@ -34,13 +34,44 @@
 
     
 }
+
+ /* welcomeCard spesific FONT --START*/
+ .welcomeCard h2 {
+    font-family: "RokkittNormal";
+}
+
+
+
+.welcomeCard li {
+    font-family: "RokkittNormal";
+    font-size: 2em;
+
+    text-align: left;
+    margin: 0;
+}
+/* welcomeCard spesific FONT --END*/
+
+
+
+/* logo properties --START */
+.logo {
+    width: 20em;
+    
+    opacity: .1;
+
+    
+}
+/* logo properties --END */
+
+
+
 /* welcomeCard --END */
 
 
 /* mobile content --START */
 @media screen and (max-width: 800px) {
 
-    
+
     /* welcomeCard --START */
     .welcomeCard {
         /* shape */
@@ -78,7 +109,19 @@
 
         /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
 
+
+    }
+
+    
+    /* logo properties --START */
+    .logo {
+        width: 20em;
+        
+        opacity: .1;
+
         
     }
+    /* logo properties --END */
+
     /* welcomeCard --END */
 }

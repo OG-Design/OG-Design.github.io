@@ -1,0 +1,105 @@
+/* img standards --START */
+img {
+    /* shape */
+    min-width: 10em;
+    max-width: 20em;
+    
+
+    /* style */
+    border-radius: .5em;
+    
+    /* position */
+    padding: 0;
+    margin: 0;
+}
+/* img standards --END */
+
+.imageBox {
+    
+    
+    /* shape */
+    width: 100%;
+    height: auto;
+    
+    
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* alignment */
+    justify-content: center;
+
+    gap: 2em;
+
+
+}
+
+.previewBox {
+    /* shape */
+    width: 80%;
+    height: fit-content;
+    border-radius: .5em;
+
+    /* position children */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+
+    /* used this alignment, only one that would position img in centre */
+    text-align: center;
+
+    padding: 1em;
+    
+    
+    background-color: hsl(0, 0%, 10%);
+
+}
+
+.section {
+    width: fit-content;
+    height: fit-content;
+    background-color: antiquewhite;
+}
+
+
+
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+
+
+    
+    .previewBox {
+        /* shape */
+        width: 80%;
+        height: fit-content;
+        border-radius: .5em;
+
+        /* position children */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        /* alignment */
+        justify-content: center;
+        align-items: center;
+
+        /* used this alignment, only one that would position img in centre */
+        text-align: center;
+
+        padding: 1em;
+        
+        
+        background-color: hsl(0, 0%, 10%);
+
+}
+
+
+}
+
+/* mobile content --END */

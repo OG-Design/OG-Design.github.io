@@ -58,7 +58,9 @@ h2 {
 }
 
 
-
+.item a {
+    color: black;
+}
 
 
 
@@ -112,5 +114,80 @@ h2 {
 
 .backgroundImageIndex {
     background-image: url(/Maui-Hawaii/images/napili-bay-maui-hawaii-maui.jpg);   
+
+}
+
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+
+
+    body, html {
+        width: 100%;
+        height: fit-content;
+    
+        margin: 0;
+        padding: 0;
+    
+        background-color: hsl(186, 18%, 50%);
+    }
+    
+    main{
+        width: fit-content;
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: column;
+    
+        padding-top: 0em;
+    }
+    
+    
+    nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+    
+        
+    }
+    
+    
+    
+    
+    /* text properties --START */
+    
+    
+    
+    /* fonts */
+    @import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+    
+    /* font faces */
+    @font-face {
+        font-family: RokkittBold;
+        src: url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+        font-weight: 700;
+    }
+    
+    /* font selection */
+    h1, p{
+        font-family: RokkittBold;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-family: RokkittBold;
+        color: hsl(186, 8%, 20%);
+    
+        font-size: 2em;
+    }
+    
+    
+    .item a {
+        color: black;
+    }
+    
+    
+    /* text properties --END */
+
 
 }

@@ -87,3 +87,95 @@
     margin: 2em;
 }
 
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+    
+    .contentBox h1 {
+        font-size: 3rem;
+        color: hsl(186, 8%, 10%);
+
+        margin: 0;
+        padding: 0rem;
+    }
+
+    .contentBox p {
+        font-size: 2em;
+    }
+
+
+    .contentBox {
+        /* shape */
+        width: fit-content;
+        height: fit-content;
+        
+
+
+        /* position */
+
+
+        /* position child */
+        display: flex;
+        flex-direction: column;
+
+        /* alignment */
+        justify-content: center;
+        align-items: left;
+
+        margin: 2em;
+        padding: 1em;
+
+        z-index: 0;
+
+        /* background-color: red; */
+    }
+
+
+    /* contentBox child */
+    .boxRow {
+        /* shape */
+        width: 100%;
+        height: 100%;
+
+        /* position child */
+        display: flex;
+        flex-direction: column;
+
+        /* alignment */
+        justify-content: space-between;
+    }
+
+    .boxColumn {
+        /* shape */
+        width: 100%;
+        height: 100%;
+        
+        /* position child */
+        display: flex;
+        flex-direction: column;
+
+        /* alignment */
+        justify-content: space-between;
+
+        
+        
+    }
+
+    .item {
+        
+        width: 70%;
+        height: fit-content;
+
+        margin: 2em;
+
+    }
+
+    .itemImg {
+        width: 30em;
+        margin: 0em;
+    }
+
+    .itemSpacer {
+        margin: 2em;
+}
+}
+/* mobile content --END */

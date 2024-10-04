@@ -6,3 +6,11 @@
     background-color: hsl(186, 30%, 64%);
     color: hsl(186, 58%, 90%);
 }
+
+.animationText {
+    transition: .1s;
+}
+
+.animationText:hover {
+    color: hsl(186, 58%, 90%);
+}

@@ -217,6 +217,12 @@ footer a {
         font-size: 2em;
     }
 
+    
+    h3 {
+        font-size: 2em;
+        
+    }
+
     p   {
 
         /* shape */
@@ -268,21 +274,7 @@ footer a {
 
 
 
-    /* welcomeCard spesific FONT --START*/
-    .welcomeCard h2 {
-        font-family: "RokkittNormal";
-    }
-
-
-
-    .welcomeCard li {
-        font-family: "RokkittNormal";
-        font-size: 2em;
-
-        text-align: left;
-        margin: 0;
-    }
-    /* welcomeCard spesific FONT --END*/
+   
 
     /* asideMenu spesific properties --START */
     .asideMenu a {

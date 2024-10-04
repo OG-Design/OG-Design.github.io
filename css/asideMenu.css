@@ -1,0 +1,133 @@
+/* asideMenu --START */
+.asideMenu {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+    
+    border-radius: .5em;
+
+    /* style */
+    background-color: hsl(0, 0%, 10%);
+
+
+
+    /* position */
+    position: static;
+    top: -20em;
+    padding-top: 12em;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+
+
+    
+
+    
+    
+    margin-left: 10%;
+    padding: 1em;
+    
+    
+
+}
+
+.asideMenuButtonGroup {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+
+    
+    
+    /* shape check */
+    /* background-color: aqua; */
+}
+
+.asideMenuButton {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+    padding: .1em;
+
+    /* shape check */
+    /* background-color: rgb(255, 106, 106); */
+}
+/* asideMenu --END */
+
+
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+
+
+
+
+
+/* asideMenu --START */
+.asideMenu {
+    /* shape */
+    width: fit-content;
+    height: 3em;
+    
+    border-radius: .5em;
+
+    /* style */
+    background-color: hsl(0, 0%, 10%);
+
+
+
+    /* position */
+    position: static;
+    
+    
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+    
+    
+    margin: 0%;
+    padding: 1em;
+    
+    
+
+}
+
+.asideMenuButtonGroup {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    /* shape check */
+    /* background-color: aqua; */
+}
+
+.asideMenuButton {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+    padding: .3em;
+
+    /* shape check */
+    /* background-color: rgb(255, 106, 106); */
+}
+/* asideMenu --END */
+
+
+}
+/* mobile content --END */
