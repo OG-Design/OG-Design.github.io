@@ -1,0 +1,84 @@
+/* welcomeCard --START */
+.welcomeCard {
+    /* shape */
+    width: 50%;
+    height: fit-content;
+
+    border-radius: .5em;
+
+    padding: 1em;
+
+    
+    /* position */
+    
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    /* alignment */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    /* style */
+    background-color: hsl(0, 0%, 10%);
+    background-image: url(/img/4k\ blur.webp);
+    background-size: 100%;
+    
+
+    margin: 0em;
+
+    /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
+
+    
+}
+/* welcomeCard --END */
+
+
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+
+    
+    /* welcomeCard --START */
+    .welcomeCard {
+        /* shape */
+        width: 80%;
+        height: fit-content;
+
+        border-radius: .5em;
+        
+        /* position parent */
+        top: 100em;
+
+
+        /* position child */
+        padding: 1em;
+
+
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        /* alignment */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        
+        /* style */
+        background-color: hsl(0, 0%, 10%);
+        background-image: url(/img/4k\ blur.webp);
+        background-size: 100%;
+        
+
+        margin: 0em;
+
+        /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
+
+        
+    }
+    /* welcomeCard --END */
+}

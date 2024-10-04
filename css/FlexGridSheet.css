@@ -1,62 +1,4 @@
-/* mastHead --START */
-.mastHeadPosition {
 
-    /* sticks to page bounds */
-    position: sticky;
-    position: -webkit-sticky;
-
-    /* positioning vertical */
-    transform: translate(0em, 10em);
-
-    
-    /* sticks at -10em vertical */
-    top: -10em;
-
-
-    /* z-index to fix asideMenu covering mastHead */
-    z-index: +1;
-}
-
-.mastHead {
-    
-    /* shape */
-    width: 100%;
-    height: 8em;
-    
-    /* flex properties */
-    display: flex;
-    flex-direction: row;
-
-    /* child position */
-    justify-content: center;
-    align-items: center;
-
-    /* parent position */
-    position: static;
-
-    /* style */
-    background-color: hsl(0, 0%, 0%);   
-
-    z-index: +1;
-    
-
-}
-
-.contentBox {
-    /* shape */
-    width: 100%;
-    height: fit-content;
-
-    /* position */
-    /* child position */
-    display: flex;
-    flex-direction: column;
-
-
-    padding-top: 12em;
-}
-
-/* mastHead --END */
 
 /* main --START */
 main {
@@ -85,65 +27,8 @@ main {
 /* main --END */
 
 
-.textBox {
-    /* shape */
-    width: 50%;
-    
-    border-radius: .5em;
-    padding: 1em;
 
 
-    /* flex properties */
-    display: flex;
-    
-    flex-direction: column;
-
-    /* child position */
-    text-align: left;
-
-    /* parent position */
-    
-    /* style */
-    background-color: hsl(0, 0%, 20%);
-}
-
-/* welcomeCard --START */
-.welcomeCard {
-    /* shape */
-    width: 50%;
-    height: fit-content;
-
-    border-radius: .5em;
-
-    padding: 1em;
-
-    
-    /* position */
-    
-    /* flex properties */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    /* alignment */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    
-    /* style */
-    background-color: hsl(0, 0%, 10%);
-    background-image: url(/img/4k\ blur.webp);
-    background-size: 100%;
-    
-
-    margin: 0em;
-
-    /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
-
-    
-}
-/* welcomeCard --END */
 
 
 /* asideMenu --START */
@@ -278,70 +163,7 @@ footer{
 
 
 /* mobile content --START */
-
 @media screen and (max-width: 800px) {
-
-
-
-        /* mastHead --START */
-    .mastHeadPosition {
-
-        /* sticks to page bounds */
-        position: sticky;
-        position: -webkit-sticky;
-
-        /* positioning vertical */
-        transform: translate(0em, 5em);
-
-        
-        /* sticks at -10em vertical */
-        top: -5em;
-
-
-        /* z-index to fix asideMenu covering mastHead */
-        z-index: +2;
-    }
-
-    .mastHead {
-        
-        /* shape */
-        width: 100%;
-        height: 4em;
-        
-        /* flex properties */
-        display: flex;
-        flex-direction: row;
-
-        /* child position */
-        justify-content: center;
-        align-items: center;
-
-        /* parent position */
-        position: static;
-
-        /* style */
-        background-color: hsl(0, 0%, 0%);   
-
-        z-index: +1;
-        
-
-    }
-
-    .contentBox {
-        /* shape */
-        width: 100%;
-        height: fit-content;
-
-        /* position */
-        /* child position */
-        display: flex;
-        flex-direction: column;
-
-
-        padding-top: 5em;
-    }
-
-    /* mastHead --END */
 
     /* main --START */
     main {
@@ -370,69 +192,8 @@ footer{
     /* main --END */
 
 
-    .textBox {
-        /* shape */
-        width: 80%;
-        
-        border-radius: .5em;
-        padding: 1em;
-
-
-        /* flex properties */
-        display: flex;
-        
-        flex-direction: column;
-
-        /* child position */
-        text-align: left;
-
-        /* parent position */
-        
-        /* style */
-        background-color: hsl(0, 0%, 20%);
-    }
-
-    /* welcomeCard --START */
-    .welcomeCard {
-        /* shape */
-        width: 80%;
-        height: fit-content;
-
-        border-radius: .5em;
-        
-        /* position parent */
-        top: 100em;
-
-
-        /* position child */
-        padding: 1em;
-
-
-        /* flex properties */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-
-        /* alignment */
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        
-        /* style */
-        background-color: hsl(0, 0%, 10%);
-        background-image: url(/img/4k\ blur.webp);
-        background-size: 100%;
-        
-
-        margin: 0em;
-
-        /* box-shadow: 0 50px 80px 0px hsl(0, 0%, 100%, 10%); */
-
-        
-}
-    /* welcomeCard --END */
-
+    
+    
 
     /* asideMenu --START */
     .asideMenu {

@@ -1,0 +1,113 @@
+/* mastHead --START */
+.mastHeadPosition {
+
+    /* sticks to page bounds */
+    position: sticky;
+    position: -webkit-sticky;
+
+    /* positioning vertical */
+    transform: translate(0em, 10em);
+
+    
+    /* sticks at -10em vertical */
+    top: -10em;
+
+
+    /* z-index to fix asideMenu covering mastHead */
+    z-index: +1;
+}
+
+.mastHead {
+    
+    /* shape */
+    width: 100%;
+    height: 8em;
+    
+    /* flex properties */
+    display: flex;
+    flex-direction: row;
+
+    /* child position */
+    justify-content: center;
+    align-items: center;
+
+    /* parent position */
+    position: static;
+
+    /* style */
+    background-color: hsl(0, 0%, 0%);   
+
+    z-index: +1;
+    
+
+}
+
+.mastHead img {
+    width: 5em;
+}
+/* mastHead --END */
+
+
+/* mobile content --START */
+@media screen and (max-width: 800px) {
+
+
+
+    /* mastHead --START */
+    .mastHeadPosition {
+
+        /* sticks to page bounds */
+        position: sticky;
+        position: -webkit-sticky;
+
+        /* positioning vertical */
+        transform: translate(0em, 5em);
+
+        
+        /* sticks at -10em vertical */
+        top: -5em;
+
+
+        /* z-index to fix asideMenu covering mastHead */
+        z-index: +2;
+    }
+
+    .mastHead {
+        
+        /* shape */
+        width: 100%;
+        height: 4em;
+        
+        /* flex properties */
+        display: flex;
+        flex-direction: row;
+
+        /* child position */
+        justify-content: center;
+        align-items: center;
+
+        /* parent position */
+        position: static;
+
+        /* style */
+        background-color: hsl(0, 0%, 0%);   
+
+        z-index: +1;
+        
+
+    }
+
+}
+
+.mastHead img {
+    width: 5em;
+}
+/* mastHead --END */
+
+
+
+/* mobile content --END */
+
+
+
+
