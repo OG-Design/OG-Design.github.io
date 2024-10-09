@@ -53,6 +53,7 @@ aside {
 /* IMPORTS */
 @import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
 @import url(/fonts/Rokkitt/Rokkitt-Italic-VariableFont_wght.ttf);
+@import url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
 
 /* font face/s */
 @font-face {
@@ -72,6 +73,20 @@ aside {
     src: url(/fonts/Pacifico/Pacifico-Regular.ttf);
     font-weight: bold;
 }
+
+
+
+@font-face {
+    font-family: DefaultNormal;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: DefaultBold;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 500;
+}
 /* font/s --END */
 
 /* default texts --START */
@@ -89,7 +104,7 @@ h1 {
 }
 
 h2 {
-    font-family: "RokkittBold";
+    font-family: "DefaultNormal";
     font-size: 3em;
 }
 
@@ -102,7 +117,7 @@ p   {
     /* shape */
     font-size: 1.5em;
 
-    font-family: "RokkittNormal";
+    font-family: "DefaultNormal";
 }
 
 
@@ -110,9 +125,24 @@ p   {
 a {
     /* removes underline */
     text-decoration: none;
-    font-family: "RokkittBold";
+    font-family: "DefaultBold";
 }
 /* default texts --END */
+
+/* default button properties --START */
+
+button {
+    
+    border-style: none;
+    background-color: hsla(0, 0%, 0%, 0);
+
+}
+
+/* default button properties --END */
+
+
+
+
 
 /* welcomeCard spesific FONT --START*/
 .welcomeCard h2 {

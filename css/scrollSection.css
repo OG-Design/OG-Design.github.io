@@ -1,0 +1,104 @@
+/* scrollSection --START */
+
+.scrollSection {
+    /* shape */
+    width: 80%;
+    
+    border-radius: .5em;
+    padding: 1em;
+
+
+    /* flex properties */
+    display: flex;
+    
+    flex-direction: column;
+
+    /* child position */
+    
+
+    /* parent position */
+    
+    /* style */
+    background-color: hsl(0, 0%, 15%);
+}
+
+/* scrollSection --END */
+
+
+.scrollArea {
+    /* shape */
+    width: auto;
+    height: fit-content;
+
+
+
+    border-radius: .5em;
+
+
+    background-color: rgb(88, 74, 74);
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+    
+
+    /* alignment */
+    justify-content: left;
+    gap: 10em;
+    padding: 0em;
+
+    
+
+    /* hides button overflow(like a clipping mask) */
+    overflow: hidden;
+}
+
+.scrollArea button {
+    width: 50em;
+    height: 50em;
+    background-color: rgb(74, 104, 94);
+
+    border-style: none;
+
+    border-radius: .5em;
+
+    
+}
+
+
+/* mobile content --START */
+
+
+@media screen and (max-width: 800px) {
+
+    /* scrollSection --START */
+
+
+    .scrollSection {
+        /* shape */
+        width: 80%;
+        
+        border-radius: .5em;
+        padding: 1em;
+
+
+        /* flex properties */
+        display: flex;
+        
+        flex-direction: column;
+
+        /* child position */
+        text-align: left;
+
+        /* parent position */
+        
+        /* style */
+        background-color: hsl(0, 0%, 20%);
+    }
+
+
+    /* scrollSection --END */
+
+}
+/* mobile content --END */

@@ -57,6 +57,21 @@
     /* shape check */
     /* background-color: rgb(255, 106, 106); */
 }
+
+/* dotMenuImg --START */
+.asideMenu img {
+    width: 5em;
+    filter: invert(100%);
+}
+/* dotMenuImg --END */
+
+
+
+
+
+
+
+
 /* asideMenu --END */
 
 
@@ -127,6 +142,9 @@
     /* background-color: rgb(255, 106, 106); */
 }
 /* asideMenu --END */
+
+
+
 
 
 }
