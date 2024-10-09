@@ -1,28 +1,8 @@
 /* scrollSection --START */
 
-.scrollSection {
-    /* shape */
-    width: 80%;
-    
-    border-radius: .5em;
-    padding: 1em;
 
 
-    /* flex properties */
-    display: flex;
-    
-    flex-direction: column;
 
-    /* child position */
-    
-
-    /* parent position */
-    
-    /* style */
-    background-color: hsl(0, 0%, 15%);
-}
-
-/* scrollSection --END */
 
 
 .scrollArea {
@@ -51,7 +31,7 @@
     
 
     /* hides button overflow(like a clipping mask) */
-    overflow: hidden;
+    overflow: auto;
 }
 
 .scrollArea button {
@@ -65,6 +45,10 @@
 
     
 }
+.scrollArrow {
+    font-size: 5em;
+}
+/* scrollSection --END */
 
 
 /* mobile content --START */

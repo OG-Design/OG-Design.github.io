@@ -1,5 +1,5 @@
 /* default properties html, body --START */
-html, body, aside {
+html, body {
     /* position */
     position: static;
 
@@ -19,7 +19,36 @@ html, body, aside {
     
 
 }
+
+main {
+
+    /* shape */
+    width: 100%;
+    height: fit-content;
+
+    /* position */
+    /* child position */
+    display: flex;
+    flex-direction: column;
+
+    /* child alignment */
+    align-items: center;
+
+
+    padding-top: 30em;
+}
+
+
+
+
+
 /* default properties html, body --END */
+
+
+
+
+
+
 
 /* default properties ul --START */
 ul {
@@ -27,23 +56,6 @@ ul {
     padding: 0;
 }
 /* default properties ul --END */
-
-/* default properties aside --START */
-
-aside {
-    width: fit-content;
-
-    /* position */
-    position: sticky;
-    position: -webkit-sticky;
-    top: 9em;
-    left: 0em;
-    
-
-    z-index: 1;
-}
-
-/* default properties aside --END */
 
 /* default properties text --START */
 
@@ -275,17 +287,17 @@ main {
 
     h1 {
         font-family: "Pacifico";
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     h2 {
         font-family: "RokkittBold";
-        font-size: 2em;
+        font-size: 1em;
     }
 
     
     h3 {
-        font-size: 2em;
+        font-size: 1em;
         
     }
 

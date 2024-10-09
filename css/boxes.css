@@ -1,0 +1,33 @@
+.rowBox {
+    width: 80%;
+    height: fit-content;
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: .5em;
+}
+
+.columnBox {
+    /* shape */
+    width: 80%;
+    
+    border-radius: .5em;
+    padding: 1em;
+
+
+    /* flex properties */
+    display: flex;
+    
+    flex-direction: column;
+
+    /* child position */
+    
+
+    /* parent position */
+    
+    /* style */
+    background-color: hsl(0, 0%, 15%);
+    
+}
