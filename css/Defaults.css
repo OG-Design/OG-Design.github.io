@@ -1,5 +1,5 @@
 /* default properties html, body --START */
-html, body {
+html, body, main {
     /* position */
     position: static;
 
