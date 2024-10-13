@@ -9,8 +9,12 @@
 
 .contentBox p {
     font-size: 2em;
+    color: hsl(208, 30%, 10%);
 }
 
+.contentBox h2 {
+    color: hsl(208, 30%, 80%);
+}
 
 .contentBox {
     /* shape */
@@ -165,17 +169,18 @@
         width: 70%;
         height: fit-content;
 
-        margin: 2em;
+        margin: 0em;
+        margin-top: 1em;
 
     }
 
     .itemImg {
-        width: 30em;
+        width: 15em;
         margin: 0em;
     }
 
     .itemSpacer {
-        margin: 2em;
+        margin: 1em;
 }
 }
 /* mobile content --END */

@@ -107,7 +107,7 @@ li, a, button{
     /* position */
     position: sticky;
     /* when sticky activates */
-    top: 10em;
+    /* top: 10em;   */
 
     /* position child */
     display: flex;
@@ -115,11 +115,12 @@ li, a, button{
     flex-wrap: wrap;
 
     /* alignment */
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
-    padding: 1em;
-    padding-bottom: 2em;
+    padding: 0em;
+    padding-bottom: .2em;
+    padding-top: .2em;
     margin: 0;
 
     background-color: hsl(186, 40%, 74%);
@@ -134,26 +135,30 @@ li, a, button{
 
 ul li {
     /* shape */
-    width: 10em;
-    height: 5em;
+    width: fit-content;
+    height: 2em;
     
     /* position */
     padding: .2em;
-    padding-left: 1em;
     
     
+    
+}
+
+li h1 {
+    font-size: 1.75em;
+    margin: 0;
 }
 
 
 .button {
     /* shape */
-    width: 100%;
-    height: fit-content;
+    width: fit-content;
+    height: 100%;
 
     /* position */
-    padding: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: .1em;
+
 
 
 

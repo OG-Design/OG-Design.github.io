@@ -45,8 +45,19 @@ nav {
     font-weight: 700;
 }
 
+@font-face {
+    font-family: RokkittNormal;
+    src: url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
 /* font selection */
-h1, p{
+p {
+    font-family: RokkittNormal;
+    font-size: 1em;
+}
+
+h1 {
     font-family: RokkittBold;
     font-size: 2em;
 }
@@ -123,23 +134,33 @@ h2 {
 
 
     body, html {
+        /* shape */
         width: 100%;
         height: fit-content;
     
+        /* style */
+        background-color: hsl(186, 18%, 50%);
+        
+        
+        /* alignment */
         margin: 0;
         padding: 0;
     
-        background-color: hsl(186, 18%, 50%);
+        
     }
     
     main{
+        /* shape */
         width: fit-content;
         height: fit-content;
     
+        /* position child */
         display: flex;
         flex-direction: column;
     
-        padding-top: 0em;
+        /* alignment */
+        margin: 0;
+        padding: 0;
     }
     
     
@@ -170,7 +191,7 @@ h2 {
     }
     
     /* font selection */
-    h1, p{
+    h1 {
         font-family: RokkittBold;
         font-size: 2em;
     }
