@@ -8,7 +8,20 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    
 }
+
+/* text --START */
+footer p {
+    color: hsl(0, 0%, 25%);
+    font-size: 1em;
+}
+footer a {
+    color: hsl(0, 0%, 25%);
+    font-size: 1em;
+}
+/* text --END */
 
 /* mobile content --START */
 @media screen and (max-width: 800px) {
@@ -25,5 +38,16 @@ footer{
         justify-content: space-around;
     }
 
+
+    /* text --START */
+    footer p {
+        color: hsl(0, 0%, 25%);
+        font-size: 1em;
+    }
+    footer a {
+        color: hsl(0, 0%, 25%);
+        font-size: 1em;
+    }
+    /* text --END */
 
 }

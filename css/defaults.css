@@ -1,5 +1,5 @@
 /* default properties html, body --START */
-html, body, main {
+html, body {
     /* position */
     position: static;
 
@@ -35,7 +35,8 @@ main {
     align-items: center;
 
 
-    padding-top: 30em;
+    padding-top: 10em;
+    gap: 1em;
 }
 
 
@@ -152,38 +153,6 @@ button {
 
 /* default button properties --END */
 
-
-
-
-
-/* welcomeCard spesific FONT --START*/
-.welcomeCard h2 {
-    font-family: "RokkittNormal";
-}
-
-
-
-.welcomeCard li {
-    font-family: "RokkittNormal";
-    font-size: 2em;
-
-    text-align: left;
-    margin: 0;
-}
-/* welcomeCard spesific FONT --END*/
-
-/* asideMenu spesific properties --START */
-.asideMenu a {
-    font-size: 2em;
-}
-
-.asideMenu h1 {
-    margin: 0;
-    font-size: 3em;
-    color: hsl(0, 0%, 100%);
-}
-/* asideMenu spesific properties --END */
-
 footer p {
     color: hsl(0, 0%, 25%);
 }
@@ -197,31 +166,7 @@ footer a {
 
 
 
-/* main --START */
-main {
-    
-    /* shape */
-    
-    width: 100%;
-    height: 100%;
 
-    /* flex properties */
-    display: flex;
-    
-    /* position */
-    /* parent position */
-    position: relative;
-
-    top: -17em;
-    /* child position */
-    /* horizontal alignment*/
-    align-items: center;
-    flex-direction: column;
-
-    gap: 1em;
-
-}
-/* main --END */
 
 
 
@@ -248,7 +193,7 @@ main {
 
 
     /* default properties html, body --START */
-    html, body, aside {
+    html, body {
         /* position */
         position: static;
 
@@ -317,61 +262,6 @@ main {
         font-family: "RokkittBold";
     }
     /* default texts --END */
-
-    aside {
-        width: 80%;
-        height: 5em;
-
-        /* position */
-        
-        /* position child */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        /* position parent */
-        position: sticky;
-        
-        top: 4em;
-        margin: 0% auto;
-        padding: 1em;
-        
-
-        z-index: 1;
-
-        /* style fix */
-        background-color:  hsl(0, 0%, 10%);
-
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: .5em;
-        border-bottom-right-radius: .5em;
-        
-    }
-
-
-
-
-   
-
-    /* asideMenu spesific properties --START */
-    .asideMenu a {
-        font-size: 1em;
-    }
-
-    .asideMenu h1 {
-        margin: 0;
-        font-size: 2em;
-        
-    }
-    /* asideMenu spesific properties --END */
-
-    footer p {
-        color: hsl(0, 0%, 25%);
-    }
-    footer a {
-        color: hsl(0, 0%, 25%);
-    }
 
 
 

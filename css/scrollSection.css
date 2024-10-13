@@ -57,28 +57,50 @@
 @media screen and (max-width: 800px) {
 
     /* scrollSection --START */
-
-
-    .scrollSection {
+    .scrollArea {
         /* shape */
-        width: 80%;
-        
+        width: auto;
+        height: fit-content;
+
+
+
         border-radius: .5em;
-        padding: 1em;
 
 
-        /* flex properties */
+        background-color: rgb(88, 74, 74);
+
+        /* position child */
         display: flex;
+        flex-direction: row;
         
-        flex-direction: column;
-
-        /* child position */
-        text-align: left;
-
-        /* parent position */
         
-        /* style */
-        background-color: hsl(0, 0%, 20%);
+
+        /* alignment */
+        justify-content: left;
+        gap: 3em;
+        padding: 0em;
+        padding-left: 2em;
+
+        
+
+        /* hides button overflow(like a clipping mask) */
+        overflow: auto;
+    }
+
+
+    .scrollArea button {
+        width: 20em;
+        height: 20em;
+        background-color: rgb(74, 104, 94);
+    
+        border-style: none;
+    
+        border-radius: .5em;
+    
+        
+    }
+    .scrollArrow {
+        font-size: 2em;
     }
 
 
