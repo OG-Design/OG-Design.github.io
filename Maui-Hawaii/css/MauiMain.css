@@ -36,34 +36,34 @@ nav {
 
 
 /* fonts */
-@import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+@import url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
 
 /* font faces */
 @font-face {
-    font-family: RokkittBold;
-    src: url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+    font-family: DefaultBold;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
     font-weight: 700;
 }
 
 @font-face {
-    font-family: RokkittNormal;
-    src: url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
-    font-weight: 400;
+    font-family: DefaultNormal;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-weight: 500;
 }
 
 /* font selection */
 p {
-    font-family: RokkittNormal;
+    font-family: DefaultNormal;
     font-size: 1em;
 }
 
 h1 {
-    font-family: RokkittBold;
+    font-family: DefaultBold;
     font-size: 2em;
 }
 
 h2 {
-    font-family: RokkittBold;
+    font-family: DefaultBold;
     color: hsl(186, 8%, 20%);
 
     font-size: 4em;
@@ -180,15 +180,6 @@ h2 {
     
     
     
-    /* fonts */
-    @import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
-    
-    /* font faces */
-    @font-face {
-        font-family: RokkittBold;
-        src: url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
-        font-weight: 700;
-    }
     
     /* font selection */
     h1 {

@@ -13,7 +13,8 @@
 }
 
 .contentBox h2 {
-    color: hsl(208, 30%, 80%);
+    color: hsl(208, 50%, 100%);
+    
 }
 
 .contentBox {
@@ -75,11 +76,15 @@
 
 .item {
     
-    width: 70%;
+    width: fit-content;
     height: fit-content;
 
-    margin: 2em;
+    margin: 1em;
 
+    background-color: hsl(208, 100%, 97%, 40%);
+    
+    padding: 1em;
+  
 }
 
 .itemImg {
@@ -88,14 +93,14 @@
 }
 
 .itemSpacer {
-    margin: 2em;
+    margin: 1em;
 }
 
 /* mobile content --START */
 @media screen and (max-width: 1000px) {
     
     .contentBox h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         color: hsl(186, 8%, 10%);
 
         margin: 0;
@@ -103,7 +108,7 @@
     }
 
     .contentBox p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
 
@@ -166,7 +171,7 @@
 
     .item {
         
-        width: 90%;
+        width: fit-content;
         height: fit-content;
 
         margin: 0em;
