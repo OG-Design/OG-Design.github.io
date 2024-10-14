@@ -75,20 +75,22 @@
 }
 
 .item {
-    
+    /* shape */
     width: fit-content;
     height: fit-content;
 
+    /* alignment */
     margin: 1em;
-
-    background-color: hsl(208, 100%, 97%, 40%);
-    
     padding: 1em;
   
 }
 
 .itemImg {
+    /* shape */
     width: 30em;
+    height: auto;
+
+    /* alignment */
     margin: 0em;
 }
 
@@ -96,6 +98,10 @@
     margin: 1em;
 }
 
+/* seperates one section from another */
+.itemDivider {
+    background-color: hsl(208, 100%, 97%, 40%);
+}
 /* mobile content --START */
 @media screen and (max-width: 1000px) {
     

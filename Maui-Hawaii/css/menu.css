@@ -46,7 +46,7 @@ ul li {
 
 .button {
     /* shape */
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 
     /* position */

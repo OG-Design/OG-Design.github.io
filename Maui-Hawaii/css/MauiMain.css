@@ -181,23 +181,45 @@ h2 {
     
     
     
-    /* font selection */
-    h1 {
-        font-family: RokkittBold;
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-family: RokkittBold;
-        color: hsl(186, 8%, 20%);
-    
-        font-size: 2em;
-    }
-    
-    
-    .item a {
-        color: black;
-    }
+ 
+    /* fonts */
+@import url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+
+/* font faces */
+@font-face {
+    font-family: DefaultBold;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: DefaultNormal;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-weight: 500;
+}
+
+/* font selection */
+p {
+    font-family: DefaultNormal;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: DefaultBold;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: DefaultBold;
+    color: hsl(186, 8%, 20%);
+
+    font-size: 4em;
+}
+
+
+.item a {
+    color: black;
+}
     
     
     /* text properties --END */
