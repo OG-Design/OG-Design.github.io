@@ -144,6 +144,11 @@
         padding: 0rem;
     }
 
+    .contentBox h2 {
+        color: hsl(208, 10%, 10%);
+        font-size: 2em;   
+    }
+
     .contentBox p {
         font-size: 1.5em;
     }
