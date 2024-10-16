@@ -1,6 +1,6 @@
 
 .contentBox h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: hsl(186, 8%, 10%);
 
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 .contentBox p {
-    font-size: 2em;
+    font-size: 1.5em;
     color: hsl(208, 30%, 10%);
 }
 
@@ -74,6 +74,7 @@
     
 }
 
+/* items --START */
 .item {
     /* shape */
     width: fit-content;
@@ -182,21 +183,26 @@
     }
 
     .item {
-        
+        /* shape */
         width: fit-content;
         height: fit-content;
 
+        /* alinment */
         margin: 0em;
         margin-top: 1em;
 
     }
 
     .itemImg {
+        /* shape */
         width: 15em;
+
+        /* alignment */
         margin: 1em;
     }
 
     .itemSpacer {
+        /* alignment */
         margin: 1em;
 }
 }
