@@ -13,7 +13,7 @@
 }
 
 .contentBox h2 {
-    color: hsl(208, 50%, 100%);
+    color: hsl(208, 10%, 10%);
     
 }
 
@@ -69,6 +69,7 @@
 
     /* alignment */
     justify-content: space-between;
+    
 
     
     
@@ -102,12 +103,35 @@
 /* seperates one section from another */
 .itemDivider {
     background-color: hsl(208, 100%, 97%, 40%);
+
 }
 
 .contentBox button {
-    margin: 1em;
-    border-radius: 1em;
+    
+    /* shape */
+    width: fit-content;
+    height: fit-content;
 
+
+    /* style */
+    border: solid;
+    border-width: .1em color(white);
+
+    /* alignment */
+    margin: 1em;
+
+    /* left right alignment */
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+
+    
+}
+
+.contentBox a {
+    margin: auto;
 }
 /* mobile content --START */
 @media screen and (max-width: 1000px) {
