@@ -23,7 +23,7 @@
     
     /* shape */
     
-    width: 100%;
+    width: 20em;
     height: fit-content;
 
 
@@ -32,4 +32,35 @@
     flex-direction: row;
     flex-wrap: nowrap;
     
+
+    /* alignment */
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.infoList h1, p{
+    padding: .2em;
+    
+}
+
+.infoList .item {
+    
+    /* shape */
+    width: fit-content;
+    
+
+    /* style */
+    border: solid;
+   
+
+
+    /* alignment */
+    padding: 1em;
+    
+    
+    
+
 }

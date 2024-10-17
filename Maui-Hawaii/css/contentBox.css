@@ -120,9 +120,7 @@
     height: fit-content;
 
 
-    /* style */
-    border: solid;
-    border-width: .1em color(white);
+    
 
     /* alignment */
     margin: 1em;
@@ -139,6 +137,12 @@
 
 .contentBox a {
     margin: auto;
+}
+
+.border {
+    border: solid;
+    border-width: .2em;
+    border-color: hsl(189, 8%, 30%);
 }
 
 /* mobile content --START */
