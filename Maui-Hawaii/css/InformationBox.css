@@ -1,0 +1,35 @@
+.infoList {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+
+
+    /* style */
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+
+
+    /* alignment */
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+.infoList li {
+    
+    /* shape */
+    
+    width: 100%;
+    height: fit-content;
+
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}

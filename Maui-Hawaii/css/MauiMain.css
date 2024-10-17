@@ -57,6 +57,7 @@ p {
     font-size: 1em;
 }
 
+
 h1 {
     font-family: DefaultBold;
     font-size: 2em;
@@ -69,6 +70,14 @@ h2 {
     font-size: 3em;
 }
 
+h3 {
+    font-family: DefaultBold;
+    color: black;
+
+    font-size: 2em;
+    margin: 0;
+}
+
 
 .item a {
     color: black;
@@ -76,7 +85,10 @@ h2 {
 
 
 
-
+.pWeight {
+    font-weight: bolder;
+    font-family: DefaultNormal;
+}
 
 
 

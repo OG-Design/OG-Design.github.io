@@ -10,7 +10,11 @@
 .contentBox p {
     font-size: 1.5em;
     color: hsl(208, 30%, 10%);
+
+    margin: 0;
 }
+
+
 
 .contentBox h2 {
     color: hsl(208, 10%, 10%);
@@ -84,6 +88,8 @@
     /* alignment */
     margin: 1em;
     padding: 1em;
+
+
   
 }
 
@@ -104,6 +110,7 @@
 .itemDivider {
     background-color: hsl(208, 100%, 97%, 40%);
 
+    
 }
 
 .contentBox button {
@@ -133,6 +140,7 @@
 .contentBox a {
     margin: auto;
 }
+
 /* mobile content --START */
 @media screen and (max-width: 1000px) {
     
@@ -233,6 +241,7 @@
     .itemSpacer {
         /* alignment */
         margin: 1em;
+        
 }
 }
 /* mobile content --END */
