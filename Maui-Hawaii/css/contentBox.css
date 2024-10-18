@@ -145,6 +145,92 @@
     border-color: hsl(189, 8%, 30%);
 }
 
+
+/* ---  --- */
+    /* ---  --- */
+/* boxInfoList properties --START */
+
+
+/* boxInfoList --START */
+.boxInfoList {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+
+
+    /* style */
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+
+
+    /* alignment */
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+/* boxInfoList --END */
+
+
+/* boxInfoList list item properties --START */
+.boxInfoList li {
+    
+    /* shape */
+    
+    width: 30em;
+    height: fit-content;
+
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    /* alignment */
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 1em;
+}
+
+.boxInfoList h1, p{
+    padding: .2em;
+    
+}
+
+.BoxInfoList .item {
+    
+    /* shape */
+    width: fit-content;
+    
+
+    
+   
+
+
+    /* alignment */
+    padding: 1em;
+    
+    
+    
+
+}
+/* boxInfoList list item --END */
+
+
+/* boxInfoList --END */
+    /* ---  --- */
+/* ---  --- */
+
+
+
+/* ---  --- */
+    /* ---  --- */
 /* mobile content --START */
 @media screen and (max-width: 1000px) {
     
@@ -244,8 +330,92 @@
 
     .itemSpacer {
         /* alignment */
-        margin: 1em;
+        margin: 1em;    
+    }
+
+    /* ---  --- */
+        /* ---  --- */
+    /* boxInfoList properties --START */
+
+
+    /* boxInfoList --START */
+    .boxInfoList {
+        /* shape */
+        width: 5em;
+        height: fit-content;
+
+
+        /* style */
+
+        /* position child */
+        display: flex;
+        flex-direction: column;
         
-}
+
+
+        /* alignment */
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+    }
+    /* boxInfoList --END */
+
+
+    /* boxInfoList list item properties --START */
+    .boxInfoList li {
+        
+        /* shape */
+        
+        width: fit-content;
+        height: fit-content;
+
+
+        /* position child */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+
+        /* alignment */
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0;
+        padding: .1em;
+    }
+
+    .boxInfoList h1, p{
+        padding: .2em;
+        
+    }
+
+    .BoxInfoList .item {
+        
+        /* shape */
+        width: fit-content;
+        
+
+        
+    
+
+
+        /* alignment */
+        padding: 1em;
+        
+        
+        
+
+    }
+    /* boxInfoList list item --END */
+
+
+    /* boxInfoList --END */
+        /* ---  --- */
+    /* ---  --- */
+
+
 }
 /* mobile content --END */
+    /* ---  --- */
+/* --- --- */
