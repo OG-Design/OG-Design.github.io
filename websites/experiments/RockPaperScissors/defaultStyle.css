@@ -1,0 +1,27 @@
+html, body {
+    width: 100%;
+    height: fit-content;
+    background-color: hsl(0, 0%, 20%);
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+@font-face {
+    font-family: defaultFontNormal;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: hsl(37, 34%, 60%);
+    font-family: defaultFontNormal;
+}
+
