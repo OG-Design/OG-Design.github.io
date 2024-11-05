@@ -32,10 +32,13 @@ footer a {
         height: 2em;
 
         background-color: black;
-        
+    
+        position: relative;
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        
     }
 
 
@@ -49,5 +52,7 @@ footer a {
         font-size: 1em;
     }
     /* text --END */
+
+
 
 }
