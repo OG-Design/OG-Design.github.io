@@ -140,6 +140,26 @@ a {
     text-decoration: none;
     font-family: "DefaultBold";
 }
+
+ol li {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+p, li {
+    font-size: 1em;
+    margin: 0;
+    
+}
+ol p {
+    transform: translate(0, -1.2em);
+}
+ol a {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* default texts --END */
 
 /* default button properties --START */
