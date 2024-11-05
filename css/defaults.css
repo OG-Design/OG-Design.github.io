@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 h1 {
     font-family: "Pacifico";
     font-size: 4em;
+    margin: 0;
 }
 
 h2 {
