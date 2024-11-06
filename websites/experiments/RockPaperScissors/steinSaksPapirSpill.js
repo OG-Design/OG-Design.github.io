@@ -41,6 +41,7 @@ function lost() {
 // function for when result is won
 function won() {
     document.getElementById("output").innerText = " You won!";
+    
 }
 
 function valgteStein() {
