@@ -3,7 +3,7 @@ let stein = document.getElementById("steinElement");
 let saks = document.getElementById("saksElement");
 let papir = document.getElementById("papirElement");
 
-stein.addEventListener("click", velgStein);
+stein.addEventListener("click", velgStein) 
 
 saks.addEventListener("click", velgSaks);
 
@@ -12,7 +12,7 @@ papir.addEventListener("click", velgPapir);
 
 // programmert valg av stein, saks, eller papir, 
 // avrundet med floor for å runde ned til et helt tall.
-let programValgSteinSaksPapir = Math.floor(Math.random() * 3 ); 
+programValgSteinSaksPapir = Math.floor(Math.random() * 3 ); 
 
 let programValgStein = 0;
 let programValgSaks = 1;
@@ -61,6 +61,8 @@ function velgStein() {
     // sjekk for click bekreftelse
     console.log("steinClicked");
 
+    // kjører valg etter click
+    programValgSteinSaksPapir = Math.floor(Math.random() *3);
     // hvis valg = programValgSteinSaksPapir
     if ( programValgSteinSaksPapir === programValgStein ) {
         
@@ -93,6 +95,9 @@ function velgSaks() {
     // sjekk for click bekreftelse
     console.log("saksClicked");
 
+    // kjører valg etter click
+    programValgSteinSaksPapir = Math.floor(Math.random() * 3 );
+
     // hvis valg = programValgSteinSaksPapir
     if ( programValgSteinSaksPapir === programValgStein ) {
 
@@ -122,6 +127,9 @@ function velgSaks() {
 function velgPapir() {
     // sjekk for click bekreftelse
     console.log("papirClicked");
+
+    // kjører valg etter click
+    programValgSteinSaksPapir = Math.floor(Math.random() * 3 );
 
     // hvis valg = programValgSteinSaksPapir
     if ( programValgSteinSaksPapir === programValgStein ) {
