@@ -31,3 +31,20 @@
     background-color: hsl(0, 0%, 15%);
     
 }
+
+.rowBoxWholeWidth {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+
+
+    background-color: hsl(0, 0%, 15%);
+}
