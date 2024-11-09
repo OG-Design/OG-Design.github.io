@@ -16,7 +16,7 @@ buttonPapir.addEventListener("click", velgPapir);
 
 // lagring av bruker valg, tom til fyllt.
 let velgBruker = "";
-
+//
 
 
 // funksjons seksjonen.
