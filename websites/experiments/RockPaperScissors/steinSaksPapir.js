@@ -7,6 +7,9 @@ let buttonStein = document.getElementById("steinElement");
 let buttonSaks = document.getElementById("saksElement");
 let buttonPapir = document.getElementById("papirElement");
 
+let scoreBruker = 0;
+let scoreDatamaskin = 0;
+
 
 // denne seksjonen legger til eventListener.
 // Denne hører etter events, for eksempel keybind eller click osv.
@@ -16,7 +19,7 @@ buttonPapir.addEventListener("click", velgPapir);
 
 // lagring av bruker valg, tom til fyllt.
 let velgBruker = "";
-//
+
 
 
 // funksjons seksjonen.
@@ -49,10 +52,18 @@ function velgPapir() {
 //sjekk resultatet
 function sjekkResultat() {
 
+    
     let velgDatamaskin = "";
-    let resultat= "";
 
-    // random valg av daramaskin 0-2
+
+    
+
+    
+    
+     
+
+
+    // random valg av datamaskin 0-2
     velgDatamaskin = Math.floor(Math.random() * 3);
 
     console.log(velgDatamaskin);
@@ -68,6 +79,10 @@ function sjekkResultat() {
     function vant() {
         console.log("Du vant!");
         document.getElementById("resultat1").innerText = "du vant!";
+        
+        scoreBruker++;
+        document.getElementById("scoreBruker").innerHTML = scoreBruker;
+    
     }
 
 
@@ -119,10 +134,15 @@ else if (velgBruker == "papir" && velgDatamaskin == "stein") {
 
     console.log("Du tapte!");
     document.getElementById("resultat1").innerHTML = "du tapte!";
-
+    scoreDatamaskin++;
+    document.getElementById("scoreDatamaskin").innerHTML = scoreDatamaskin;
 }
 
 valgtDatamaskinMelding();
+
+
+
+
 
 }
 
