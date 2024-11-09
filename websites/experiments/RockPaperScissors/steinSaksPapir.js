@@ -78,7 +78,7 @@ function sjekkResultat() {
     // hva som skjer om bruker vinner
     function vant() {
         console.log("Du vant!");
-        document.getElementById("resultat1").innerText = "du vant!";
+        document.getElementById("resultat1").innerText = "Du vant!";
         
         scoreBruker++;
         document.getElementById("scoreBruker").innerHTML = scoreBruker;
@@ -113,7 +113,7 @@ function sjekkResultat() {
 if (velgDatamaskin == velgBruker) {
 
     console.log("uavgjort");
-    document.getElementById("resultat1").innerText = "det ble Uavgjort!";
+    document.getElementById("resultat1").innerText = "Det ble uavgjort!";
 
 } 
 else if (velgBruker == "stein" && velgDatamaskin == "saks") {
@@ -133,7 +133,7 @@ else if (velgBruker == "papir" && velgDatamaskin == "stein") {
 } else {
 
     console.log("Du tapte!");
-    document.getElementById("resultat1").innerHTML = "du tapte!";
+    document.getElementById("resultat1").innerHTML = "Du tapte!";
     scoreDatamaskin++;
     document.getElementById("scoreDatamaskin").innerHTML = scoreDatamaskin;
 }

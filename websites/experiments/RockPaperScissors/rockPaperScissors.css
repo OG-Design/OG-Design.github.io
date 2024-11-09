@@ -74,7 +74,7 @@
 }
 
 .rockPaperScissorsBoxColumn div {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 
     padding: 0.1rem;
@@ -84,6 +84,16 @@
     border-radius: 1em;
     margin: .25em;
 }
+
+
+.scoreStatusBox {
+    background-color: hsl(0, 0%, 21%);
+    padding: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 1em;
+}
+
 
 @media screen and (max-width: 1050px) {
 
@@ -166,7 +176,7 @@
     }
 
     .rockPaperScissorsBoxColumn div {
-        width: fit-content;
+        width: 90%;
         height: fit-content;
     
         padding: 0.1rem;
