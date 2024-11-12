@@ -1,7 +1,7 @@
 html, body {
     width: 100%;
-    height: 100%;
-    background-color: hsl(0, 0%, 20%);
+    height: fit-content;
+    background-color: hsl(0, 0%, 0%);
 
     margin: 0;
     padding: 0;
@@ -20,9 +20,16 @@ html, body {
 
 
 
-h1, h2, h3, h4, h5, h6, p, a {
+h2, h3, h4, h5, h6, p, a {
     color: hsl(37, 34%, 60%);
     font-family: defaultFontNormal;
 }
-h1 {font-size: 1.5em;}
+.previewBox h1 { font-family: defaultNormal; font-size: 1.5em; margin-left: .5em;}
+.previewBox h2 { margin: .5em;}
 
+
+@media screen and (max-width: 1050px) { 
+    .previewBox h1 { font-family: defaultNormal; font-size: .5em; margin-left: .5em;}
+    .previewBox h2 { margin: .2em; font-family: defaultNormal; font-size: .8; font-weight: bold;}
+}
+/*  */

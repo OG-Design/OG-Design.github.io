@@ -73,7 +73,29 @@
     
 }
 
-@media screen and (max-width: 800px) {
+.rockPaperScissorsBoxColumn div {
+    width: 100%;
+    height: fit-content;
+
+    padding: 0.1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: hsl(160, 0%, 7%);
+    border-radius: 1em;
+    margin: .25em;
+}
+
+
+.scoreStatusBox {
+    background-color: hsl(0, 0%, 21%);
+    padding: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 1em;
+}
+
+
+@media screen and (max-width: 1050px) {
 
 
     .rockPaperScissorsBoxColumn {
@@ -96,8 +118,8 @@
     .rockPaperScissorsBoxRow button {
     
     
-        width: 10em;
-        height: 15em;
+        width: 5em;
+        height: 7.5em;
     
         
         background-color: hsla(0, 0%, 0%, 0);
@@ -118,8 +140,8 @@
     }
     
     .rockPaperScissorsBoxRow img {
-        width: 5em;
-        margin: .1em; 
+        width: 2.5em;
+        margin: .05em; 
         
         
         
@@ -144,14 +166,27 @@
     
     
     .rockPaperScissorsBoxRow .scale {
-        width: 8em;
+        width: 4em;
         transform: translate(.1em, -.5em);
     }
 
     .rockPaperScissorsBoxRow .scale1 {
-        width: 5em;
-        
+        width: 2.5em;
+        transform: translate(.1em, -.5em);
+    }
+
+    .rockPaperScissorsBoxColumn div {
+        width: 90%;
+        height: fit-content;
+    
+        padding: 0.1rem;
+        padding-left: .2rem;
+        padding-right: .2rem;
+        background-color: hsl(160, 0%, 7%);
+        border-radius: 1em;
+        margin: .25em;
     }
 
 }
     
+/*  */

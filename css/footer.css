@@ -45,14 +45,14 @@ footer a {
     /* text --START */
     footer p {
         color: hsl(0, 0%, 25%);
-        font-size: 1em;
+        font-size: .75em;
     }
     footer a {
         color: hsl(0, 0%, 25%);
-        font-size: 1em;
+        font-size: .75em;
     }
     /* text --END */
 
-
+/*  */
 
 }
