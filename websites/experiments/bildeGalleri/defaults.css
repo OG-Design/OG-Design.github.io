@@ -7,7 +7,7 @@ html, body {
     justify-content: center;
 
 
-    background-color: hsl(22, 10%, 13%);
+    background-color: hsl(208, 5%, 25%);
 
     margin: 0;
 }
@@ -16,7 +16,7 @@ header {
     width: 100%;
     height: 10rem;
 
-    background-color: hsl(22, 25%, 35%);
+    background-color: hsl(208, 91%, 87%);
     box-shadow: 27px 27px 17px -4px rgba(0, 0, 0, 0.);
 }
 
@@ -32,20 +32,20 @@ main {
 }
 
 picture {
-    width: 90%;
+    width: 100%;
     height: fit-content;
     padding: 1em;
-    gap: .25em;
+    
 
-    background-color: hsl(22, 15%, 23%);
+    background-color: hsl(202, 10%, 16%);
 
     display: flex;
     flex-direction: row;
 
-    justify-content: center;
+    justify-content: start;
     
     
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
     overflow: hidden;
 
@@ -56,16 +56,28 @@ picture {
 }
 
 
+
 picture img {
-    width: 24%;
+    width: 350px;
     height: auto;
 
     border-radius: .25em;
     /* border: solid hsl(17, 30%, 25%);
     border-width: .25em; */
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+
+    animation: scrollAnimation 10s linear infinite;
+    
 }
 
+@keyframes scrollAnimation {
+    0% {
+        left: 100%;
+    }
+    0% {
+        left: -100%;
+    }
+}
 
 .gallerySection {
     width: 100%;
@@ -88,6 +100,6 @@ picture img {
 
 h1 {
     font-family: defaultNormal;
-    color: hsl(17, 55%, 65%);
+    color: hsl(200, 87%, 62%);
     font-weight: 600;
 }
