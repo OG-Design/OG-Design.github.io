@@ -1,0 +1,52 @@
+// let click = document.body.addEventListener("click", addNewArithmeticExpression);
+// click
+
+// let js_ac = document.querySelector("js-ac");
+// function addNewArithmeticExpression() {
+
+//     let newExpression = document.createElement("h2");
+//     if (js_ac == click) {
+//         console.log("AC RESET");
+
+//         newExpression.setAttribute("id","AC").innerHTML="AC";
+//         document.appendChild(newExpression);
+        
+//         addNewArithmeticExpression;
+    
+//     }
+    
+// }
+
+// const currentExpression = document.getElementById("");
+
+// addNewArithmeticExpression;
+
+document.createElement("h2").innerHTML="1";
+
+// adds EventListener for click inside body
+let clickEvent = document.addEventListener("click", newExpression);
+
+let ac_js = document.querySelector("ac_html");
+
+// new expression function
+function newExpression() {
+    
+    let newElementCreate = document.createElement("h2");
+    
+    
+    newElementCreate.id = 0;
+
+    if (ac_js == clickEvent) {
+        
+        newElementCreate;
+        newElementCreate.innerHTML="AC";
+        newElementCreate.id ++ ;
+
+        console.log("AC Clicked");
+    
+    } else {
+        console.log("noEffect");
+    }
+}
+
+newExpression();

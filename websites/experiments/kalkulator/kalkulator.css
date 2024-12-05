@@ -1,0 +1,51 @@
+.kalkulatorBox {
+
+    width: 20em;
+    height: 30em;
+
+    background-color: hsl(36, 10%, 50%);
+    /* pos & alignment */
+    gap: 0;
+    padding: 0;
+    margin: 0;
+
+}
+.kalkulatorBox #calculationOutput_html {
+    width: 93.125%;
+    height: 10%;
+    
+    /* style */
+    border: solid hsl(36, 10%, 65%) .2em ;
+
+}
+
+.kalkulatorKnapp {
+    width: 23%;
+    height: 18%;
+
+    /* pos & alignment */
+    padding: 0;
+    margin: 0;
+
+
+    /* style */
+    border: solid hsl(36, 10%, 65%) .2em ;
+    
+    
+    
+    
+
+    background-color: hsl(36, 20%, 80%);
+
+
+    transition: .1s;
+    
+}
+
+.kalkulatorKnapp:active {
+    
+    background-color: hsl(36, 10%, 60%);
+
+}
+
+

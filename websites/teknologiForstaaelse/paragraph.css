@@ -1,0 +1,13 @@
+.paragraph {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: fit-content;
+
+
+    padding: 1rem;
+
+    
+    
+}

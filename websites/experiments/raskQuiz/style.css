@@ -1,0 +1,147 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+}
+
+.questionFrame {
+    width: 40rem;
+    height: fit-content;
+
+    /* background-color: hsl(0, 0%, 25%); */
+
+
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.borderStandard {
+    border-radius: .5rem;
+    
+}
+
+.questionFrame ol {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+li {
+    font-family: defaultNormal;  
+    width: 90%;
+    height: fit-content;
+
+
+
+    /* background-color: hsl(0, 0%, 40%); */
+
+    color: hsl(0, 0%, 60%);
+
+    margin: .5rem;
+    padding: .25rem;
+
+}
+
+
+@font-face {
+    font-family: defaultNormal;
+    src: url(/fonts/cascadia-code/ttf/CascadiaCode.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: defaultBold;
+    src: url(/fonts/cascadia-code/ttf/CascadiaCode.ttf);
+    font-weight: 900;
+}
+
+h2 {
+    color: hsl(202, 100%, 81%);
+    font-family: defaultBold;
+    margin: .5rem;
+    padding: 0;
+}
+
+p {
+    font-family: defaultNormal;
+    color: hsl(202, 40%, 61%);
+    margin: .5rem;
+}
+
+h4 {
+    font-family: defaultNormal;
+}
+
+input {
+    width: fit-content;
+    height: 1.25rem;
+
+    margin: .5rem;
+    margin-top: .5rem;
+    padding-left: .5rem;
+
+    border-style: none;
+    /* background-color: hsl(0, 0%, 60%); */
+    color: hsl(0, 0%, 90%);
+}
+
+button {
+    width: 15em;
+    height: 4rem;
+
+    margin: .5rem;
+
+    
+
+    border-style: none;
+    background-color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 90%);
+
+
+}
+
+button:active {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.resultSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    width: 1.5rem;
+    text-align: center;
+    
+    
+    background-color: hsl(0, 0%, 50%);
+
+
+}
+
+.colorDark {
+    background-color: hsl(210, 10%, 15%);
+}
+
+.colorMid {
+    background-color: hsl(200, 15%, 35%);
+    
+}
+
+.colorBright {
+    background-color: hsl(210, 15%, 65%);
+    color: hsl(200, 50%, 20%);
+}
+
