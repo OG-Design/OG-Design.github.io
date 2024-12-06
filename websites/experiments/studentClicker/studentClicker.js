@@ -43,7 +43,11 @@ function headerMenu_EducationalButtonClickFacilitiesJsFunction() {
     // debug
     console.log("debug-function headerMenu_EducationalFacilitiesButtonClick");
     
-    headerMenu_EducationalFacilities_menuFrameJs.style.display ="";
+    if (document.getElementById("displayMenu_EducationalFacilities").style.display = "none") {
+        document.getElementById("displayMenu_EducationalFacilities").style.display = "block";
+    } else {
+        document.getElementById("displayMenu_EducationalFacilities").style.display = "none";
+    }
 
 
 }

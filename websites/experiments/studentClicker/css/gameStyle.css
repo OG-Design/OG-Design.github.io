@@ -44,7 +44,7 @@ header {
     flex-direction: row;
 
 
-    background-color: rgb(163, 163, 163);
+    /* background-color: rgb(163, 163, 163); */
 
 }
 
@@ -61,8 +61,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: .05rem;
 
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 /* menuButton */
@@ -90,7 +91,19 @@ header {
 /* menu --END */
 
 #displayMenu_EducationalFacilities {
+    /* shape */
     width: 20rem;
-    height: fit-content;
-    background-color: bisque;
+    height: 50rem;
+
+    border-top-left-radius: 1rem;
+    
+
+    /* position self */
+    position: absolute;
+    top: 4.05rem;
+    right: 0;
+
+    /* background-color: bisque; */
+    
 }
+
