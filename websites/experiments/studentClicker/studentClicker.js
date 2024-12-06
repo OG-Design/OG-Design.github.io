@@ -1,6 +1,6 @@
 
 // score value
-let score = 0;
+let score = Math.round(0);
 
 // score encrease value
 let scoreIncrementValue = 1;
@@ -28,7 +28,7 @@ function student_ButtonClickJs() {
     console.log("Unemployed: ", score);
 
     // write score to html.
-    scoreDisplayJs.innerText = score;
+    scoreDisplayJs.innerText = Math.round(score);
 
 }
 // student_Button event and function --END
@@ -36,14 +36,17 @@ function student_ButtonClickJs() {
 
 
 // headerMenu --START
-let headerMenu_EducationalFacilitiesButtonClick = document.getElementById("html_menuButton_EducationalFacilities").addEventListener("click", headerMenu_EducationalButtonClickFacilitiesJsFunction);
+let headerMenu_EducationalFacilitiesButtonClick = document.getElementById("html_menuButton_EducationalFacilities").addEventListener("click", headerMenu_EducationalFacilitiesJsFunction);
 let headerMenu_EducationalFacilities_menuFrameJs = document.getElementById("displayMenu_EducationalFacilities").style.display = "none";
 
-function headerMenu_EducationalButtonClickFacilitiesJsFunction() {
+
+// menu for educational facilities function --START
+function headerMenu_EducationalFacilitiesJsFunction() {
     // debug
     console.log("debug-function headerMenu_EducationalFacilitiesButtonClick");
     
-    if (document.getElementById("displayMenu_EducationalFacilities").style.display = "none") {
+    // display block if display is == to none, else display none on click.
+    if (document.getElementById("displayMenu_EducationalFacilities").style.display == "none") {
         document.getElementById("displayMenu_EducationalFacilities").style.display = "block";
     } else {
         document.getElementById("displayMenu_EducationalFacilities").style.display = "none";
@@ -51,4 +54,47 @@ function headerMenu_EducationalButtonClickFacilitiesJsFunction() {
 
 
 }
+
+
+// Button_smallSchool --START
+
+let smallSchoolJs = document.getElementById("html_Button_smallSchool").addEventListener("click", smallSchoolJsFunction);
+let smallSchoolJS_Price = 12;
+
+ 
+function smallSchoolJsFunction() {
+
+    // if score same or higher then score - scoreDisplayJs else remain same.
+    if (score >= smallSchoolJS_Price ) {
+
+        console.log("Purchased SmallSchool");
+        
+        
+
+        scoreIncrementValue = scoreIncrementValue + 1;
+        
+        smallSchoolJS_Price = smallSchoolJS_Price * 1.25;
+        
+        console.log(score);
+
+
+        score = Math.ceil(score - smallSchoolJS_Price);
+
+    } else {
+
+        console.log("score was to low to purchase SmallSchool");
+        score = Math.round(score);
+    }
+
+    // updateScore
+    scoreDisplayJs.innerText = score;
+
+}
+
+// Button_smallSchool --END
+
+
+
+// menu for educational facilities function --END
+
 // headerMenu --END

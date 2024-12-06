@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.94 183.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7e55b;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: .1;
+      }
+
+      .cls-3 {
+        fill: #122e6e;
+      }
+
+      .cls-4 {
+        fill: #224da1;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #001;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <ellipse class="cls-5" cx="143.28" cy="117.78" rx="83.4" ry="58.23" transform="translate(-27.65 45.79) rotate(-16.58)"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polyline id="HattTopp1" class="cls-5" points=".8 101.41 156.74 152.22 249.94 22.25 249.14 19.56 107.27 0 0 98.72"/>
+    </clipPath>
+  </defs>
+  <g id="Student">
+    <g id="StudentHatt">
+      <g id="BunnDel">
+        <g class="cls-8">
+          <ellipse class="cls-4" cx="142.07" cy="117.91" rx="130.69" ry="92.6" transform="translate(-27.74 45.45) rotate(-16.58)"/>
+          <polygon class="cls-1" points="60.08 114.95 120.36 152.01 163.51 154.24 204.78 107.23 224.3 64.65 58.1 102.49 60.08 114.95"/>
+          <polygon class="cls-2" points="56.69 126.89 108.59 164.65 184.09 155.88 228.73 86.4 253.15 140.8 148.71 191.99 60.02 181.02 56.69 126.89"/>
+          <polygon class="cls-1" points="226.51 60.56 197.62 101.6 193.29 128.47 206.95 155.92 237.89 115.65 226.51 60.56"/>
+          <polygon class="cls-2" points="85.85 173.33 98.21 128.94 81.47 72.71 51.92 44.05 -17.43 81.15 85.85 173.33"/>
+          <polygon class="cls-2" points="66.28 161.29 81.24 122.57 31.27 74.41 1.55 68.19 4.94 156.26 66.28 161.29"/>
+        </g>
+      </g>
+      <g id="ToppDel">
+        <g class="cls-7">
+          <polyline id="HattTopp1-2" data-name="HattTopp1" class="cls-3" points=".8 101.41 156.74 152.22 249.94 22.25 249.14 19.56 107.27 0 0 98.72"/>
+          <polygon id="HattTopp1-3" data-name="HattTopp1" class="cls-4" points="249.14 19.57 107.27 0 0 98.72 155.94 149.53 249.14 19.57"/>
+          <polygon class="cls-1" points="177.31 -4.96 212.99 28.96 202.99 81.27 249.63 116.72 303.81 13.34 177.31 -4.96"/>
+          <polygon class="cls-1" points="92.53 1.79 162.44 20.26 194.47 44.98 183.81 87.44 148.45 154.69 195.64 150.15 272.59 23.55 171.65 -16.29 92.53 1.79"/>
+          <polygon class="cls-2" points="136.28 -14.66 65.76 60.7 57.52 79.82 70.63 91.64 168.1 140.54 150.63 168.54 -22.46 105.01 104.34 -8.81 136.28 -14.66"/>
+          <polygon class="cls-2" points="62.99 32.97 39.14 84.84 72.34 124.72 -10.86 136.27 -25.27 46.46 62.99 32.97"/>
+        </g>
+        <polygon class="cls-2" points="99.75 64.39 120.33 44.9 153.15 48.15 127.64 69.45 99.75 64.39"/>
+        <path class="cls-6" d="M126.67,61.97s1.5-18.38-6.34-17.07c-7.84,1.31-60.62,61.56-64.31,72.07s9.45,62.42,9.45,62.42"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -107,3 +107,13 @@ header {
     
 }
 
+button {
+    border: none;
+    background-color: none;
+    
+
+}
+
+#html_buttonClick img {
+    width: 10rem;
+}
