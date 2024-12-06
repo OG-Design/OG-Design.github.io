@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentClicker</title>
 
+    <link rel="stylesheet" href="/websites/experiments/studentClicker/css/style.css">
+    <link rel="stylesheet" href="/websites/experiments/studentClicker/css/gameStyle.css">
+    
     <script src="/websites/experiments/studentClicker/studentClicker.js" defer></script>
 
 </head>
@@ -12,6 +15,37 @@
     <main>
         <!-- GameContainer --START -->
         <div id="gameContainer">
+
+            
+            <!-- header --START -->
+            <header>
+            
+                <!-- scoreContainer --START -->
+                <div id="scoreContainer" class="gapStandard">
+                    <h2>Unemployed Graduates</h2>
+                    <h2 id="html_scoreDisplayValue">
+                        <!-- written by js -->0
+                    </h2>
+                </div>
+                <!-- scoreContainer --END -->
+                <menu id="headerMenuSelection" class="">
+
+                
+                <button id="html_menuButton_EducationalFacilities" class="menuButton"><img class="menuButtonImgSize" src="/websites/experiments/studentClicker/img/studentClicker-PlaceHolders-EducationalFacilities.jpg" alt="Menu_BuildEducationalFacilities"></button>
+                <button class="menuButton"><img src="" alt="Menu"></button>
+                <button class="menuButton"><img src="" alt="Menu"></button>
+
+
+                </menu>
+
+                <!-- educationalFacilities menu --START -->
+                <menu id="displayMenu_EducationalFacilities">
+
+                </menu>
+                <!-- educationalFacilities menu --END -->
+            </header>
+
+            <!-- header --END -->
 
             <!-- button event --START -->
             <button id="html_buttonClick">
