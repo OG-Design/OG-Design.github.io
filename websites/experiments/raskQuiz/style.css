@@ -45,12 +45,13 @@ li {
 
     /* background-color: hsl(0, 0%, 40%); */
 
-    color: hsl(0, 0%, 60%);
+    /* color: hsl(0, 0%, 60%); */
 
     margin: .5rem;
     padding: .25rem;
 
 }
+
 
 
 @font-face {
@@ -66,7 +67,7 @@ li {
 }
 
 h2 {
-    color: hsl(202, 100%, 81%);
+    color: hsl(202, 100%, 91%);
     font-family: defaultBold;
     margin: .5rem;
     padding: 0;
@@ -80,6 +81,26 @@ p {
 
 h4 {
     font-family: defaultNormal;
+
+    margin-left: .5rem;
+    margin-right: 0;
+
+    margin-top: 0;
+    margin-bottom: .0rem;
+}
+
+.textColor1 {
+    color: hsl(189, 100%, 57%);
+}
+
+.importantInfo {
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    
+    /* alignment */
+    padding-left: .2rem;
+    padding-right: .2rem;
+
 }
 
 input {
@@ -92,7 +113,7 @@ input {
 
     border-style: none;
     /* background-color: hsl(0, 0%, 60%); */
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 50%, 20%);
 }
 
 button {
@@ -142,6 +163,30 @@ button:active {
 
 .colorBright {
     background-color: hsl(210, 15%, 65%);
-    color: hsl(200, 50%, 20%);
+
+}
+
+.textColorWrong {
+    color: red;
+}
+
+.textColorRight {
+    color: green;
+}
+
+
+label {
+    /* shape */
+    width: fit-content;
+    max-width: 40rem;
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    column-gap: 1rem;
+    row-gap: .1rem;
+
 }
 
