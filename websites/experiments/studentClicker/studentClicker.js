@@ -1,8 +1,9 @@
 
+// score functions --START
 // score value
 let score = Math.round(0);
 
-// score encrease value
+// score encrement value
 let scoreIncrementValue = 1;
 
 
@@ -32,6 +33,10 @@ function student_ButtonClickJs() {
 
 }
 // student_Button event and function --END
+// score functions --END
+
+
+
 
 
 
@@ -56,10 +61,11 @@ function headerMenu_EducationalFacilitiesJsFunction() {
 }
 
 
-// Button_smallSchool --START
-
+// smallSchool --START
 let smallSchoolJs = document.getElementById("html_Button_smallSchool").addEventListener("click", smallSchoolJsFunction);
+
 let smallSchoolJS_Price = 12;
+let smallSchoolJS_Price_display = document.getElementById("html_price_smallSchool");
 
  
 function smallSchoolJsFunction() {
@@ -70,15 +76,19 @@ function smallSchoolJsFunction() {
         console.log("Purchased SmallSchool");
         
         
-
+        // gained after purchace
         scoreIncrementValue = scoreIncrementValue + 1;
         
+        // price after purchace
         smallSchoolJS_Price = smallSchoolJS_Price * 1.25;
         
         console.log(score);
 
+        // match score with expence and round after purchace
+        score = Math.round(score - smallSchoolJS_Price);
 
-        score = Math.ceil(score - smallSchoolJS_Price);
+        // display correct price and round after purchace
+        smallSchoolJS_Price_display.innerText = Math.round(smallSchoolJS_Price);
 
     } else {
 
@@ -90,8 +100,7 @@ function smallSchoolJsFunction() {
     scoreDisplayJs.innerText = score;
 
 }
-
-// Button_smallSchool --END
+// smallSchool --END
 
 
 

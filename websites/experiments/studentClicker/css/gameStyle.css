@@ -1,8 +1,11 @@
 #gameContainer {
     /* shape */
-    width: 100%; 
+    width: 70rem; 
     height: 50rem;
     
+    /* self position */
+    margin: 1rem;
+
     /* child position */
     display: flex;
     flex-direction: column;
@@ -10,6 +13,8 @@
     align-items: center;
 
     background-color: hsl(236, 69%, 55%);
+
+    
 
 }
 
@@ -93,18 +98,27 @@ header {
 #displayMenu_EducationalFacilities {
     /* shape */
     width: 20rem;
-    height: 50rem;
+    height: 44.95rem;
 
     border-top-left-radius: 1rem;
     
 
     /* position self */
-    position: absolute;
-    top: 4.05rem;
-    right: 0;
+    position:static;
+    margin: 0;
+    
+    
 
+    /* position child */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .1rem;
     /* background-color: bisque; */
     
+
+
+
 }
 
 button {
@@ -116,4 +130,67 @@ button {
 
 #html_buttonClick img {
     width: 10rem;
+}
+
+
+
+.gameArea1Parent {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+
+    
+}
+
+
+.gameArea1 {
+    /* shape */
+    width: 60%;
+    height: 100%;
+
+    /* background-color: black; */
+    
+    /* position self */
+    position: static;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.gameArea1 button {
+    width: fit-content;
+    height: fit-content;
+
+    
+}
+
+.gameArea2 {
+    /* shape */
+    width: 40%;
+    height: 100%;
+
+    /* background-color: black; */
+
+    /* position self */
+    position: static;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: end;
+
+
+    overflow: hidden scroll;
+
+    
+
+    
 }
