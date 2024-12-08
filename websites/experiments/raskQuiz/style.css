@@ -128,12 +128,21 @@ button {
     background-color: hsl(0, 0%, 60%);
     color: hsl(0, 0%, 90%);
 
+    transition: .2s;
+}
+
+button:hover {
+    background-color: hsl(231, 55%, 58%);
 
 }
 
 button:active {
     background-color: hsl(0, 0%, 40%);
 }
+
+
+
+
 
 .resultSection {
     display: flex;
@@ -166,11 +175,13 @@ button:active {
 
 }
 
-.textColorWrong {
+.wrongAnswer {
     color: red;
 }
 
-.textColorRight {
+.rightAnswer {
+    width: 10rem;
+    height: 10rem;
     color: green;
 }
 
