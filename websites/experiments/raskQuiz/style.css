@@ -22,6 +22,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     
+    padding-top: 10rem;
 }
 
 .borderStandard {
@@ -207,6 +208,13 @@ label {
     row-gap: .1rem;
 
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 @media screen and (max-width: 650px) {
     
