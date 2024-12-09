@@ -88,9 +88,16 @@ h4 {
     margin-top: 0;
     margin-bottom: .0rem;
 }
+h5 {
+    margin-left: .5rem;
+}
 
 .textColor1 {
     color: hsl(189, 100%, 57%);
+}
+
+.textColor2 {
+    color: hsl(189, 40%, 57%);
 }
 
 .importantInfo {
@@ -201,3 +208,210 @@ label {
 
 }
 
+@media screen and (max-width: 650px) {
+    
+    html, body {
+        width: 100%;
+        height: fit-content;
+    
+        background-color: black;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+        
+    }
+    
+    .questionFrame {
+        width: 22rem;
+        height: fit-content;
+    
+        /* background-color: hsl(0, 0%, 25%); */
+    
+    
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .borderStandard {
+        border-radius: .5rem;
+        
+    }
+    
+    .questionFrame ol {
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    li {
+        font-family: defaultNormal;  
+        width: 90%;
+        height: fit-content;
+    
+    
+    
+        /* background-color: hsl(0, 0%, 40%); */
+    
+        /* color: hsl(0, 0%, 60%); */
+    
+        margin: .5rem;
+        padding: .25rem;
+    
+    }
+    
+    
+    
+    @font-face {
+        font-family: defaultNormal;
+        src: url(/fonts/cascadia-code/ttf/CascadiaCode.ttf);
+        font-weight: 400;
+    }
+    
+    @font-face {
+        font-family: defaultBold;
+        src: url(/fonts/cascadia-code/ttf/CascadiaCode.ttf);
+        font-weight: 900;
+    }
+    
+    h2 {
+        color: hsl(202, 100%, 91%);
+        font-family: defaultBold;
+        margin: .5rem;
+        padding: 0;
+    }
+    
+    p {
+        font-family: defaultNormal;
+        color: hsl(202, 40%, 61%);
+        margin: .5rem;
+    }
+    
+    h4 {
+        font-family: defaultNormal;
+    
+        margin-left: .5rem;
+        margin-right: 0;
+    
+        margin-top: 0;
+        margin-bottom: .0rem;
+    }
+    
+    .textColor1 {
+        color: hsl(189, 100%, 57%);
+    }
+    
+    .importantInfo {
+        color: white;
+        background-color: hsla(0, 0%, 0%, 0.7);
+        
+        /* alignment */
+        padding-left: .2rem;
+        padding-right: .2rem;
+    
+    }
+    
+    input {
+        width: fit-content;
+        height: 1.25rem;
+    
+        margin: .5rem;
+        margin-top: .5rem;
+        padding-left: .5rem;
+    
+        border-style: none;
+        /* background-color: hsl(0, 0%, 60%); */
+        color: hsl(0, 50%, 20%);
+    }
+    
+    button {
+        width: 15em;
+        height: 4rem;
+    
+        margin: .5rem;
+    
+        
+    
+        border-style: none;
+        background-color: hsl(0, 0%, 60%);
+        color: hsl(0, 0%, 90%);
+    
+        transition: .2s;
+    }
+    
+    button:hover {
+        background-color: hsl(231, 55%, 58%);
+    
+    }
+    
+    button:active {
+        background-color: hsl(0, 0%, 40%);
+    }
+    
+    
+    
+    
+    
+    .resultSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bg {
+        width: 1.5rem;
+        text-align: center;
+        
+        
+        background-color: hsl(0, 0%, 50%);
+    
+    
+    }
+    
+    .colorDark {
+        background-color: hsl(210, 10%, 15%);
+    }
+    
+    .colorMid {
+        background-color: hsl(200, 15%, 35%);
+        
+    }
+    
+    .colorBright {
+        background-color: hsl(210, 15%, 65%);
+    
+    }
+    
+    .wrongAnswer {
+        color: red;
+    }
+    
+    .rightAnswer {
+        width: 10rem;
+        height: 10rem;
+        color: green;
+    }
+    
+    
+    label {
+        /* shape */
+        width: fit-content;
+        max-width: 25rem;
+    
+        /* child position */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        column-gap: 1rem;
+        row-gap: .1rem;
+    
+    }
+    
+
+}

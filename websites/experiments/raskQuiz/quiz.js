@@ -19,30 +19,37 @@ function formSending(event) {
     let q2_js = document.getElementById("q2").value; 
     let a2_js = "481";
 
+    let q3_js = document.getElementById("q3").value;
+    let a3_js = "180";
 
     // questions array
-    let question = [q0_js, q1_js, q2_js];
+    let question = [q0_js, q1_js, q2_js, q3_js];
     
     // answers array
-    let answer = [a0_js, a1_js, a2_js];
+    let answer = [a0_js, a1_js, a2_js, a3_js];
 
 
     // correct answer until usr input
     let correctAnswer = 0;
     
     // for loop
+    // 
+    // i = 0; i smaller than question.length; i++
+    // i is 0; i smaller than questino.length; repeats until i is no longer smaler than question.length.
+    
     for (let i = 0; i < question.length; i++) {
         if(question[i]===answer[i]) {
-            // var correctDiv = document.createElement('div');
-            // correctDiv.className="rightAnswer";
-            // document.body.appendChild(correctDiv);
+            
 
             correctAnswer++;
+
+
             
         } else {
 
         }
     }
+
     console.log(correctAnswer);
     
     // correct answer value displayed in html
