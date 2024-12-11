@@ -2,11 +2,11 @@
 
 // default id properties
 // readable id
-imgIdReadable="image ";
+imgIdReadable="image_";
 // number value
 imgIdValue=0;
 
-function imageFunction(src, height, alt) {
+function imageFunction(src, alt) {
     
     
 
@@ -17,7 +17,7 @@ function imageFunction(src, height, alt) {
     
     img.src = src;
     // img.width = width;
-    img.height = height;
+    // img.height = height;
     img.alt = alt;
     
     
@@ -52,16 +52,18 @@ function imageFunction(src, height, alt) {
 
 
 // images to diaplay
-let img1_js = imageFunction("img/spareGris.svg", 350, "piggyBank svg");
-let img2_js = imageFunction("/img/Gallery/3D/1001.png", 350, "piggyBank svg");
-let img3_js = imageFunction("/img/gallery/3D/IMG_0525.jpg", 350, "piggyBank svg");
-let img4_js = imageFunction("/img/gallery/3D/IMG_0528.jpg", 350, "piggyBank svg");
+
+let img1_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
+let img2_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys003.jpg", "Northern lights");
+let img3_js = imageFunction("/img/Gallery/3D/1001.png", "piggyBank svg");
+let img4_js = imageFunction("/img/gallery/3D/IMG_0525.jpg", "piggyBank svg");
+let img5_js = imageFunction("/img/gallery/3D/IMG_0528.jpg", "piggyBank svg");
 
 // debug
 // console.log("test1");
 // console.log("\n\n\n\n");
 
-let imageArray = [img1_js, img2_js, img3_js, img4_js];
+let imageArray = [img1_js, img2_js, img3_js, img4_js, img5_js];
 
 
 
@@ -85,6 +87,7 @@ function idRead(){
         // displays array elements with id
         document.getElementById(imgId).style.display="block";
     
+
         // checkValue
         // console.log(imgIdValue);
         
