@@ -52,18 +52,19 @@ function imageFunction(src, alt) {
 
 
 // images to diaplay
-
-let img1_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
+let img0_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
+let img1_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys001.jpg", "Northern lights");
 let img2_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys003.jpg", "Northern lights");
 let img3_js = imageFunction("/img/Gallery/3D/1001.png", "piggyBank svg");
 let img4_js = imageFunction("/img/gallery/3D/IMG_0525.jpg", "piggyBank svg");
 let img5_js = imageFunction("/img/gallery/3D/IMG_0528.jpg", "piggyBank svg");
+let img01_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
 
 // debug
 // console.log("test1");
 // console.log("\n\n\n\n");
 
-let imageArray = [img1_js, img2_js, img3_js, img4_js, img5_js];
+let imageArray = [img0_js, img1_js, img2_js, img3_js, img4_js, img5_js, img01_js];
 
 
 
