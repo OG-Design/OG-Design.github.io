@@ -55,9 +55,9 @@ function imageFunction(src, alt) {
 let img0_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
 let img1_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys001.jpg", "Northern lights");
 let img2_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys003.jpg", "Northern lights");
-let img3_js = imageFunction("/img/Gallery/3D/1001.png", "piggyBank svg");
-let img4_js = imageFunction("/img/gallery/3D/IMG_0525.jpg", "piggyBank svg");
-let img5_js = imageFunction("/img/gallery/3D/IMG_0528.jpg", "piggyBank svg");
+let img3_js = imageFunction("/img/Gallery/3D/1001.png", "flowers");
+let img4_js = imageFunction("/img/gallery/3D/IMG_0525.jpg", "planeView");
+let img5_js = imageFunction("/img/gallery/3D/IMG_0528.jpg", "planeView");
 let img01_js = imageFunction("/img/Gallery/Photos/northernLights/Nordlys002.jpg", "Northern lights");
 
 // debug
