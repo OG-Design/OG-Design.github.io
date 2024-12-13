@@ -32,13 +32,13 @@ function localClock () {
     }
 
     // if min same as 59 add an hour and reset min
-    if (minutes === 59) {
+    if (minutes === 59 && seconds === 59) {
         hours ++;
         minutes = 0;
     }
 
     // if hour same as 23, and min same as 59 set hour to 0
-    if (hours === 23, minutes === 59 ) {
+    if (hours === 23 && minutes === 59 ) {
         hours = 0;
     }
 

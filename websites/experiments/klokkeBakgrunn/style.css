@@ -29,6 +29,10 @@ body {
     scroll-behavior: smooth;
 }
 
+
+
+
+
 img {
     /* color: azure; */
     width: 100%;
@@ -57,7 +61,7 @@ img {
     width: 50rem;
     display: flex;
     
-    padding-left: 10%;
+    padding: 2%;
 
     font-family: defaultNormal;
     font-size: 10rem;    
