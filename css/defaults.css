@@ -172,7 +172,7 @@ ol li {
 
     /* style */
     list-style: none;
-    
+    /* list-style: -moz-element(none); */
 
     /* color: aliceblue; */
     background-color: hsl(0, 0%, 20%);
