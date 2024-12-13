@@ -33,12 +33,30 @@ body {
 
 
 
-img {
+.imageGallery img {
     /* color: azure; */
     width: 100%;
     /* padding: .1rem; */
 
     /* border-radius: 1rem; */
+}
+
+.clock div {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    /* background-color: aquamarine; */
+
+}
+
+.clock img {
+
+    width:15em;
+    margin-left: 10rem;
 }
 
 .clock {

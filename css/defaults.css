@@ -52,9 +52,18 @@ main {
 
 
 /* default properties ul --START */
-ul {
+ul, ol {
+    
+    
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
-    padding: 0;
+    padding: 1.5rem;
+
+
+
+    gap: 1rem;
 }
 /* default properties ul --END */
 
@@ -112,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 }
 
 h1 {
-    font-family: "Pacifico";
+    font-family: Pacifico;
     font-size: 4em;
     margin: 0;
 }
@@ -131,9 +140,15 @@ p   {
     /* shape */
     font-size: 1.5em;
 
-    font-family: "DefaultNormal";
+    font-family: DefaultNormal;
 }
 
+.pWeight {
+    /* shape */
+    font-size: 1.5em;
+
+    font-family: DefaultBold;
+}
 
 
 a {
@@ -143,18 +158,37 @@ a {
 }
 
 ol li {
-    color: aliceblue;
+
+    
+    
+    /* alignment */
     margin: 0;
-    padding: 0;
+    
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .25rem;
+
+    text-align: left;
+
+    /* style */
+    list-style: none;
+    
+
+    /* color: aliceblue; */
+    background-color: hsl(0, 0%, 20%);
+    
+    
 }
 p, li {
     font-size: 1em;
     margin: 0;
-    
+    padding: 0;
 }
-ol p {
-    transform: translate(0, -1.2em);
-}
+/* ol p {
+     transform: translate(0, 0);
+}  */
+
+
 ol a {
     margin: 0;
     padding: 0;
