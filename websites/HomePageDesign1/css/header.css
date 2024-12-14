@@ -1,0 +1,219 @@
+/* header --START */
+header {
+    /* shape */
+    width: 100%;
+    height: 7.5em;
+
+
+    /* self position */
+    position: sticky;
+    top: -10em;
+    /* alignment */
+    padding-top: 10em;
+
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    /* shadowfix for nav */
+    z-index: +1;
+
+}
+
+/* header link style --START */
+
+header a {
+    text-decoration-line: none;
+}
+
+/* header link style --END */
+
+
+/* header main --START */
+header main {
+    /* shape */
+    width: 90%;
+    height: inherit;
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment child */
+    justify-content: space-between;
+}
+/* header main --END */
+
+
+
+/* header logo --START */
+.headerLogo {
+    position: absolute;
+    width: 10%;
+    height: inherit;
+
+    /* background-color: aqua; */
+    
+    /* position child */
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+header .logoButton_html {
+    width: fit-content;
+    height: 100%;
+
+
+    border: none;
+    background-color: hsla(0, 100%, 100%, 0);
+}
+
+
+
+header main img {
+    height: inherit;
+}
+/* header logo --END */
+
+/* headerTitle --START */
+.headerTitle {
+    /* shape */
+    width: 100%;
+    height: inherit;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment child */
+    justify-content: center;
+    align-items: center;
+
+    /* position self */
+    position: absolute;
+
+    /* fix for button */
+    z-index: -1;
+
+}
+
+/* header title font */
+header .headerTitle h1 {
+    font-family: headerDefault;
+    font-size: 3.5rem;
+}
+
+/* headerTitle --END */
+
+/* header nav --START */
+header nav {
+    /* shape */
+    height: fit-content;
+    min-width: 1em;
+    max-width: fit-content;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+
+    /* alignment child */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+
+
+    /* position self */
+    position: absolute;
+    top: 17.5em;
+    
+    
+}
+
+/* header nav font --START */
+header nav h1 {
+    font-family: navTitle;
+    font-weight: 700;
+}
+/* header nav font --END */
+
+
+/* header nav ul --START */
+header nav ul {
+    /* shape */
+    height: fit-content;
+    width: fit-content;
+    
+    /* position child */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: black;
+
+    /* style */
+    list-style: none;
+}
+
+/* header nav ul font --START */
+
+/* header nav ul font --END */
+
+
+/* header nav ul --END */
+
+
+/* header nav list item --START */
+header nav li {
+    /* shape */
+    min-height: 1em;
+    height: fit-content;
+    width: fit-content;
+
+    /* alignment */
+    padding: 0;
+    margin: 0;
+
+}
+
+header nav li p {
+    font-family: navItem;
+}
+
+/* header nav list item --END */
+
+/* header nav --END */
+
+
+
+
+
+/* header fonts --START */
+/* imports */
+@font-face {
+    font-family: headerDefault;
+    src: url(/fonts/Pacifico/Pacifico-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: navTitle;
+    src: url(/fonts/cascadia-code/ttf/CascadiaMonoNF.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: navItem;
+    src: url(/fonts/cascadia-code/ttf/CascadiaMonoNF.ttf);
+    font-weight: 400;
+
+}
+
+/* header fonts --END */
+/* header --END */

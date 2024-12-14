@@ -1,0 +1,21 @@
+/* button preset --START */
+.buttonPreset {
+
+    width: fit-content;
+    height: 100%;
+
+
+    border: none;
+    background-color: hsla(0, 100%, 100%, 0);
+
+    /* animation duration */
+    transition: .1s ease-in-out;
+
+}
+
+.buttonPreset:active {
+    
+    transform: scale(1.1);
+}
+/* button preset --END */
+
