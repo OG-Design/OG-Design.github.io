@@ -45,7 +45,7 @@ function localClock () {
     document.getElementById("time_js").innerText=hours + " : " + minutes + " : " + seconds;
         
 
-    console.clear();
+    
     
     
     // used to check consistancy
@@ -63,4 +63,5 @@ function localClock () {
     
 }
 
+// console.clear();
 
