@@ -3,7 +3,7 @@
 .baseCol_1_bg {
 
     /* color */
-    background-color: hsl(180, 20%, 85%);
+    background-color: hsl(180, 5%, 75%);
     
 }
 
@@ -16,7 +16,7 @@
 .secoCol_1_bg {
 
     /* color */
-    background-color: hsl(200, 30%, 60%);
+    background-color: hsl(200, 10%, 75%);
 
 }
 
@@ -24,7 +24,7 @@
 
     /* color */
     /* background-color: hsl(228, 71%, 53%); */
-    background-color: hsl(228, 100%, 30%);
+    background-color: hsl(200, 40%, 70%);
 
 }
 
@@ -49,3 +49,57 @@
 }
 /* --   --  --  --  --  --  -- */
 /* color classes bright_MODE --END */
+
+
+
+/* color classes dark_MODE --START */
+/* --   --  --  --  --  --  -- */
+.baseCol_1_bgDark {
+
+    /* color */
+    background-color: hsl(180, 5%, 75%);
+    
+}
+
+.baseCol_2_bgDark {
+    /* color */
+    background-color: hsl(180, 5%, 65%);
+
+}
+
+.secoCol_1_bgDark {
+
+    /* color */
+    background-color: hsl(200, 10%, 75%);
+
+}
+
+.keysCol_1_bgDark {
+
+    /* color */
+    /* background-color: hsl(228, 71%, 53%); */
+    background-color: hsl(200, 40%, 70%);
+
+}
+
+.baseCol_1Dark {
+
+    /* color */
+    color: hsl(0, 0%, 5%);
+
+}
+
+.secoCol_1Dark {
+
+
+
+}
+
+.keysCol_1Dark {
+    /* color */
+    color: hsl(20, 100%, 60%);
+    /* text-shadow: 0px 3px 10px rgb(255, 255, 255); */
+
+}
+/* --   --  --  --  --  --  -- */
+/* color classes dark_MODE --END */

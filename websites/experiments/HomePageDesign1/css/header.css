@@ -129,7 +129,7 @@ header .headerTitle h1 {
 /* headerTitle --END */
 
 /* header nav --START */
-header nav {
+header .headerNav_html {
     /* shape */
     height: fit-content;
     min-width: 1em;
@@ -164,7 +164,7 @@ header nav h1 {
 
 
 /* header nav ul --START */
-header nav ul {
+header .headerNav_html ul {
     /* shape */
     height: fit-content;
     width: fit-content;
@@ -191,7 +191,7 @@ header nav ul {
 
 
 /* header nav list item --START */
-header nav li {
+header .headerNav_html li {
     /* shape */
     min-height: 1em;
     height: fit-content;
@@ -204,7 +204,7 @@ header nav li {
 
 }
 
-header nav li button {
+header .headerNav_html li button {
     /* shape */
     height: 100%;
     min-height: fit-content;
@@ -223,13 +223,15 @@ header nav li button {
 }
 
 
-header nav li button p {
+header .headerNav_html li button p {
     font-family: navItem;
     font-size: 1.5rem;
 }
 
 
 /* header nav list item --END */
+
+
 
 /* header nav --END */
 
@@ -241,19 +243,19 @@ header nav li button p {
 /* imports */
 @font-face {
     font-family: headerDefault;
-    src: url(/fonts/Pacifico/Pacifico-Regular.ttf);
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
 
 }
 
 @font-face {
     font-family: navTitle;
-    src: url(/fonts/cascadia-code/ttf/CascadiaMonoNF.ttf);
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
     font-weight: 900;
 }
 
 @font-face {
     font-family: navItem;
-    src: url(/fonts/cascadia-code/ttf/CascadiaMonoNF.ttf);
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
     font-weight: 400;
 
 }
