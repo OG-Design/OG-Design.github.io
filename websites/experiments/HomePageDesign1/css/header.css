@@ -89,7 +89,23 @@ header main img {
     
 }
 
+.headerDotMenu {
+    position: absolute;
+    width: 10%;
+    height: inherit;
 
+    /* background-color: aqua; */
+    
+    /* position child */
+    margin-right: 20%;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.dotMenuButton_html {
+    width: 1em;
+}
 
 /* all header main buttons bg */
 header main button {
