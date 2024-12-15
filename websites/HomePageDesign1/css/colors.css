@@ -3,21 +3,21 @@
 .baseCol_1_bg {
 
     /* color */
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 20%, 85%);
     
 }
 .secoCol_1_bg {
 
     /* color */
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(200, 30%, 80%);
 
 }
 
 .keysCol_1_bg {
 
     /* color */
-    background-color: hsl(228, 71%, 53%);
-    
+    /* background-color: hsl(228, 71%, 53%); */
+    background-color: hsl(228, 100%, 30%);
 
 }
 
@@ -25,6 +25,18 @@
 
     /* color */
     color: hsl(0, 0%, 5%);
+
+}
+
+.secoCol_1 {
+
+
+}
+
+.keysCol_1 {
+    /* color */
+    color: hsl(20, 100%, 60%);
+    text-shadow: 0px 1px 17px rgb(91, 192, 255);
 
 }
 /* --   --  --  --  --  --  -- */

@@ -64,20 +64,19 @@ header main {
     justify-content: start;
 }
 
-header .logoButton_html {
-    width: fit-content;
-    height: 100%;
-
-
-    border: none;
-    background-color: hsla(0, 100%, 100%, 0);
-}
 
 
 
 header main img {
     height: inherit;
+    
 }
+
+/* all header main buttons bg */
+header main button {
+    background-color: hsla(0, 100%, 100%, 0);
+}
+
 /* header logo --END */
 
 /* headerTitle --START */
@@ -155,10 +154,13 @@ header nav ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: black;
+    /* background-color: black; */
+    padding-left: 0;
 
     /* style */
     list-style: none;
+    
+    
 }
 
 /* header nav ul font --START */
@@ -174,6 +176,7 @@ header nav li {
     /* shape */
     min-height: 1em;
     height: fit-content;
+    min-width: 10rem;
     width: fit-content;
 
     /* alignment */
@@ -182,9 +185,29 @@ header nav li {
 
 }
 
-header nav li p {
+header nav li button {
+    /* shape */
+    height: 100%;
+    min-height: fit-content;
+    min-width: 11rem;
+    width: 100%;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+    /* alignment */
+    justify-content: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+
+header nav li button p {
     font-family: navItem;
 }
+
 
 /* header nav list item --END */
 

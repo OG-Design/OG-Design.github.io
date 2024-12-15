@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/defaultBody.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/button.css">
+
+
+    <!-- js -->
+    <script src="navScript.js" defer></script>
+
 </head>
 <body class="baseCol_1_bg">
     <header class="baseCol_1_bg shade_1">
@@ -25,14 +30,37 @@
                 <h1>Olsen-Graphics</h1>
             </div>
         </main>
-        <nav class="baseCol_1_bg shade_1 shade_overflowTop">
+        <nav class="headerNav_html baseCol_1_bg shade_1 shade_overflowTop">
             <h1>Directions</h1>
-            <ul class="baseCol_1_bg">
+            <ul class="baseCol_1_bg shade_2 shade_overflowTop">
                 
-                <li><a class="baseCol_1" href=""><p>Home</p></a></li>
-                <li><a class="baseCol_1" href=""><p>About</p></a></li>
-                <li><a class="baseCol_1" href=""><p>Gallery Portfolio</p></a></li>
-                <li><a class="baseCol_1" href=""><p>Web Portfolio</p></a></li>
+                <!-- Home -->
+                <li>
+                    <button class="buttonPreset keysCol_1_bg">
+                        <p class="keysCol_1">Home</p>
+                    </button>
+                </li>
+                
+                <!-- About -->
+                <li>
+                    <button class="buttonPreset secoCol_1_bg">
+                        <p>About</p>
+                    </button>
+                </li>
+
+                <!-- Gallery Portfolio -->
+                <li>
+                    <button class="buttonPreset secoCol_1_bg">
+                        <p>Gallery Portfolio</p>
+                    </button>
+                </li>
+
+                <!-- Web Portfolio -->
+                <li>
+                    <button class="buttonPreset secoCol_1_bg">
+                        <p>Web Portfolio</p>
+                    </button>
+                </li>
                 
             </ul>
         </nav>
