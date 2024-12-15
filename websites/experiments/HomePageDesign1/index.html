@@ -11,18 +11,26 @@
     <link rel="stylesheet" href="css/defaultBody.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/button.css">
-
-
+    <link rel="stylesheet" href="css/borderRadiusPreset.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- js -->
-    <script src="navScript.js" defer></script>
-
+    
+    <script src="js/navScript.js" defer></script>
+    <script src="js/imgDragScript.js" defer></script>
 </head>
 <body class="baseCol_1_bg">
+
+
+
+    <!-- header --START -->
+    <!-- -- -- -- -- -- -- -- -- \\\ -->
     <header class="baseCol_1_bg shade_1">
-        <main>
-            <div class="headerLogo">
+       
+        <!-- main header elements --START -->
+        <main class="headerMain">
+            <div class="headerLogo headerLogo_animation_css">
                 <button class="logoButton_html buttonPreset">
-                    <img src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
+                    <img class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
                 </button>
                 
             </div>
@@ -30,40 +38,57 @@
                 <h1>Olsen-Graphics</h1>
             </div>
         </main>
+        <!-- main header elements --END -->
+
+
+        <!-- headerNav --START  -->
+        <!-- hidden by js click logo to open and close -->
         <nav class="headerNav_html baseCol_1_bg shade_1 shade_overflowTop">
             <h1>Directions</h1>
-            <ul class="baseCol_1_bg shade_2 shade_overflowTop">
+            <ul class="secoCol_1_bg shade_2 borderRadius_preset">
                 
                 <!-- Home -->
                 <li>
-                    <button class="buttonPreset keysCol_1_bg">
+                    <button class="buttonPreset keysCol_1_bg borderRadius_preset">
                         <p class="keysCol_1">Home</p>
                     </button>
                 </li>
                 
                 <!-- About -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset">
                         <p>About</p>
                     </button>
                 </li>
 
                 <!-- Gallery Portfolio -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset">
                         <p>Gallery Portfolio</p>
                     </button>
                 </li>
 
                 <!-- Web Portfolio -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset">
                         <p>Web Portfolio</p>
                     </button>
                 </li>
                 
             </ul>
         </nav>
+        <!-- headerNav --END  -->
+
+
     </header>
+    <!-- -- -- -- -- -- -- -- -- /// -->
+    <!-- header --END -->
+
+    <main class="mainBody baseCol_2_bg">
+
+    </main>
+
+
+
 </body>
 </html>

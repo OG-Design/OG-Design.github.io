@@ -1,0 +1,14 @@
+.borderRadius_preset {
+    border-radius: 1rem;
+    margin: 0.1em;
+
+    /* overflow: hidden; */
+}
+
+.borderRadius_presetBottom {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0.1em;
+
+    /* overflow: hidden; */
+}

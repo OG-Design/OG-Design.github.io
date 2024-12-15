@@ -1,4 +1,4 @@
-/* color classes --START */
+/* color classes bright_MODE --START */
 /* --   --  --  --  --  --  -- */
 .baseCol_1_bg {
 
@@ -6,10 +6,17 @@
     background-color: hsl(180, 20%, 85%);
     
 }
+
+.baseCol_2_bg {
+    /* color */
+    background-color: hsl(180, 5%, 65%);
+
+}
+
 .secoCol_1_bg {
 
     /* color */
-    background-color: hsl(200, 30%, 80%);
+    background-color: hsl(200, 30%, 60%);
 
 }
 
@@ -31,13 +38,14 @@
 .secoCol_1 {
 
 
+
 }
 
 .keysCol_1 {
     /* color */
     color: hsl(20, 100%, 60%);
-    text-shadow: 0px 1px 17px rgb(91, 192, 255);
+    /* text-shadow: 0px 3px 10px rgb(255, 255, 255); */
 
 }
 /* --   --  --  --  --  --  -- */
-/* color classes --END */
+/* color classes bright_MODE --END */

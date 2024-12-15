@@ -8,13 +8,22 @@
     border: none;
 
     /* animation duration */
-    transition: .1s ease-in-out;
+    transition: .05s ease-in-out;
+
+}
+
+.buttonPreset:hover {
+
+    transform: scale(1.05);
 
 }
 
 .buttonPreset:active {
     
     transform: scale(1.1);
+
 }
+
+
 /* button preset --END */
 
