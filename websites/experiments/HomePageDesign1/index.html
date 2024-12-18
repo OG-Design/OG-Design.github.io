@@ -28,17 +28,22 @@
        
         <!-- main header elements --START -->
         <main class="headerMain">
+            <!-- logo menu -->
             <div class="headerLogo headerLogo_animation_css">
                 <button class="logoButton_html buttonPreset">
                     <img class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
                 </button>
                 
             </div>
+
+            <!-- title -->
             <div class="headerTitle">
                 <h1>Olsen-Graphics</h1>
             </div>
+
+            <!-- dotMenu -->
             <div class="headerDotMenu">
-                <button class="dotMenuButton_html buttonPreset">
+                <button class="dotMenuButton_html dotMenu_button buttonPreset">
                     <img class="dropShadow_1" src="/img/SVG/dotMenuIcon.svg" alt="OG logo">
                 </button>
             </div>
@@ -48,34 +53,34 @@
 
         <!-- headerNav --START  -->
         <!-- hidden by js click logo to open and close -->
-        <nav class="headerNav_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
+        <nav class="headerNav_html headerNav_logoMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
             <h1>Directions</h1>
             <ul class="secoCol_1_bg shade_2 borderRadius_preset">
                 
                 <!-- Home -->
                 <li>
-                    <button class="buttonPreset keysCol_1_bg borderRadius_preset shadeHover_1">
+                    <button class="buttonPreset keysCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
                         <p class="keysCol_1">Home</p>
                     </button>
                 </li>
                 
                 <!-- About -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
                         <p>About</p>
                     </button>
                 </li>
 
                 <!-- Gallery Portfolio -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
                         <p>Gallery Portfolio</p>
                     </button>
                 </li>
 
                 <!-- Web Portfolio -->
                 <li>
-                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1">
+                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
                         <p>Web Portfolio</p>
                     </button>
                 </li>
@@ -83,7 +88,19 @@
             </ul>
         </nav>
 
-        <nav>
+        <nav class="headerNav_html headerNav_dotMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
+            
+            <h1>Settings</h1>
+            <ul class="secoCol_1_bg shade_2 borderRadius_preset">
+                
+                <!-- Home -->
+                <li>
+                    <label class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
+                        <p class="keysCol_1">Theme</p>
+                        <input type="checkbox" name="themeLabel" id="" class="buttonPreset">
+                    </label>
+                </li>
+            </ul>
 
         </nav>
 

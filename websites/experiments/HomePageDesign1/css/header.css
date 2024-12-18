@@ -64,6 +64,10 @@ header .headerMain {
     justify-content: start;
 }
 
+.headerLogo img {
+    height: 7.5rem;
+}
+
 
 /* headerLogo animation --START */
 .headerLogo_animation_css {
@@ -84,10 +88,8 @@ header .headerMain {
 }
 /* headerLogo animation --END */
 
-header main img {
-    height: inherit;
-    
-}
+
+
 
 .headerDotMenu {
     position: absolute;
@@ -98,17 +100,39 @@ header main img {
     /* background-color: aqua; */
     
     /* position child */
-    margin-top: 7%;
+    margin-top: 3.5rem;
     margin-right: 5%;
     right: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
+
+    
+    /* padding: 1rem; */
+
+
 }
-.dotMenuButton_html {
-    /* width: 1em; */
+
+.dotMenu_button {
+    /* shape */
+    height: 3em;
+    width: fit-content;
+    padding: 1rem;
+
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
 }
+.dotMenu_button img {
+    width: 3.5rem;
+}
+
 
 /* all header main buttons bg */
 header main button {
@@ -148,7 +172,8 @@ header .headerTitle h1 {
 /* headerTitle --END */
 
 /* header nav --START */
-header .headerNav_html {
+/* logo nav --START */
+header .headerNav_logoMenu_html {
     /* shape */
     height: fit-content;
     min-width: 1em;
@@ -173,6 +198,37 @@ header .headerNav_html {
     
     
 }
+/* logo nav --END */
+/* logo nav --START */
+header .headerNav_dotMenu_html {
+    /* shape */
+    height: fit-content;
+    min-width: 1em;
+    max-width: fit-content;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+
+    /* alignment child */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+
+
+    /* position self */
+    position: absolute;
+    top: 17.5em;
+    right: 0;
+    
+    
+}
+/* logo nav --END */
+
+
 
 /* header nav font --START */
 header nav h1 {
@@ -223,7 +279,7 @@ header .headerNav_html li {
 
 }
 
-header .headerNav_html li button {
+header .headerNav_html li .itemIndication {
     /* shape */
     height: 100%;
     min-height: fit-content;
@@ -241,8 +297,25 @@ header .headerNav_html li button {
     
 }
 
+header .headerNav_html li .itemIndicationR {
+    /* shape */
+    height: 100%;
+    min-height: fit-content;
+    min-width: 20rem;
+    width: 90%;
 
-header .headerNav_html li button p {
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+    /* alignment */
+    justify-content: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+header .headerNav_html p {
     font-family: navItem;
     font-size: 1.5rem;
 }

@@ -1,8 +1,8 @@
 /* button preset --START */
 .buttonPreset {
 
-    width: fit-content;
-    height: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
 
 
     border: none;
