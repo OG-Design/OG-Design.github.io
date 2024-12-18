@@ -23,7 +23,7 @@
 .secoCol_2_bg {
 
     /* color */
-    background-color: hsl(200, 10%, 55%);
+    background-color: hsl(200, 10%, 45%);
 
 }
 
@@ -44,7 +44,13 @@
 
 .secoCol_1 {
 
+    color: hsl(228, 10%, 25%);
 
+}
+
+.secoCol_2 {
+
+    color: hsl(228, 10%, 45%);
 
 }
 

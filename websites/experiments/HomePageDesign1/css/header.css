@@ -234,13 +234,19 @@ header .headerNav_dotMenu_html {
 
     /* shape */
     width: fit-content;
-    min-width: 2em;
+    min-width: 20em;
+    min-height: fit-content;
+    height: 2em;
+
+
 
     /* child position */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 
@@ -336,6 +342,11 @@ header .headerNav_html p {
     font-size: 1.5rem;
 }
 
+header h2 {
+    font-family: navSubTitle;
+    font-size: 1.5rem;
+}
+
 
 /* header nav list item --END */
 
@@ -359,6 +370,12 @@ header .headerNav_html p {
     font-family: navTitle;
     src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
     font-weight: 900;
+}
+
+@font-face {
+    font-family: navSubTitle;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 700;
 }
 
 @font-face {
