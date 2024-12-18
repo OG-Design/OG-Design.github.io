@@ -199,7 +199,8 @@ header .headerNav_logoMenu_html {
     
 }
 /* logo nav --END */
-/* logo nav --START */
+
+/* dotMenu nav --START */
 header .headerNav_dotMenu_html {
     /* shape */
     height: fit-content;
@@ -226,7 +227,22 @@ header .headerNav_dotMenu_html {
     
     
 }
-/* logo nav --END */
+/* dotMenu nav --END */
+
+
+.themeLabel_row {
+
+    /* shape */
+    width: fit-content;
+    min-width: 2em;
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
