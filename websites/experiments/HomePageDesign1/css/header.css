@@ -274,6 +274,7 @@ header .headerNav_dotMenu_html {
 header nav h1 {
     font-family: navTitle;
     font-weight: 700;
+    margin-left: 1rem;
 }
 /* header nav font --END */
 
@@ -430,7 +431,7 @@ header h2 {
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:550px) {
     /* header --START */
 header {
     /* shape */
@@ -440,7 +441,7 @@ header {
 
     /* self position */
     position: sticky;
-    top: -15em;
+    top: -14em;
     /* alignment */
     padding-top: 15em;
 
@@ -613,7 +614,8 @@ header main button {
 /* header title font */
 header .headerTitle h1 {
     font-family: headerDefault;
-    font-size: .7rem;
+    font-size: 2rem;
+    padding-bottom: 10rem;
 }
 
 /* headerTitle --END */
@@ -623,19 +625,21 @@ header .headerTitle h1 {
 header .headerNav_logoMenu_html {
     /* shape */
     height: fit-content;
-    min-width: 1em;
+    min-width: 100%;
     max-width: fit-content;
 
     /* position child */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 
     justify-content: start;
 
     /* alignment child */
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 1.5em;
     margin: 0;
 
 
@@ -651,8 +655,8 @@ header .headerNav_logoMenu_html {
 header .headerNav_dotMenu_html {
     /* shape */
     height: fit-content;
-    min-width: 1em;
-    max-width: fit-content;
+    min-width: 100%;
+    max-width: 100%;
 
     /* position child */
     display: flex;
@@ -661,9 +665,9 @@ header .headerNav_dotMenu_html {
     justify-content: start;
 
     /* alignment child */
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 1.5em;
     margin: 0;
 
 
@@ -705,6 +709,7 @@ header .headerNav_dotMenu_html {
 header nav h1 {
     font-family: navTitle;
     font-weight: 700;
+    margin-left: .5rem;
 }
 /* header nav font --END */
 
@@ -713,7 +718,7 @@ header nav h1 {
 header .headerNav_html ul {
     /* shape */
     height: fit-content;
-    width: fit-content;
+    width: 100%;
     
     /* position child */
     display: flex;
@@ -741,8 +746,8 @@ header .headerNav_html li {
     /* shape */
     min-height: 1em;
     height: fit-content;
-    min-width: 10rem;
-    width: fit-content;
+    min-width: 100%;
+    width: 100%;
 
     /* alignment */
     padding: 0;
@@ -754,7 +759,7 @@ header .headerNav_html li .itemIndication {
     /* shape */
     height: 100%;
     min-height: fit-content;
-    min-width: 20rem;
+    min-width: 100%;
     width: 100%;
 
     /* position child */
@@ -772,8 +777,8 @@ header .headerNav_html li .itemIndicationR {
     /* shape */
     height: 100%;
     min-height: fit-content;
-    min-width: 20rem;
-    width: 90%;
+    min-width: 100%;
+    width: 100%;
 
     /* position child */
     display: flex;
@@ -781,8 +786,8 @@ header .headerNav_html li .itemIndicationR {
     
     /* alignment */
     justify-content: start;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     
 }
 

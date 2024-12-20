@@ -1,5 +1,23 @@
 body .mainBody {
+
+
+    /* shape */
     width: 100%;
-    height: 100%;
+    height: fit-content;
+
+
+
+    /* position child */
+    padding-top: 7.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+
+    padding-bottom: 10rem;
     
 }

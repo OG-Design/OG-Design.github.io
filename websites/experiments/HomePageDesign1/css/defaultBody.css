@@ -5,6 +5,49 @@ html, body {
     /* alignment */
     margin: 0;
     padding: 0; 
+
+    padding-bottom: 10rem;
     
+    
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    
+}
+
+@font-face {
+    font-family: defaultFontIndicator;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    
+}
+
+.defTitle_font {
+    font-family: defaultFont;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.defPara_font {
+    font-family: defaultFont;
+    font-weight: 300;
+
+    font-size: 2rem;
+}
+
+.defIndicator_font {
+    font-family: defaultFontIndicator;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width:550px) {
+    .defTitle_font {
+        font-family: defaultFont;
+        font-weight: 800;
+        font-size: 2rem;
+    }
     
 }

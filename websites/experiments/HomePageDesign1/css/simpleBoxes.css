@@ -1,0 +1,173 @@
+.simpleBoxes_column {
+    /* shape */
+    width: 90%;
+    height: fit-content;
+    
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    /* alignment */
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.simpleBoxes_row {
+
+    /* shape */
+    width: 90%;
+    height: fit-content;
+    
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment */
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.simpleBoxes_column_text {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+
+    
+    
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    /* alignment */
+    justify-content: left;
+    align-items: start;
+
+    padding: 1rem;
+}
+
+.simpleBoxes_row_text {
+    /* shape */
+    width: fit-content;
+    height: fit-content;
+
+    
+    
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment */
+    justify-content: left;
+    align-items: start;
+
+    padding: 1rem;
+}
+
+.simpleBoxes_padding {
+    padding: 1rem;
+}
+
+.simpleBoxes_padding_text {
+    padding-right: .5rem;
+}
+
+.simpleBoxes_pageIndicator {
+    /* shape */
+    width: 100%;
+
+    /* position fix */
+    height: 0;
+    padding-left: 2rem;
+
+    /* above */
+    z-index: 0;
+
+}
+
+
+/* mobile integration */
+@media screen and (max-width: 550px) {
+
+    .simpleBoxes_column {
+        /* shape */
+        width: 90%;
+        height: fit-content;
+        
+        /* position child */
+        display: flex;
+        flex-direction: column;
+    
+        /* alignment */
+        justify-content: space-evenly;
+        align-items: center;
+    
+    
+    }
+    
+    .simpleBoxes_row {
+    
+        /* shape */
+        width: 90%;
+        height: fit-content;
+        
+        /* position child */
+        display: flex;
+        flex-direction: column;
+    
+        /* alignment */
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+    }
+    
+    .simpleBoxes_column_text {
+        /* shape */
+        width: fit-content;
+        height: fit-content;
+    
+        
+        
+        /* position child */
+        display: flex;
+        flex-direction: column;
+    
+        /* alignment */
+        justify-content: left;
+        align-items: start;
+    
+        padding: 1rem;
+    }
+    
+    .simpleBoxes_row_text {
+        /* shape */
+        width: fit-content;
+        height: fit-content;
+    
+        
+        
+        /* position child */
+        display: flex;
+        flex-direction: column;
+    
+        /* alignment */
+        justify-content: left;
+        align-items: start;
+    
+        padding: 1rem;
+    }
+    
+    .simpleBoxes_padding {
+        padding: 1rem;
+    }
+    
+    .simpleBoxes_padding_text {
+        padding-right: .5rem;
+    }
+
+
+}
