@@ -32,20 +32,21 @@
             <!-- logo menu -->
             <div class="headerLogo headerLogo_animation_css">
                 <button class="logoButton_html buttonPreset">
-                    <img class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
+                    <img id="pageLogoImg" class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
                 </button>
                 
             </div>
 
             <!-- title -->
             <div class="headerTitle">
-                <h1>Olsen-Graphics</h1>
+                <h1 class="baseCol_1">Olsen-Graphics</h1>
             </div>
 
             <!-- dotMenu -->
             <div class="headerDotMenu">
                 <button class="dotMenuButton_html dotMenu_button buttonPreset">
-                    <img class="dropShadow_1" src="/img/SVG/dotMenuIcon.svg" alt="OG logo">
+                    <!-- <img class="dropShadow_1" src="/img/SVG/dotMenuIcon.svg" alt="OG logo"> -->
+                    <h2 class="baseCol_1">...</h2>
                 </button>
             </div>
         </main>
@@ -55,7 +56,7 @@
         <!-- headerNav --START  -->
         <!-- hidden by js click logo to open and close -->
         <nav class="headerNav_html headerNav_logoMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
-            <h1>Directions</h1>
+            <h1 class="baseCol_1">Directions</h1>
             <ul class="secoCol_1_bg shade_2 borderRadius_preset">
                 
                 <!-- Home -->
@@ -68,45 +69,46 @@
                 <!-- About -->
                 <li>
                     <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p>About</p>
+                        <p class="secoCol_1">About</p>
                     </button>
                 </li>
 
                 <!-- Gallery Portfolio -->
                 <li>
                     <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p>Gallery Portfolio</p>
+                        <p class="secoCol_1">Gallery Portfolio</p>
                     </button>
                 </li>
 
                 <!-- Web Portfolio -->
                 <li>
                     <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p>Web Portfolio</p>
+                        <p class="secoCol_1">Web Portfolio</p>
                     </button>
                 </li>
                 
             </ul>
         </nav>
 
+
         <nav class="headerNav_html headerNav_dotMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
             
-            <h1>Settings</h1>
+            <h1 class="baseCol_1">Settings</h1>
             <ul class="secoCol_1_bg shade_2 borderRadius_preset">
                 
                 <!-- Theme -->
                 <li>
                     <h2 class="secoCol_1">Theme</h2>
-                    <label class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
+                    <label for="brightnessSwitch_html" class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
                         <!-- <p class="secoCol_2">Theme</p> -->
                         
                         <div class="themeLabel_row   borderRadius_preset">
                             
-                            <p>brightness:</p>
-                            <p class="smallp">Bright / Dark</p>
+                            <p class="baseCol_1">brightness:</p>
+                            <p class="smallp secoCol_1"></p>
 
-                            <input type="checkbox" name="themeLabel" id="brightnessSwitch_html" class="buttonPreset">
-
+                            <button type="submit" name="themeLabel" id="brightnessSwitch_html" class="buttonPreset secoCol_1_bg borderRadius_preset"><h2>Change</h2></button>
+                            
                         </div>
                         
                     </label>
@@ -127,7 +129,7 @@
 
     <main class="mainBody baseCol_2_bg">
         <!-- <p>1</p> -->
-        <h1 id="1">123</h1>
+        <!-- <h1 id="1">123sas</h1> -->
     </main>
 
 

@@ -16,7 +16,7 @@
 .secoCol_1_bg {
 
     /* color */
-    background-color: hsl(200, 10%, 75%);
+    background-color: hsl(200, 5%, 85%);
 
 }
 
@@ -38,7 +38,7 @@
 .baseCol_1 {
 
     /* color */
-    color: hsl(0, 0%, 5%);
+    color: hsl(0, 0%, 10%);
 
 }
 
@@ -72,18 +72,20 @@
     /* color */
     background-color: hsl(180, 5%, 15%);
     
+    
+
 }
 
 .baseCol_2_bgDark {
     /* color */
-    background-color: hsl(180, 5%, 65%);
+    background-color: hsl(180, 5%, 5%);
 
 }
 
 .secoCol_1_bgDark {
 
     /* color */
-    background-color: hsl(200, 10%, 75%);
+    background-color: hsl(200, 5%, 20%);
 
 }
 
@@ -91,28 +93,36 @@
 
     /* color */
     /* background-color: hsl(228, 71%, 53%); */
-    background-color: hsl(200, 40%, 70%);
+    background-color: hsl(200, 10%, 30%);
 
 }
 
 .baseCol_1Dark {
 
     /* color */
-    color: hsl(0, 0%, 5%);
+    color: hsl(0, 0%, 80%);
 
 }
 
 .secoCol_1Dark {
 
-
+    color: hsl(200, 20%, 70%);
 
 }
 
 .keysCol_1Dark {
     /* color */
-    color: hsl(20, 100%, 60%);
+    color: hsl(20, 80%, 60%);
     /* text-shadow: 0px 3px 10px rgb(255, 255, 255); */
 
 }
 /* --   --  --  --  --  --  -- */
 /* color classes dark_MODE --END */
+
+
+
+
+
+.baseCol_1_bg, .baseCol_2_bg, .secoCol_1_bg, .secoCol_2_bg, .keysCol_1_bg, .baseCol_1, .secoCol_1, .secoCol_2, .keysCol_1, .baseCol_1_bgDark, .baseCol_2_bgDark, .secoCol_1_bgDark, .keysCol_1_bgDark, .baseCol_1Dark, .secoCol_1Dark, .keysCol_1Dark {
+    transition: .5s;
+}

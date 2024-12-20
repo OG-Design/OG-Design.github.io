@@ -117,9 +117,9 @@ header .headerMain {
 
 .dotMenu_button {
     /* shape */
-    height: 3em;
+    height: 5em;
     width: fit-content;
-    padding: 1rem;
+    padding: 0rem;
 
 
     /* child position */
@@ -133,6 +133,22 @@ header .headerMain {
     width: 3.5rem;
 }
 
+.dotMenu_button h2{
+    position: static;
+    margin: 0;
+    
+    line-height: 2rem;
+
+    
+    /* transform-origin: 100% 100%; */
+
+    font-size: 7em;
+
+    transform: translateY(-2rem);
+}
+label h2 {
+    margin: 0;
+}
 
 /* all header main buttons bg */
 header main button {
@@ -233,8 +249,8 @@ header .headerNav_dotMenu_html {
 .themeLabel_row {
 
     /* shape */
-    width: fit-content;
-    min-width: 20em;
+    width: 100%;
+    /* min-width: 20em; */
     min-height: fit-content;
     height: 2em;
 
@@ -243,12 +259,14 @@ header .headerNav_dotMenu_html {
     /* child position */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    gap: 1rem;
+    padding: .50rem;
+    
 }
-
+.themeLabel {
+    width: 100%;
+}
 
 
 
@@ -387,3 +405,435 @@ header h2 {
 
 /* header fonts --END */
 /* header --END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    /* header --START */
+header {
+    /* shape */
+    width: 100%;
+    height: 3.5em;
+
+
+    /* self position */
+    position: sticky;
+    top: -15em;
+    /* alignment */
+    padding-top: 15em;
+
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    /* shadowfix for nav */
+    z-index: +1;
+
+}
+
+/* header link style --START */
+
+header a {
+    text-decoration-line: none;
+}
+
+/* header link style --END */
+
+
+/* header main --START */
+header .headerMain {
+    /* shape */
+    width: 90%;
+    height: inherit;
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment child */
+    justify-content: space-between;
+}
+/* header main --END */
+
+
+
+/* header logo --START */
+.headerLogo {
+    position: absolute;
+    width: 10%;
+    height: inherit;
+
+    /* background-color: aqua; */
+    
+    /* position child */
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.headerLogo img {
+    height: 3.5rem;
+}
+
+
+/* headerLogo animation --START */
+.headerLogo_animation_css {
+    animation: headerLogoClickHere 2s ease-in-out infinite;
+}
+
+@keyframes headerLogoClickHere {
+    0% {
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+
+}
+/* headerLogo animation --END */
+
+
+
+
+.headerDotMenu {
+    position: absolute;
+    /* width: 20em; */
+    /* height: inherit; */
+    height: 1em;
+
+    /* background-color: aqua; */
+    
+    /* position child */
+    margin-top: 1.5rem;
+    margin-right: 1%;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    
+    /* padding: 1rem; */
+
+
+}
+
+.dotMenu_button {
+    /* shape */
+    height: 1em;
+    width: fit-content;
+    padding: 0rem;
+
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dotMenu_button h2{
+    position: static;
+    margin: 0;
+    
+    line-height: 2rem;
+
+    
+    /* transform-origin: 100% 100%; */
+
+    font-size: 5em;
+
+    transform: translateY(-75%);
+}
+label h2 {
+    margin: 0;
+}
+
+/* all header main buttons bg */
+header main button {
+    background-color: hsla(0, 100%, 100%, 0);
+}
+
+/* header logo --END */
+
+/* headerTitle --START */
+.headerTitle {
+    /* shape */
+    width: 100%;
+    height: inherit;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+    /* alignment child */
+    justify-content: center;
+    align-items: center;
+
+    /* position self */
+    position: absolute;
+
+    /* fix for button */
+    z-index: -1;
+
+}
+
+/* header title font */
+header .headerTitle h1 {
+    font-family: headerDefault;
+    font-size: .7rem;
+}
+
+/* headerTitle --END */
+
+/* header nav --START */
+/* logo nav --START */
+header .headerNav_logoMenu_html {
+    /* shape */
+    height: fit-content;
+    min-width: 1em;
+    max-width: fit-content;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+
+    /* alignment child */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+
+
+    /* position self */
+    position: absolute;
+    top: 18.5em;
+    
+    
+}
+/* logo nav --END */
+
+/* dotMenu nav --START */
+header .headerNav_dotMenu_html {
+    /* shape */
+    height: fit-content;
+    min-width: 1em;
+    max-width: fit-content;
+
+    /* position child */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+
+    /* alignment child */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+
+
+    /* position self */
+    position: absolute;
+    top: 18.5em;
+    right: 0;
+    
+    
+}
+/* dotMenu nav --END */
+
+
+.themeLabel_row {
+
+    /* shape */
+    width: 100%;
+    /* min-width: 20em; */
+    min-height: fit-content;
+    height: 2em;
+
+
+
+    /* child position */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .50rem;
+    
+}
+.themeLabel {
+    width: 100%;
+}
+
+
+
+/* header nav font --START */
+header nav h1 {
+    font-family: navTitle;
+    font-weight: 700;
+}
+/* header nav font --END */
+
+
+/* header nav ul --START */
+header .headerNav_html ul {
+    /* shape */
+    height: fit-content;
+    width: fit-content;
+    
+    /* position child */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* background-color: black; */
+    padding-left: 0;
+
+    /* style */
+    list-style: none;
+    
+    
+}
+
+/* header nav ul font --START */
+
+/* header nav ul font --END */
+
+
+/* header nav ul --END */
+
+
+/* header nav list item --START */
+header .headerNav_html li {
+    /* shape */
+    min-height: 1em;
+    height: fit-content;
+    min-width: 10rem;
+    width: fit-content;
+
+    /* alignment */
+    padding: 0;
+    margin: 0;
+
+}
+
+header .headerNav_html li .itemIndication {
+    /* shape */
+    height: 100%;
+    min-height: fit-content;
+    min-width: 20rem;
+    width: 100%;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+    /* alignment */
+    justify-content: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+header .headerNav_html li .itemIndicationR {
+    /* shape */
+    height: 100%;
+    min-height: fit-content;
+    min-width: 20rem;
+    width: 90%;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+    
+    /* alignment */
+    justify-content: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+header .headerNav_html p {
+    font-family: navItem;
+    font-size: 1.5rem;
+}
+
+header h2 {
+    font-family: navSubTitle;
+    font-size: 1.5rem;
+}
+
+
+/* header nav list item --END */
+
+
+
+/* header nav --END */
+
+
+
+
+
+/* header fonts --START */
+/* imports */
+@font-face {
+    font-family: headerDefault;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+
+}
+
+@font-face {
+    font-family: navTitle;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: navSubTitle;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: navItem;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 400;
+
+}
+
+/* header fonts --END */
+/* header --END */
+}
