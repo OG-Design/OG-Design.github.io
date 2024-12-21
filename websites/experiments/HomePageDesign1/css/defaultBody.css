@@ -12,6 +12,12 @@ html, body {
 }
 
 @font-face {
+    font-family: defaultFontBold;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    
+}
+
+@font-face {
     font-family: defaultFont;
     src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
     
@@ -19,19 +25,19 @@ html, body {
 
 @font-face {
     font-family: defaultFontIndicator;
-    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(/fonts/Caladea/Caladea-Regular.ttf);
     
 }
 
 .defTitle_font {
-    font-family: defaultFont;
+    font-family: defaultFontBold;
     font-weight: 800;
     font-size: 3rem;
 }
 
 .defPara_font {
     font-family: defaultFont;
-    font-weight: 300;
+    font-weight: 200;
 
     font-size: 2rem;
 }
