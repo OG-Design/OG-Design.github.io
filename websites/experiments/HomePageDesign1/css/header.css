@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
 
     /* shadowfix for nav */
-    z-index: +1;
+    z-index: 0;
 
 }
 
@@ -212,7 +212,7 @@ header .headerNav_logoMenu_html {
     position: absolute;
     top: 17.5em;
     
-    
+    z-index: +1;
 }
 /* logo nav --END */
 
@@ -442,6 +442,7 @@ header {
     /* self position */
     position: sticky;
     top: -14em;
+
     /* alignment */
     padding-top: 15em;
 
@@ -453,7 +454,7 @@ header {
     justify-content: space-between;
 
     /* shadowfix for nav */
-    z-index: +1;
+    z-index: 0;
 
 }
 

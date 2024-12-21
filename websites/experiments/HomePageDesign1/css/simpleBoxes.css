@@ -64,7 +64,7 @@
     justify-content: left;
     align-items: start;
 
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .simpleBoxes_padding {
@@ -81,10 +81,10 @@
 
     /* position fix */
     height: 0;
-    padding-left: 2rem;
+    padding-left: 0rem;
 
-    /* above */
-    z-index: 0;
+    /* above
+    z-index: 0; */
 
 }
 
