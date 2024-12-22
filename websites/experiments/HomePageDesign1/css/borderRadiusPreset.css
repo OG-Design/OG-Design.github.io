@@ -12,3 +12,21 @@
 
     /* overflow: hidden; */
 }
+
+@media screen and (max-width: 500px) {
+    
+    .borderRadius_preset {
+        border-radius: 0;
+        margin: 0em;
+    
+        /* overflow: hidden; */
+    }
+    
+    .borderRadius_presetBottom {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        
+    
+        /* overflow: hidden; */
+    }
+}
