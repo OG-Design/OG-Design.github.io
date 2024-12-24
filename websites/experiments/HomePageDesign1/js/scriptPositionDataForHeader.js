@@ -57,18 +57,23 @@ function checkPosHeader_js() {
     if (screenWidth_js<550) {
 
         // if y smaller or equal to 220 or navClicked zIndex +1
-        if (y>= 220 ) {
+        if (y>= 200 ) {
         
             console.log("posBot");
-            
+
+            // adds atribute to header
+            headerPos.classList.add("shade_1");
             // z+1
-            headerPos.style.zIndex="+1";
+            // headerPos.style.zIndex="+1";
 
         } else { 
 
             // z0
-            headerPos.style.zIndex="0";
+            // headerPos.style.zIndex="0";
             console.log("posTop");
+
+            // removes attribute from header
+            headerPos.classList.remove("shade_1");
         
         }
 
@@ -78,15 +83,19 @@ function checkPosHeader_js() {
 
             console.log("posBot");
 
+            // adds atribute to header
+            headerPos.classList.add("shade_1");
             // z+1
-            headerPos.style.zIndex="+1";
+            // headerPos.style.zIndex="+1";
         
         } else {
 
             // z0
-            headerPos.style.zIndex="0";
+            // headerPos.style.zIndex="0";
             console.log("posTop");
             
+            // removes attribute from header
+            headerPos.classList.remove("shade_1");
             
         }
         

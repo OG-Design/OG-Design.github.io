@@ -9,7 +9,7 @@
 
 .baseCol_2_bg {
     /* color */
-    background-color: hsl(180, 5%, 65%);
+    background-color: hsl(180, 5%, 95%);
 
 }
 
@@ -70,7 +70,7 @@
 .baseCol_1_bgDark {
 
     /* color */
-    background-color: hsl(180, 5%, 15%);
+    background-color: hsl(180, 15%, 5%);
     
     
 
@@ -78,7 +78,7 @@
 
 .baseCol_2_bgDark {
     /* color */
-    background-color: hsl(180, 20%, 7%);
+    background-color: hsl(180, 15%, 10%);
 
 }
 

@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
 
     /* shadowfix for nav */
-    z-index: 0;
+    z-index: +1;
 
 }
 
