@@ -20,6 +20,7 @@
     <script src="../js/navScript.js" defer></script>
     <script src="../js/imgDragScript.js" defer></script>
     <script src="../js/settings_brightnessSwitch.js" defer></script>
+    <script src="../js/scriptPositionData.js" defer></script>
 </head>
 <body class="a baseCol_1_bg">
 
@@ -27,7 +28,7 @@
 
     <!-- header --START -->
     <!-- -- -- -- -- -- -- -- -- \\\ -->
-    <header class="baseCol_1_bg shade_1">
+    <header id="headerId" class="baseCol_1_bg shade_1">
        
         <!-- main header elements --START -->
         <main class="headerMain">
@@ -124,45 +125,46 @@
         </nav>
 
 
-        <!-- horisontalNav --START -->
-        <nav class="headerNavHorisontalDirections shade_1 shade_overflowTop baseCol_1_bg">
-            <ul class="">
-                
-                
-                
-                <li>   
-                    <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
-                        <p class="secoCol_1 horisontalNav_button_font">About</p>
-                    </button>
-                </li>
-
-                
-                <li>
-                    <a href="Gallery/index.html">
-                    <button class="buttonPreset keysCol_1_bg shadeHover_1 itemIndication borderRadius_presetBottom">
-                        <p class="keysCol_1 horisontalNav_button_font">Gallery Portfolio</p>
-                    </button>
-                    </a>
-                </li>
-
-                
-                <li>
-                    <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
-                        <p class="secoCol_1 horisontalNav_button_font">Web Portfolio</p>
-                    </button>
-                </li>
-                
-            </ul>
-        </nav>
-        <!-- horisontalNav --END -->
-
-
         <!-- headerNav --END  -->
 
 
     </header>
     <!-- -- -- -- -- -- -- -- -- /// -->
     <!-- header --END -->
+
+    <!-- horisontalNav --START -->
+    <nav class="headerNavHorisontalDirections shade_1 shade_overflowTop baseCol_1_bg">
+        <ul class="">
+            
+            
+            
+            <li>   
+                <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
+                    <p class="secoCol_1 horisontalNav_button_font">About</p>
+                </button>
+            </li>
+
+            
+            <li>
+                <a href="Gallery/index.html">
+                <button class="buttonPreset keysCol_1_bg shadeHover_1 itemIndication borderRadius_presetBottom">
+                    <p class="keysCol_1 horisontalNav_button_font">Gallery Portfolio</p>
+                </button>
+                </a>
+            </li>
+
+            
+            <li>
+                <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
+                    <p class="secoCol_1 horisontalNav_button_font">Web Portfolio</p>
+                </button>
+            </li>
+            
+        </ul>
+    </nav>
+    <!-- horisontalNav --END -->
+
+
 
 
     <main class="mainBody baseCol_2_bg">

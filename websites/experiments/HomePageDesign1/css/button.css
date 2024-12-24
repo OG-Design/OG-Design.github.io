@@ -10,6 +10,7 @@
     /* animation duration */
     transition: .05s ease-in-out;
     margin: 0;
+    z-index: +1;
 }
 
 .buttonPreset:hover {

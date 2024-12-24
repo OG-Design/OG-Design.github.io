@@ -212,7 +212,7 @@ header .headerNav_logoMenu_html {
     position: absolute;
     top: 17.5em;
     
-    z-index: +1;
+    z-index: +2;
 }
 /* logo nav --END */
 
@@ -294,6 +294,8 @@ header .headerNav_html ul {
 
     /* style */
     list-style: none;
+
+    
     
     
 }
@@ -317,7 +319,7 @@ header .headerNav_html li {
     /* alignment */
     padding: 0;
     margin: 0;
-
+    
 }
 
 header .headerNav_html li .itemIndication {
@@ -454,7 +456,7 @@ header {
     justify-content: space-between;
 
     /* shadowfix for nav */
-    z-index: 0;
+    z-index: +1;
 
 }
 
@@ -676,6 +678,7 @@ header .headerNav_dotMenu_html {
     position: absolute;
     top: 18.5em;
     right: 0;
+    
     
     
 }
