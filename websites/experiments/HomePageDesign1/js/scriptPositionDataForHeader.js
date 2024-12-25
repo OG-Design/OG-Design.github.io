@@ -39,10 +39,16 @@ function navClickedFunction() {
 let time = Date();
 let newTime = new Date();
 time;
+
 newTime;
 
+let timeCount = 0;
+if (timeCount<100) {
+    timeCount=0
+}
+
 // refreshrate time ms
-setInterval(checkPosHeader_js, 0.01);
+setInterval(checkPosHeader_js, 100);
 
 // check header position
 function checkPosHeader_js() {
@@ -53,14 +59,20 @@ function checkPosHeader_js() {
 
 
     // if windowWidth >550 then 
-
+    if (timeCount>100) {
+        timeCount=null
+        // console.clear();
+        sessionStorage.clear();
+        
+    }
     if (screenWidth_js<550) {
 
         // if y smaller or equal to 220 or navClicked zIndex +1
         if (y>= 200 ) {
         
-            console.log("posBot");
-
+            // console.log("posBot");
+            timeCount++;
+            // console.log(timeCount);
             // adds atribute to header
             headerPos.classList.add("shade_1");
             // z+1
@@ -70,7 +82,9 @@ function checkPosHeader_js() {
 
             // z0
             // headerPos.style.zIndex="0";
-            console.log("posTop");
+            // console.log("posTop");
+            timeCount++;
+            // console.log(timeCount);
 
             // removes attribute from header
             headerPos.classList.remove("shade_1");
@@ -81,7 +95,10 @@ function checkPosHeader_js() {
         // if y smaller or equal to 120 or navClicked zIndex +1
         if (y>= 120 ) {
 
-            console.log("posBot");
+            // console.log("posBot");
+            timeCount++;
+            // console.log(timeCount);
+
 
             // adds atribute to header
             headerPos.classList.add("shade_1");
@@ -92,7 +109,9 @@ function checkPosHeader_js() {
 
             // z0
             // headerPos.style.zIndex="0";
-            console.log("posTop");
+            // console.log("posTop");
+            timeCount++;
+            // console.log(timeCount);
             
             // removes attribute from header
             headerPos.classList.remove("shade_1");

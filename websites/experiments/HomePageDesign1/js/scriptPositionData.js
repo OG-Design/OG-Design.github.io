@@ -44,7 +44,7 @@ newTime;
 
 
 // refreshrate time ms
-setInterval(checkPosHeader_js, 0.01);
+setInterval(checkPosHeader_js, 1);
 
 // check header position
 function checkPosHeader_js() {
@@ -126,7 +126,7 @@ function checkPosHeader_js() {
     newTime = null;
 
     sessionStorage.clear();
-    // console.clear();
+    console.clear();
 
 
 }
