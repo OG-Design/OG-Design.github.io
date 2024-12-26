@@ -618,7 +618,8 @@ header main button {
 header .headerTitle h1 {
     font-family: headerDefault;
     font-size: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 0rem;
+    margin-bottom: 7rem;
 }
 
 /* headerTitle --END */
