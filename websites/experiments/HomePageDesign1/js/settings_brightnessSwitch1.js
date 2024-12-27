@@ -25,6 +25,16 @@ function brightnessFunctionJs() {
 
     for (i=0; i <= brightness_bright_js.length; i++) {
         console.log("array item:",String(i));
+        
+        //select by querryAll per array i
+        //create id per i which is 
+        //different from eachother.
+
+        brightness_bright_js[i].id=i;
+        
+        document.getElementById(i).classList.add(brightness_dark_js[i]);
+        document.getElementById(i).classList.remove(i);
+        document.getElementById(i).
                 
     }
 
