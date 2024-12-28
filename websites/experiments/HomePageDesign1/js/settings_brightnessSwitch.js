@@ -70,7 +70,7 @@ function baseCol_1_bg() {
 
     // col_bg statements --START
     // baseCol1
-    if ( baseCol_1_bg_jsAll != null) {
+    if ( baseCol_1_bg_jsAll != "empty") {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < baseCol_1_bg_jsAll.length; i++ ) {
