@@ -39,11 +39,13 @@ function brightnessFunctionJs() {
     for (let i=0; i <= brightness_bright_jsQuery.length; i++) {
         console.log("array item:",String(i));
 
-        if ( brightness_bright_jsQuery[i] != 0) {
+        if ( brightness_bright_jsQuery[i].length==0 ) {
                 // if b <= brightness arrays item i .length; b++
-            for (let b = 0; b< brightness_bright_jsQuery[i].length; b++) {
+                let a = brightness_bright_jsQuery[i];
+            for (let b = 0; b< a.length; b++) {
                 console.log(b+"_item");
                 console.log(i);
+                
                 
                 // idCategory = 0;
 
