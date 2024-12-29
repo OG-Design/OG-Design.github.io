@@ -36,13 +36,13 @@ function brightnessFunctionJs() {
     
 
 
-    for (let i=0; i <= brightness_bright_jsQuery.length; i++) {
+    for (i=0; i <= brightness_bright_jsQuery.length; i++) {
         console.log("array item:",String(i));
 
-        if ( brightness_bright_jsQuery[i].length==0 ) {
+        if ( Array.from(brightness_bright_jsQuery).indexOf.length >=1 ) {
                 // if b <= brightness arrays item i .length; b++
-                let a = brightness_bright_jsQuery[i];
-            for (let b = 0; b< a.length; b++) {
+                
+            for (let b = 0; b< brightness_bright_jsQuery[i].length; b++) {
                 console.log(b+"_item");
                 console.log(i);
                 
@@ -71,10 +71,10 @@ function brightnessFunctionJs() {
                 // removes the tempid and adds saved previous id's
                 arrayItem.id=arrayItemTempIdSave;
 
-                console.log(brightness_dark_jsQuery[i]);
+                console.log(Array.from(brightness_bright_jsQuery).indexOf);
             }
         } 
-        if (brightness_dark_jsQuery[i] != null) {
+        if ( Array.from(brightness_dark_jsQuery).indexOf.length >1 ) {
             // if b <= brightness arrays item i .length; b++
             for (let b = 0; b< brightness_dark_jsQuery[i].length; b++) {
                 console.log(b+"_item");
