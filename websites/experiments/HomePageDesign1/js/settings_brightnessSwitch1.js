@@ -2,7 +2,6 @@ document.getElementById("brightnessSwitch_html").addEventListener("click", brigh
 
 // array elements
 let baseCol1_bg_bright_js = document.querySelectorAll(".baseCol_1_bg");
-
 let baseCol2_bg_bright_js = document.querySelectorAll(".baseCol_2_bg");
 
 let secoCol1_bg_bright_js = document.querySelectorAll(".secoCol_1_bg");
