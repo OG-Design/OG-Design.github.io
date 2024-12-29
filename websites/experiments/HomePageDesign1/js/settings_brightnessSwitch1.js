@@ -38,12 +38,19 @@ function brightnessFunctionJs() {
     for (i=0; i <= brightness_bright_jsQuery.length; i++) {
         console.log("array item:",String(i));
 
-        if ( Array.from(brightness_bright_jsQuery).indexOf.length >=1 ) {
+        let tempQuerySave = brightness_bright_jsQuery[i];
+
+        console.log(tempQuerySave);
+        console.log(brightness_bright_jsQuery[i]);
+
+
+        var selection = brightness_bright_jsQuery[i] == tempQuerySave;
+        if (selection ) {
                 // if b <= brightness arrays item i .length; b++
                 
             for (let b = 0; b< brightness_bright_jsQuery[i].length; b++) {
                 console.log(b+"_item");
-                console.log(i);
+                // console.log(i);
                 
                 
                 // idCategory = 0;
@@ -56,7 +63,7 @@ function brightnessFunctionJs() {
                 let arrayItemTempIdSave = arrayItem.getAttribute("id",[i][b]);
                 
                 // debug
-                console.log("original id: ", arrayItemTempIdSave);
+                // console.log("original id: ", arrayItemTempIdSave);
                 
                 // defines id as item's id + temp id
                 let arrayItemId = arrayItem.id=[arrayItem.id]+" "+i+col_Id+b;
@@ -70,10 +77,10 @@ function brightnessFunctionJs() {
                 // removes the tempid and adds saved previous id's
                 arrayItem.id=arrayItemTempIdSave;
 
-                console.log(Array.from(brightness_bright_jsQuery).indexOf);
+                // console.log(Array.from(brightness_bright_jsQuery).indexOf);
             }
         } 
-        if ( Array.from(brightness_dark_jsQuery).indexOf.length >1 ) {
+        else{
             // if b <= brightness arrays item i .length; b++
             for (let b = 0; b< brightness_dark_jsQuery[i].length; b++) {
                 console.log(b+"_item");
@@ -102,7 +109,7 @@ function brightnessFunctionJs() {
                 // removes the tempid and adds saved previous id's
                 arrayItem.id=arrayItemTempIdSave;
                 
-                console.log(brightness_dark_jsQuery[i]);
+                // console.log(brightness_dark_jsQuery[i]);
 
             }
         }

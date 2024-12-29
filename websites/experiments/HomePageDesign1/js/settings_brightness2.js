@@ -31,18 +31,18 @@ let brightness_dark_jsClass = ["baseCol_1_bgDark", "baseCol_2_bgDark", "secoCol_
 function brightnessFunctionJs() {
     for (let i = 0; i< brightness_bright_jsQuery.length; i++) {
         // debug
-        console.log("brightness_bright_jsQuery array gone through: ",i," amount of times");
+        console.log("brightness_bright_jsQuery array gone through: ",i+1," amount of times");
 
         for (let a = 0; a < brightness_bright_jsQuery[i].length; a++) {
 
             
-
+            if ( i[a]==empty ){
+                console.log("output");
+            }
            
             
-            // debug
-            if ( i[a]<=0) {
-                console.log("contains no arrayItems");
-            }
+            
+          
             
             console.log("arrayItem: ", a);
             
