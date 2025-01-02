@@ -28,6 +28,8 @@ screenWidth_js = window.innerWidth;
 let navButtonsClick = document.querySelector(".dotMenuButton_html",".logoButton_html").addEventListener("click", navClickedFunction);
 
 
+
+
 function navClickedFunction() {
 
 }
@@ -52,6 +54,10 @@ setInterval(checkPosHeader_js, 100);
 
 // check header position
 function checkPosHeader_js() {
+    let baseCol_1_bg_jsAll = document.querySelectorAll(".baseCol_1_bg");
+    let baseCol_1_bgDark_jsAll = document.querySelectorAll(".baseCol_1_bgDark");
+
+
     newTime = new Date();
 
     let x = rect.left + window.scrollX;
@@ -75,6 +81,8 @@ function checkPosHeader_js() {
             // console.log(timeCount);
             // adds atribute to header
             headerPos.classList.add("shade_1");
+            
+            
             // z+1
             // headerPos.style.zIndex="+1";
 
@@ -97,13 +105,17 @@ function checkPosHeader_js() {
 
             // console.log("posBot");
             timeCount++;
-            // console.log(timeCount);
-
-
-            // adds atribute to header
+            // console.log(timeCount);    
             headerPos.classList.add("shade_1");
+               
+            
+            
             // z+1
             // headerPos.style.zIndex="+1";
+
+            
+            
+
         
         } else {
 
@@ -128,6 +140,8 @@ function checkPosHeader_js() {
 
     }
         
+    
+
     
 
     newTime = null;

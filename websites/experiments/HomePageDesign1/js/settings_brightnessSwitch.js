@@ -1,7 +1,7 @@
-document.getElementById("brightnessSwitch_html").addEventListener("click", baseCol_1_bg)
+document.getElementById("brightnessSwitch_html").addEventListener("click", themeSwitch1)
 
 
-function baseCol_1_bg() {
+function themeSwitch1() {
     
     let logoImg_jsBright = document.getElementById("pageLogoImg").src="/img/SVG/OG_LOGO.svg";
     let logoImg_jsDark = document.getElementById("pageLogoImg").src="/img/SVG/OG_LOGO.svg";
@@ -57,8 +57,8 @@ function baseCol_1_bg() {
 
 
     // SHADOWS
-    let shade1_js = document.querySelectorAll(".shade_1");
-    let shade1_Dark_js = document.querySelectorAll(".shade_1Dark");
+    let shade1_js = document.querySelectorAll("shade_1");
+    let shade1Dark_js = document.querySelectorAll("shade_1Dark");
 
     // colorArrays
     // let colors_bg_jsAll = [baseCol_1_bg_jsAll, SecoCol_1_bg_jsAll];
@@ -68,15 +68,25 @@ function baseCol_1_bg() {
     let col_Id="col_id_";
     
 
+    
+
+
     // col_bg statements --START
     // baseCol1
     if ( baseCol_1_bg_jsAll != "empty") {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < baseCol_1_bg_jsAll.length; i++ ) {
-        
+    
+            // defines ele as ...
+            let ele = baseCol_1_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+            
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = baseCol_1_bg_jsAll[i].id=col_Id+ i;
+            
             let idGet = document.getElementById(idMake);
             
             // adds a class to each baseCol element using id
@@ -87,6 +97,11 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
+
+            // sets ele id as atr
+            ele.id=atr;
+
+            console.log(ele, atr);
         }
         
 
@@ -99,6 +114,12 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < baseCol_1_bgDark_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = baseCol_1_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+            
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = baseCol_1_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -111,7 +132,9 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
-
+            
+            // sets ele id as atr
+            ele.id=atr;
             
         }
 
@@ -125,6 +148,12 @@ function baseCol_1_bg() {
             // for loop to assign id to each element, aswell as giving it a different class.
             for( i = 0 ; i < baseCol_2_bg_jsAll.length; i++ ) {
             
+                // defines ele as ...
+                let ele = baseCol_2_bg_jsAll[i];
+                // saves atr as id atribute
+                let atr = ele.getAttribute("id");
+            
+
                 // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
                 let idMake = baseCol_2_bg_jsAll[i].id=col_Id+ i;
                 let idGet = document.getElementById(idMake);
@@ -137,6 +166,9 @@ function baseCol_1_bg() {
                 
                 // removes id
                 idGet.removeAttribute("id");
+
+                // sets ele id as atr
+                ele.id=atr;
             }
     
     
@@ -145,10 +177,17 @@ function baseCol_1_bg() {
         // baseCol2Dark
         if (baseCol_2_bgDark_jsAll != null) {
     
-    
+            
+
+
             // for loop to assign id to each element, aswell as giving it a different class.
             for( i = 0 ; i < baseCol_2_bgDark_jsAll.length; i++ ) {
             
+                // defines ele as ...
+                let ele = baseCol_2_bgDark_jsAll[i];
+                // saves atr as id atribute
+                let atr = ele.getAttribute("id");
+
                 // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
                 let idMake = baseCol_2_bgDark_jsAll[i].id=col_Id+ i;
                 let idGet = document.getElementById(idMake);
@@ -162,7 +201,8 @@ function baseCol_1_bg() {
                 // removes id
                 idGet.removeAttribute("id");
     
-                
+                // sets ele id as atr
+                ele.id=atr;
             }
     
     
@@ -175,6 +215,11 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < secoCol_1_bg_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = secoCol_1_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = secoCol_1_bg_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -187,6 +232,9 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -199,6 +247,12 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < secoCol_1_bgDark_jsAll.length; i++ ) {
         
+
+            // defines ele as ...
+            let ele = secoCol_1_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = secoCol_1_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -212,7 +266,8 @@ function baseCol_1_bg() {
             // removes id
             idGet.removeAttribute("id");
 
-            
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -220,11 +275,16 @@ function baseCol_1_bg() {
 
 
     // secoCol2
-    if ( secoCol_1_bg_jsAll != null) {
+    if ( secoCol_2_bg_jsAll != null) {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < secoCol_2_bg_jsAll.length; i++ ) {
-        
+            
+            // defines ele as ...
+            let ele = secoCol_2_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = secoCol_2_bg_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -237,6 +297,9 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -248,7 +311,12 @@ function baseCol_1_bg() {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < secoCol_2_bgDark_jsAll.length; i++ ) {
-        
+            
+            // defines ele as ...
+            let ele = secoCol_2_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = secoCol_2_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -262,7 +330,8 @@ function baseCol_1_bg() {
             // removes id
             idGet.removeAttribute("id");
 
-            
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -273,7 +342,13 @@ function baseCol_1_bg() {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1_bg_jsAll.length; i++ ) {
-        
+            
+
+            // defines ele as ...
+            let ele = keysCol_1_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1_bg_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -286,6 +361,9 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -298,6 +376,11 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1_bgDark_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = keysCol_1_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -311,7 +394,8 @@ function baseCol_1_bg() {
             // removes id
             idGet.removeAttribute("id");
 
-            
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -326,6 +410,11 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1_bg_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = keysCol_1_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1_bg_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -338,6 +427,9 @@ function baseCol_1_bg() {
             
             // removes id
             idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -350,6 +442,12 @@ function baseCol_1_bg() {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1_bgDark_jsAll.length; i++ ) {
         
+
+            // defines ele as ...
+            let ele = keysCol_1_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -363,7 +461,8 @@ function baseCol_1_bg() {
             // removes id
             idGet.removeAttribute("id");
 
-            
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -378,6 +477,11 @@ if ( baseCol_1_jsAll != null) {
 
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < baseCol_1_jsAll.length; i++ ) {
+
+        // defines ele as ...
+        let ele = baseCol_1_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
     
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = baseCol_1_jsAll[i].id=col_Id+ i;
@@ -391,6 +495,9 @@ if ( baseCol_1_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
 
 
@@ -401,6 +508,11 @@ if ( baseCol_1Dark_jsAll != null) {
 
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < baseCol_1Dark_jsAll.length; i++ ) {
+
+        // defines ele as ...
+        let ele = baseCol_1Dark_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
     
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = baseCol_1Dark_jsAll[i].id=col_Id+ i;
@@ -414,6 +526,9 @@ if ( baseCol_1Dark_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
 
 
@@ -427,6 +542,11 @@ if ( secoCol_1_jsAll != null) {
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < secoCol_1_jsAll.length; i++ ) {
     
+        // defines ele as ...
+        let ele = secoCol_1_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
+        
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = secoCol_1_jsAll[i].id=col_Id+ i;
         let idGet = document.getElementById(idMake);
@@ -439,6 +559,9 @@ if ( secoCol_1_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
 
 
@@ -450,6 +573,13 @@ if ( secoCol_1Dark_jsAll != null) {
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < secoCol_1Dark_jsAll.length; i++ ) {
     
+        // defines ele as ...
+        let ele = secoCol_1Dark_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
+
+
+
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = secoCol_1Dark_jsAll[i].id=col_Id+ i;
         let idGet = document.getElementById(idMake);
@@ -462,6 +592,9 @@ if ( secoCol_1Dark_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
 
 
@@ -479,6 +612,13 @@ if ( secoCol_2_jsAll != null) {
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < secoCol_2_jsAll.length; i++ ) {
     
+        // defines ele as ...
+        let ele = secoCol_2_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
+        
+
+
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = secoCol_2_jsAll[i].id=col_Id+ i;
         let idGet = document.getElementById(idMake);
@@ -491,7 +631,12 @@ if ( secoCol_2_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
+
 
 
 }
@@ -501,7 +646,12 @@ if ( secoCol_2Dark_jsAll != null) {
 
     // for loop to assign id to each element, aswell as giving it a different class.
     for( i = 0 ; i < secoCol_2Dark_jsAll.length; i++ ) {
-    
+
+        // defines ele as ...
+        let ele = secoCol_2Dark_jsAll[i];
+        // saves atr as id atribute
+        let atr = ele.getAttribute("id");
+
         // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
         let idMake = secoCol_2Dark_jsAll[i].id=col_Id+ i;
         let idGet = document.getElementById(idMake);
@@ -514,6 +664,9 @@ if ( secoCol_2Dark_jsAll != null) {
         
         // removes id
         idGet.removeAttribute("id");
+    
+        // sets ele id as atr
+        ele.id=atr;
     }
 
 
@@ -527,6 +680,11 @@ if ( secoCol_2Dark_jsAll != null) {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = keysCol_1_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -544,6 +702,9 @@ if ( secoCol_2Dark_jsAll != null) {
 
             // imgBrightMode
             logoImg_js.src="/img/SVG/OG_LOGO.svg";
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
 
@@ -555,6 +716,13 @@ if ( secoCol_2Dark_jsAll != null) {
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < keysCol_1Dark_jsAll.length; i++ ) {
         
+            // defines ele as ...
+            let ele = keysCol_1Dark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
+
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = keysCol_1Dark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
@@ -571,6 +739,11 @@ if ( secoCol_2Dark_jsAll != null) {
 
             // imgDarkMode
             logoImg_js.src="/img/SVG/OG_LOGO_black.svg";
+        
+
+            // sets ele id as atr
+            ele.id=atr;
+
         }
 
 
@@ -583,52 +756,64 @@ if ( secoCol_2Dark_jsAll != null) {
 
         // for loop to assign id to each element, aswell as giving it a different class.
         for( i = 0 ; i < shade1_js.length; i++ ) {
-        
+            
+            // defines ele as ...
+            let ele = shade1_js[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
             let idMake = shade1_js[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
             
             // adds a class to each baseCol element using id
-            idGet.classList.add("shade1_Dark_js");
+            idGet.classList.add("shade_1Dark");
 
             // removes a class from each baseCol element using id           
-            idGet.classList.remove("shade1_js");
+            idGet.classList.remove("shade1");
             
             // removes id
             idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
         
 
     }
 
     // baseCol1Dark
-    if (shade1_Dark_js != null) {
+    if (shade1Dark_js != null) {
 
 
         // for loop to assign id to each element, aswell as giving it a different class.
-        for( i = 0 ; i < shade1_Dark_js.length; i++ ) {
+        for( i = 0 ; i < shade1Dark_js.length; i++ ) {
         
+
+            // defines ele as ...
+            let ele = shade1Dark_js[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
-            let idMake = shade1_Dark_js[i].id=col_Id+ i;
+            let idMake = shade1Dark_js[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
 
             // adds a class to each baseCol element using id
-            idGet.classList.add("shade1_js");
+            idGet.classList.add(shade1_js);
 
             // removes a class from each baseCol element using id           
-            idGet.classList.remove("shade1_Dark_js");
+            idGet.classList.remove(shade1_Dark_js);
             
             // removes id
             idGet.removeAttribute("id");   
+        
+            // sets ele id as atr
+            ele.id=atr;
         }
 
         
     }
-
-    
-    
-
-    
 
 
 
