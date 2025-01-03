@@ -101,7 +101,8 @@ function themeSwitch1() {
             // sets ele id as atr
             ele.id=atr;
 
-            console.log(ele, atr);
+            // debug
+            // console.log(ele, atr);
         }
         
 

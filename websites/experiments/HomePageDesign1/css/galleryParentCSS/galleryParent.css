@@ -45,11 +45,53 @@
     align-items: center;
 
     /* debug */
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .galleryContentParent {
 
+    width: 90%;
+    height: fit-content;
+    display: grid;
+
     /* grid setup auto adjust scale and pos to img res / aspect */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: .1rem;
+
+    /* debug */
+    background-color: aqua;
+
+
+}
+
+.imageContentParent {
+    width: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* debug */
+    background-color: aliceblue;
+    
+    
+    margin: 0;
+    padding: 0;
+}
+
+.galleryContentParent picture {
+    width: inherit;
+
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.galleryContentParent img {
+    width: inherit;
+    margin: 0;
 }

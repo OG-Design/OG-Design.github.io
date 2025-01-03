@@ -32,14 +32,14 @@ html, body {
 .defTitle_font {
     font-family: defaultFontBold;
     font-weight: 800;
-    font-size: 3rem;
+    
 }
 
 .defPara_font {
     font-family: defaultFont;
     font-weight: 200;
 
-    font-size: 2rem;
+    
 }
 
 .defIndicator_font {
@@ -48,6 +48,20 @@ html, body {
     font-size: 1rem;
 }
 
+.defFontSize0 {
+    font-size: 2rem;
+}
+
+.defFontSize1 {
+    font-size: 1rem;
+}
+.defFontSize2 {
+    font-size: .5rem;
+}
+
+.defTitle_fontSize0 {
+    font-size: 3rem;
+}
 
 @media screen and (max-width:550px) {
     .defTitle_font {
