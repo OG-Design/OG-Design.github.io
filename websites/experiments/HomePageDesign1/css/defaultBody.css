@@ -37,7 +37,7 @@ html, body {
 
 .defPara_font {
     font-family: defaultFont;
-    font-weight: 200;
+    font-weight: 400;
 
     
 }
@@ -61,6 +61,13 @@ html, body {
 
 .defTitle_fontSize0 {
     font-size: 3rem;
+}
+
+.marginSize0 {
+    margin: 1rem;
+}
+.paddingSize0 {
+    padding: 1rem;
 }
 
 @media screen and (max-width:550px) {

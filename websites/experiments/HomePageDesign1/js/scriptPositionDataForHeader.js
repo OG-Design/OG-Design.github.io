@@ -54,13 +54,17 @@ setInterval(checkPosHeader_js, 100);
 
 // check header position
 function checkPosHeader_js() {
-    let baseCol_1_bg_jsAll = document.querySelectorAll(".baseCol_1_bg");
-    let baseCol_1_bgDark_jsAll = document.querySelectorAll(".baseCol_1_bgDark");
+    // let baseCol_1_bg_jsAll = document.querySelectorAll(".baseCol_1_bg");
+    // let baseCol_1_bgDark_jsAll = document.querySelectorAll(".baseCol_1_bgDark");
 
 
     newTime = new Date();
 
+    // not used in this case
     let x = rect.left + window.scrollX;
+
+    // defines y as rect.left + scroll in px, this produces a value 
+    // equal to the windows scroll amount
     let y = rect.left + window.scrollY;
 
 
