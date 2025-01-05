@@ -18,7 +18,7 @@
    
     <!-- galleryParent css -->
     <link rel="stylesheet" href="../css/galleryParentCSS/galleryParent.css">
-   
+    <link rel="stylesheet" href="../css/galleryParentCSS/background_img_slide.css">
    
    
     <!-- js --> 
@@ -28,7 +28,10 @@
     <script src="../js/scriptPositionDataForHeader.js" defer></script>
     <!-- <script src="../js/settings_brightnessSwitch1.js" defer></script> -->
     <!-- <script src="../js/settings_brightness2.js" defer></script> -->
+    
+    <!-- gallery js -->
     <script src="../js/galleryArrays.js" defer></script>
+    <script src="../js/gallery_scripts/background_img_slide.js"></script>
 
 </head>
 
@@ -43,11 +46,13 @@
        
         <!-- main header elements --START -->
         <main class="headerMain">
-            <!-- logo menu -->
+            <!-- logo link -->
             <div class="headerLogo headerLogo_animation_css">
-                <button class="logoButton_html buttonPreset">
-                    <img id="pageLogoImg" class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
-                </button>
+                <a href="../index.html">
+                    <button class="logoButton_html buttonPreset">
+                        <img id="pageLogoImg" class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
+                    </button>
+                </a>
                 
             </div>
 
@@ -68,71 +73,68 @@
 
 
         <!-- headerNav --START  -->
-        <!-- hidden by js click logo to open and close -->
-        <nav class="headerNav_html headerNav_logoMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
-            <h1 class="baseCol_1">Directions</h1>
-            <ul class="secoCol_1_bg shade_2 borderRadius_preset">
-                
-                <!-- Home -->
-                <li>
-                    <a href="../index.html">
-                        <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                            <p class="secoCol_1">Home</p>
-                        </button>
-                    </a>
-                </li>
-                
-                <!-- About -->
-                <li>
-                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p class="secoCol_1">About</p>
-                    </button>
-                </li>
-
-                <!-- Gallery Portfolio -->
-                <li>
-                    <button class="buttonPreset keysCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p class="keysCol_1">Gallery Portfolio</p>
-                    </button>
-                </li>
-
-                <!-- Web Portfolio -->
-                <li>
-                    <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
-                        <p class="secoCol_1">Web Portfolio</p>
-                    </button>
-                </li>
-                
-            </ul>
-        </nav>
-
-        
-
-
         <nav class="headerNav_html headerNav_dotMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom">
-            
-            <h1 class="baseCol_1">Settings</h1>
-            <ul class="secoCol_1_bg shade_2 borderRadius_preset">
+            <nav class="headerNav_html baseCol_1_bg borderRadius_preset">
+                <h1 class="baseCol_1">Directions</h1>
+                <ul class="secoCol_1_bg shade_2 borderRadius_preset">
+                    
+                    <!-- Home -->
+                    <li>
+                        <a href="../index.html">
+                            <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
+                                <p class="secoCol_1">Home</p>
+                            </button>
+                        </a>
+                    </li>
+                    
+                    <!-- About -->
+                    <li>
+                        <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
+                            <p class="secoCol_1">About</p>
+                        </button>
+                    </li>
+
+                    <!-- Gallery Portfolio -->
+                    <li>
+                        <button class="buttonPreset keysCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
+                            <p class="keysCol_1">Gallery Portfolio</p>
+                        </button>
+                    </li>
+
+                    <!-- Web Portfolio -->
+                    <li>
+                        <button class="buttonPreset secoCol_1_bg borderRadius_preset shadeHover_1 itemIndication">
+                            <p class="secoCol_1">Web Portfolio</p>
+                        </button>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <nav class="headerNav_html baseCol_1_bg borderRadius_presetBottom">
                 
-                <!-- Theme -->
-                <li>
-                    <h2 class="secoCol_1">Theme</h2>
-                    <label for="brightnessSwitch_html" class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
-                        <!-- <p class="secoCol_2">Theme</p> -->
-                        
-                        <div class="themeLabel_row   borderRadius_preset">
+                <h1 class="baseCol_1">Settings</h1>
+                <ul class="secoCol_1_bg shade_2 borderRadius_preset">
+                    
+                    <!-- Theme -->
+                    <li>
+                        <h2 class="secoCol_1">Theme</h2>
+                        <label for="brightnessSwitch_html" class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
+                            <!-- <p class="secoCol_2">Theme</p> -->
                             
-                            <p class="baseCol_1">brightness:</p>
-                            <p class="smallp secoCol_1"></p>
+                            <div class="themeLabel_row   borderRadius_preset">
+                                
+                                <p class="baseCol_1">brightness:</p>
+                                <p class="smallp secoCol_1"></p>
 
-                            <button type="submit" name="themeLabel" id="brightnessSwitch_html" class="buttonPreset secoCol_1_bg borderRadius_preset"><h2>Change</h2></button>
+                                <button type="submit" name="themeLabel" id="brightnessSwitch_html" class="buttonPreset secoCol_1_bg borderRadius_preset"><h2>Change</h2></button>
+                                
+                            </div>
                             
-                        </div>
-                        
-                    </label>
-                </li>
-            </ul>
+                        </label>
+                    </li>
+                </ul>
 
+            </nav>
         </nav>
         <!-- headerNav --END  -->
 
@@ -182,6 +184,9 @@
     <!-- main body --START -->
     <!--                        \ -->
     <main class="mainBody baseCol_1_bg">
+        <div class="background_img_slide">
+            
+        </div>
         <!-- intro home --START -->
         <div class="simpleBoxes_column baseCol_2_bg borderRadius_preset">
             <!-- title --START -->
@@ -227,7 +232,7 @@
                 <div class="galleryTitleParent marginSize0">
                     <h1 class="baseCol_1 defTitle_font">3D</h1>
                 </div>
-                <div class="galleryContentParent secoCol_1_bg paddingSize0 borderRadius_preset">
+                <div id="galleyContentParent_3d" class="galleryContentParent secoCol_1_bg paddingSize0 borderRadius_preset" >
                     <!-- img --START -->
                     <div class="imageContentParent keysCol_1_bg borderRadius_preset">
                         <h1 class="secoCol_1 defPara_font defFontSize1">Dandelion</h1>

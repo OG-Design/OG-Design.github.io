@@ -3,7 +3,9 @@
 .baseCol_1_bg {
 
     /* color */
-    background-color: hsl(180, 5%, 75%);
+    background-color: hsl(180, 5%, 75%, .5);
+
+    backdrop-filter: blur(10px);
     
 }
 
