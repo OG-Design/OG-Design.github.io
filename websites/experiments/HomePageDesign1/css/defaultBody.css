@@ -35,6 +35,11 @@ html, body {
     
 }
 
+.defSubTitle_font {
+    font-family: defaultFontBold;
+    font-weight: 500;
+}
+
 .defPara_font {
     font-family: defaultFont;
     font-weight: 400;
@@ -61,6 +66,9 @@ html, body {
 
 .defTitle_fontSize0 {
     font-size: 3rem;
+}
+.defSubTitle_fontSize0 {
+    font-size: 1rem;
 }
 
 .marginSize0 {

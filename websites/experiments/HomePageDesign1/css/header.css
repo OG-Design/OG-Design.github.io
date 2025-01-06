@@ -188,6 +188,10 @@ header .headerTitle h1 {
 /* headerTitle --END */
 
 /* header nav --START */
+.headerNav_overflow {
+    height: 10rem;
+    overflow-y: scroll;
+}
 /* logo nav --START */
 header .headerNav_logoMenu_html {
     /* shape */
@@ -219,7 +223,7 @@ header .headerNav_logoMenu_html {
 /* dotMenu nav --START */
 header .headerNav_dotMenu_html {
     /* shape */
-    height: fit-content;
+    height: 20rem;
     min-width: 1em;
     max-width: fit-content;
 

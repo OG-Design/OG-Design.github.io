@@ -52,9 +52,10 @@
 
 .simpleBoxes_row_text {
     /* shape */
+    min-width: 1rem;
     width: fit-content;
     height: fit-content;
-
+    max-width: 100%;
     
     
     /* position child */
@@ -66,14 +67,38 @@
     align-items: start;
 
     padding: 0rem;
+    flex-wrap: wrap;
 }
 
 .simpleBoxes_padding {
     padding: 1rem;
 }
 
+.simpleBoxes_paddingRight {
+    padding-right: 1rem;
+}
+
+
+.simpleBoxes_padding1 {
+    padding: 0.1rem;
+}
+
+
+
 .simpleBoxes_padding_text {
     padding-right: .5rem;
+}
+
+.simpleBoxes_margin {
+    margin: 1rem;
+}
+
+.simpleBoxes_margin1 {
+    margin: .1rem;
+}
+
+.simpleBoxes_marginBottom {
+    margin-top: 1rem;
 }
 
 .simpleBoxes_pageIndicator {
@@ -88,6 +113,20 @@
     z-index: 0; */
 
 }
+
+.simpleBoxes_ulStyleRemove {
+    list-style: none;
+    
+    margin: 0;
+
+    min-width: 1rem;
+}
+
+.simpleBoxes_ulStyleDash {
+    list-style-type: disc;
+}
+
+
 
 
 /* mobile integration */
