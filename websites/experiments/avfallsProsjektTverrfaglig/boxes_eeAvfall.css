@@ -1,0 +1,29 @@
+.boxes_ee_setWidth_flex_row {
+    /* shape */
+    width: 100rem;
+    height: fit-content;
+
+    /* position child */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.boxes_ee_setWidth_flex_column {
+    /* shape */
+    width: 100rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* debug */
+    /* background-color: aqua; */
+}
+
+.boxes_ee_imgSetWidth {
+    /* shape */
+    width: 100px;
+    height: 100px;
+}
