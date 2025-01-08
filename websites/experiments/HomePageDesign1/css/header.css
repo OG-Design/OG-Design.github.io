@@ -191,6 +191,7 @@ header .headerTitle h1 {
 .headerNav_overflow {
     height: 10rem;
     overflow-y: scroll;
+    scrollbar-width: none;
 }
 /* logo nav --START */
 header .headerNav_logoMenu_html {
@@ -512,7 +513,7 @@ header .headerMain {
 
 /* headerLogo animation --START */
 .headerLogo_animation_css {
-    animation: headerLogoClickHere 2s ease-in-out infinite;
+    animation: headerLogoClickHere 5s ease-in-out infinite;
 }
 
 @keyframes headerLogoClickHere {
