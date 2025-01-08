@@ -16,7 +16,7 @@
 @media screen and (max-width: 500px) {
     
     .borderRadius_preset {
-        border-radius: 0;
+        border-radius: 1rem;
         margin: 0em;
     
         /* overflow: hidden; */
