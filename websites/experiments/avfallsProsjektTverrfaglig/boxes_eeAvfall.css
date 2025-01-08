@@ -29,3 +29,51 @@
     width: 250px;
     /* height: 100px; */
 }
+
+.ee_Leftoffset {
+    transform: translate(-1rem);
+}
+
+ul li p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+ 
+    .boxes_ee_setWidth_flex_row {
+        /* shape */
+        width: inherit;
+        height: fit-content;
+    
+        /* position child */
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boxes_ee_setWidth_flex_column {
+        /* shape */
+        width: 90%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        /* debug */
+        /* background-color: aqua; */
+    }
+    
+    .ee_imgSetWidth {
+        /* shape */
+        width: 200px;
+        /* height: 100px; */
+    }
+    
+    .ee_Leftoffset {
+        transform: translate(-1rem);
+    }
+
+}

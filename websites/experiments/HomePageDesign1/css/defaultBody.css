@@ -68,7 +68,7 @@ html, body {
     font-size: 3rem;
 }
 .defSubTitle_fontSize0 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .marginSize0 {
@@ -78,11 +78,9 @@ html, body {
     padding: 1rem;
 }
 
-@media screen and (max-width:550px) {
-    .defTitle_font {
-        font-family: defaultFont;
-        font-weight: 800;
-        font-size: 2rem;
+@media screen and (max-width:600px) {
+    .defTitle_fontSize0 {
+        font-size: 1rem;
     }
     
 }

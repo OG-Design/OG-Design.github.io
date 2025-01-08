@@ -78,6 +78,9 @@
     padding-right: 1rem;
 }
 
+.simpleBoxes_paddingLeft_null {
+    padding-left: 0;
+}
 
 .simpleBoxes_padding1 {
     padding: 0.1rem;
