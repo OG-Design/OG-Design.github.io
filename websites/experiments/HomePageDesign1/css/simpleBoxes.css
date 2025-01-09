@@ -116,6 +116,9 @@
 .simpleBoxes_marginBottom {
     margin-bottom: 1rem;
 }
+.simpleBoxes_marginBottom1 {
+    margin-bottom: 5rem;
+}
 
 .simpleBoxes_pageIndicator {
     /* shape */
