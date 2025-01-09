@@ -30,6 +30,8 @@
 }
 
 .shade_overflowTop {
-    clip-path: inset(0px -100px -100px -100px);
+    
+    clip-path:  inset(2px -100px -100px -100px) ;
+    
 }
 

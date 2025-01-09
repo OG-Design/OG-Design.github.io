@@ -83,8 +83,35 @@ html, body {
 }
 
 @media screen and (max-width:600px) {
-    .defTitle_fontSize0 {
+    
+
+    .defFontSize0 {
         font-size: 1rem;
+    }
+    
+    .defFontSize1 {
+        font-size: .75rem;
+    }
+    .defFontSize2 {
+        font-size: .5rem;
+    }
+    
+    .defTitle_fontSize0 {
+        font-size: 1.25rem;
+    }
+    
+    .defTitle_fontSize-1 {
+        font-size: 1.5rem;
+    }
+    .defSubTitle_fontSize0 {
+        font-size: 2rem;
+    }
+    
+    .marginSize0 {
+        margin: 1rem;
+    }
+    .paddingSize0 {
+        padding: 1rem;
     }
     
 }

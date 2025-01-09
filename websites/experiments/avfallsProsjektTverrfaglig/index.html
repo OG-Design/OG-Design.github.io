@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../HomePageDesign1/css/main.css">
     <link rel="stylesheet" href="../HomePageDesign1/css/simpleBoxes.css">
     <link rel="stylesheet" href="boxes_eeAvfall.css">
+    <link rel="stylesheet" href="listImgScale_eeAvfall.css">
 
     <!-- js -->
     <script src="../HomePageDesign1/js/navScript.js" defer></script>
@@ -32,7 +33,7 @@
     <header id="headerId" class="baseCol_1_bg">
        
         <!-- main header elements --START -->
-        <main class="headerMain">
+        <div class="headerMain">
             <!-- logo link -->
             <div class="headerLogo headerLogo_animation_css">
                 <a href="/index.html">
@@ -44,7 +45,7 @@
             </div>
 
             <!-- title -->
-            <div class="headerTitle">
+            <div class="headerTitle headerAlt_font">
                 <h1 class="baseCol_1">EE avfall</h1>
             </div>
 
@@ -55,7 +56,7 @@
                     <h2 class="baseCol_1">...</h2>
                 </button>
             </div>
-        </main>
+        </div>
         <!-- main header elements --END -->
 
 
@@ -458,7 +459,7 @@
 
                 <!-- paragraph --START -->
                 <ul class="simpleBoxes_ulStyleRemove boxes_ee_setWidth_flex_column ee_Leftoffset">
-                    <p class="baseCol_1 simpleBoxes_column defPara_font defFontSize0">
+                    <p class="baseCol_1 simpleBoxes_column defPara_font defFontSize0 simpleBoxes_padding">
                         Alt EE avfall som leveres til en gjennvindings stasjon bli tatt fra hverandre og seperert fra hverandre, de blir etter dette sortert og håndtert som de ulike «grunnmaterialene» skal. 
                     </p>
 
@@ -481,7 +482,35 @@
                             </li>
 
                             <li>
-                                <p class="baseCol_1 defPara_font">Metaller</p>
+                                <p class="defPara_font">Metaller</p>
+                                <ul class="simpleBoxes_row simpleBoxes_ulStyleRemove">
+                                    <li class="simpleBoxes_margin1 secoCol_3_bg borderRadius_presetBottom shade_1 shade_overflowTop">
+                                        <p class="baseCol_1 defTitle_font secoCol_2_bg borderRadius_presetBottom simpleBoxes_padding simpleBoxes_marginNull simpleBoxes_paddingTop">Jern</p>
+                                        <img src="/img/materialPreviews/Metals/Iron2K.png" alt="bilde av en fysisk nøyaktig rekreasjon av metall: Jern">
+                                    </li>
+
+                                    <li class="simpleBoxes_margin1 secoCol_3_bg borderRadius_presetBottom shade_1 shade_overflowTop">
+                                        <p class="baseCol_1 defTitle_font secoCol_2_bg borderRadius_presetBottom simpleBoxes_padding simpleBoxes_marginNull simpleBoxes_paddingTop">Aluminium</p>
+                                        <img src="/img/materialPreviews/Metals/Aluminium2K.png" alt="bilde av en fysisk nøyaktig rekreasjon av metall: Aluminium">
+                                    </li>
+
+                                    <li class="simpleBoxes_margin1 secoCol_3_bg borderRadius_presetBottom shade_1 shade_overflowTop">
+                                        <p class="baseCol_1 defTitle_font secoCol_2_bg borderRadius_presetBottom simpleBoxes_padding simpleBoxes_marginNull simpleBoxes_paddingTop">Sølv</p>
+                                        <img src="/img/materialPreviews/Metals/Silver2K.png" alt="bilde av en fysisk nøyaktig rekreasjon av metall: Sølv">
+                                    </li>
+
+                                    <li class="simpleBoxes_margin1 secoCol_3_bg borderRadius_presetBottom shade_1 shade_overflowTop">
+
+                                        <p class="baseCol_1 defTitle_font secoCol_2_bg borderRadius_presetBottom simpleBoxes_padding simpleBoxes_marginNull simpleBoxes_paddingTop">Kobber</p>
+                                        <img src="/img/materialPreviews/Metals/Copper2K.png" alt="bilde av en fysisk nøyaktig rekreasjon av metall: Kobber">
+                                    </li>
+
+                                    <li class="simpleBoxes_margin1 secoCol_3_bg borderRadius_presetBottom shade_1 shade_overflowTop">
+                                        <p class="baseCol_1 defTitle_font secoCol_2_bg borderRadius_presetBottom simpleBoxes_padding simpleBoxes_marginNull simpleBoxes_paddingTop">Gull</p>
+                                        <img src="/img/materialPreviews/Metals/Gold2K.png" alt="bilde av en fysisk nøyaktig rekreasjon av metall: Gull">
+                                    </li>
+
+                                </ul>
                             </li>
 
                             <li>
@@ -506,7 +535,7 @@
                 <ul class="simpleBoxes_ulStyleRemove boxes_ee_setWidth_flex_column ee_Leftoffset">
                     <li class="simpleBoxes_column">
                         <p class="baseCol_1 simpleBoxes_column defPara_font defFontSize0">
-                            Det aller meste (90%) av EE avfall blir gjennvinnet, men dette er ikke gratis, avfallet blir håndtert manuelt fordi det er så mange forskjellige typer materiell i avfallet. 
+                            Det aller meste (90%) av EE avfall blir gjennvinnet, men dette er krevende, avfallet blir håndtert manuelt fordi det er så mange forskjellige typer materiell i avfallet. 
                         </p>
                     </li>
 
@@ -569,35 +598,43 @@
                 <!-- spørsmål liste --START -->
                 <li class="boxes_ee_setWidth_flex_column borderRadius_preset secoCol_1_bg simpleBoxes_padding simpleBoxes_margin1">
                     <!-- title -->
-                    <p class="baseCol_1 defTitle_font defTitle_fontSize-1">Vanlige materialer som finnes i EE avfall:</p>
+                    <p class="baseCol_1 defTitle_font defTitle_fontSize-1">Få litt perspektiv!</p>
                     
                     <!-- container for li and img -->
                     <div class="simpleBoxes_row secoCol_2_bg simpleBoxes_padding borderRadius_preset">
                         
-                        <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset">
-                            <li>
-                                <label for="question1">
-                                    <p class="baseCol_1 defPara_font">Hvor mye tilsvarer 28kg per person totalt når Norges befolkning var CA 5,5 millioner i 2022?</p>
-                                </label>
-                                
-                                <input class="secoCol_1_bg borderRadius_preset" type="number" name="" id="question1" placeholder="oppgi i tonn">
-                            </li>
+                        <form action="" id="quizForm1">
 
-                            <li>
-                                <p class="baseCol_1 defPara_font">Metaller</p>
-                            </li>
+                            <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset">
+                                <li>
+                                    <label for="questionInput1">
+                                        <p class="baseCol_1 defPara_font">Hvor mye tilsvarer 28kg per person totalt når Norges befolkning var CA 5,5 millioner i 2022?</p>
+                                    </label>
+                                    
+                                    <input id="questionInput1" class="secoCol_1_bg borderRadius_preset" type="number" name="" id="questionInput1" placeholder="oppgi svar i tonn" required>
+                                </li>
 
-                            <li>
-                                <p class="baseCol_1 defPara_font">Glass</p>
-                            </li>
+                                <li class="simpleBoxes_marginBottom">
+                                    <label for="questionInput2">
+                                        <p class="baseCol_1 defPara_font">Hvor mye av den totale mengden avfall blir ikke resirkulert?</p>
+                                    </label>
+                                    
+                                    <input id="questionInput2" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i tonn" required>
+                                </li>
 
-                            <li>
-                                <p class="baseCol_1 defPara_font">Kretskort</p>
-                            </li>
+                                <li>
+                                    <label for="questionInput4">
+                                        <p class="baseCol_1 defPara_font simpleBoxes_margin1">Hvor mye kastet du i fjor av EE avfall?</p> <p class="defIndicator_font secoCol_2 simpleBoxes_margin1">ps:"om du bruker desimal, bruk punktum"</p>
+                                    </label>
+                                    
+                                    <input id="questionInput4" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
+                                </li>
 
-                        </ol>
-                        
-                        <img class="borderRadius_preset" src="" alt="bilde av materialer">
+                            </ol>
+                            
+                            <img class="borderRadius_preset" src="" alt="bilde av materialer">
+
+                        </form>
 
                     </div>
                 </li>

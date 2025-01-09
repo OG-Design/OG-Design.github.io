@@ -24,6 +24,7 @@
     /* position child */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     /* alignment */
     justify-content: space-evenly;
@@ -74,6 +75,10 @@
     padding: 1rem;
 }
 
+.simpleBoxes_paddingTop {
+    padding-top: 1rem;
+}
+
 .simpleBoxes_paddingRight {
     padding-right: 1rem;
 }
@@ -92,12 +97,16 @@
     padding-right: .5rem;
 }
 
+.simpleBoxes_marginNull {
+    margin: 0;
+}
+
 .simpleBoxes_margin {
     margin: 1rem;
 }
 
 .simpleBoxes_margin1 {
-    margin: .1rem;
+    margin: .5rem;
 }
 
 .simpleBoxes_margin_top2 {
@@ -105,7 +114,7 @@
 }
 
 .simpleBoxes_marginBottom {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .simpleBoxes_pageIndicator {
@@ -172,6 +181,10 @@
         
     
     }
+
+    .simpleBoxes_overflow_visible {
+        overflow: visible;
+    }
     
     .simpleBoxes_column_text {
         /* shape */
@@ -217,5 +230,5 @@
         padding-right: .5rem;
     }
 
-
+    
 }

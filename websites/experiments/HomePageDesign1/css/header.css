@@ -151,7 +151,7 @@ label h2 {
 }
 
 /* all header main buttons bg */
-header main button {
+header .headerMain button {
     background-color: hsla(0, 100%, 100%, 0);
 }
 
@@ -182,6 +182,11 @@ header main button {
 /* header title font */
 header .headerTitle h1 {
     font-family: headerDefault;
+    font-size: 3.5rem;
+}
+
+header .headerAlt_font h1 {
+    font-family: headerAlt;
     font-size: 3.5rem;
 }
 
@@ -388,8 +393,13 @@ header h2 {
 /* imports */
 @font-face {
     font-family: headerDefault;
-    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(/fonts/Pacifico/Pacifico-Regular.ttf);
 
+}
+
+@font-face {
+    font-family: headerAlt;
+    src: url(/fonts/Caladea/Caladea-Bold.ttf);
 }
 
 @font-face {
@@ -591,7 +601,7 @@ label h2 {
 }
 
 /* all header main buttons bg */
-header main button {
+header .headerMain button {
     background-color: hsla(0, 100%, 100%, 0);
 }
 

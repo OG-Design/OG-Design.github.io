@@ -3,9 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sources</title>
+    <title>Sources</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../HomePageDesign1/css/colors.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/boxShadowPreset.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/defaultBody.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/header.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/headerNavHorisontal.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/button.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/borderRadiusPreset.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/main.css">
+    <link rel="stylesheet" href="../../HomePageDesign1/css/simpleBoxes.css">
+    <link rel="stylesheet" href="../boxes_eeAvfall.css">
+
+    <!-- js -->
+    <script src="../../HomePageDesign1/js/navScript.js" defer></script>
+    <script src="../../HomePageDesign1/js/imgDragScript.js" defer></script>
+    <script src="../../HomePageDesign1/js/settings_brightnessSwitch.js" defer></script>
+    <script src="../../HomePageDesign1/js/scriptPositionDataForHeader.js" defer></script>
+
 </head>
+
+<body class="a baseCol_1_bg shade_1">
+
+
+
+    <!-- header --START -->
+    <!-- -- -- -- -- -- -- -- -- \\\ -->
+    <header id="headerId" class="baseCol_1_bg">
+       
+        <!-- main header elements --START -->
+        <div class="headerMain">
+            <!-- logo link -->
+            <div class="headerLogo headerLogo_animation_css">
+                <a href="/index.html">
+                    <button class="logoButton_html buttonPreset">
+                        <img id="pageLogoImg" class="dropShadow_1" src="/img/SVG/OG_LOGO_black.svg" alt="OG logo">
+                    </button>
+                </a>
+                
+            </div>
+
+            <!-- title -->
+            <div class="headerTitle">
+                <h1 class="baseCol_1">Olsen-Graphics</h1>
+            </div>
+
+            <!-- dotMenu -->
+            <div class="headerDotMenu">
+                <button class="dotMenuButton_html dotMenu_button buttonPreset">
+                    <!-- <img class="dropShadow_1" src="/img/SVG/dotMenuIcon.svg" alt="OG logo"> -->
+                    <h2 class="baseCol_1">...</h2>
+                </button>
+            </div>
+        </div>
+        <!-- main header elements --END -->
+
+
+<!-- headerNav --START  -->
+<nav class="headerNav_dotMenu_html baseCol_1_bg shade_1 shade_overflowTop borderRadius_presetBottom headerNav_overflow">
+    <nav class="headerNav_html baseCol_1_bg borderRadius_preset">
+        <h1 class="baseCol_1">Directions</h1>
+        <ul class="">
+    
+    
+            
+            <li>
+                <a href="../index.html">
+                    <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset simpleBoxes_marginBottom">
+                        <p class="secoCol_1 horisontalNav_button_font">Home</p>
+                    </button>
+                </a>
+            </li>
+
+            <li>
+                <a href="/websites/experiments/experimentLink/index.html">
+                    <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset simpleBoxes_marginBottom">
+                        <p class="secoCol_1 horisontalNav_button_font">About</p>
+                    </button>
+                </a>
+            </li>
+            
+            <li>
+                <a href="../gallery/index.html">
+                <button class="buttonPreset keysCol_1_bg shadeHover_1 itemIndication borderRadius_preset simpleBoxes_marginBottom">
+                    <p class="keysCol_1 horisontalNav_button_font">Gallery</p>
+                </button>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset simpleBoxes_marginBottom">
+                    <p class="secoCol_1 horisontalNav_button_font">Website Portfolio</p>
+                </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="headerNav_html baseCol_1_bg borderRadius_presetBottom">
+        
+        <h1 class="baseCol_1">Settings</h1>
+        <ul class="secoCol_1_bg shade_2 borderRadius_preset">
+            
+            <!-- Theme -->
+            <li>
+                <h2 class="secoCol_1">Theme</h2>
+                <label for="brightnessSwitch_html" class="themeLabel keysCol_1_bg borderRadius_preset shadeHover_1 itemIndicationR">
+                    <!-- <p class="secoCol_2">Theme</p> -->
+                    
+                    <div class="themeLabel_row   borderRadius_preset">
+                        
+                        <p class="baseCol_1">brightness:</p>
+                        <p class="smallp secoCol_1"></p>
+
+                        <button type="submit" name="themeLabel" id="brightnessSwitch_html" class="buttonPreset secoCol_1_bg borderRadius_preset"><h2>Change</h2></button>
+                        
+                    </div>
+                    
+                </label>
+            </li>
+        </ul>
+
+    </nav>
+</nav>
+<!-- headerNav --END  -->
+
+
+
+</header>
+<!-- -- -- -- -- -- -- -- -- /// -->
+<!-- header --END -->
 <body>
+    
+    <!-- horisontalNav --START -->
+    <!--                            \ -->
+    <nav class="headerNavHorisontalDirections shade_overflowTop baseCol_1_bg">
+        <ul class="">
+            
+            
+            
+            <li>   
+                <a href="../index.html">
+                    <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
+                        <p class="secoCol_1 horisontalNav_button_font">EE avfall</p>
+                    </button>
+                </a>
+            </li>
+
+            
+            <li>
+                <a href="index.html">
+                <button class="buttonPreset keysCol_1_bg shadeHover_1 itemIndication borderRadius_presetBottom">
+                    <p class="keysCol_1 horisontalNav_button_font">Sources</p>
+                </button>
+                </a>
+            </li>
+
+            
+            <li>
+                <button class="buttonPreset secoCol_1_bg shadeHover_1 itemIndication borderRadius_preset">
+                    <p class="secoCol_1 horisontalNav_button_font">Web Portfolio</p>
+                </button>
+            </li>
+            
+        </ul>
+    </nav>
+    <!--                            / -->
+    <!-- horisontalNav --END -->
+
     <a href="https://bir.no/slik-sorterer-du/ee-avfall/"><h1>BIR</h1></a>
     <a href="https://norsirk.no/kildesortering/ee-avfall/slik-gjenvinnes-ee-avfall/#:~:text=Hva%20i%20EE%2Davfall%20kan,%2C%20aluminium%2C%20glass%20og%20plast"><h1>NORSIRK</h1></a>
     <a href="https://www.miljodirektoratet.no/ansvarsomrader/avfall/Returordninger-avfall/Elektronisk-og-elektrisk-avfall/"><h1>MILJØ-DIREKTORATET</h1></a>

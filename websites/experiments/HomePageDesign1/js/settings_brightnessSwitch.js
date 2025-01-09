@@ -29,6 +29,12 @@ function themeSwitch1() {
     let secoCol_2_bgDark_jsAll = document.querySelectorAll(".secoCol_2_bgDark");
 
     // secondaryColorsSelection
+    let secoCol_3_bg_jsAll = document.querySelectorAll(".secoCol_3_bg");
+    let secoCol_3_bgDark_jsAll = document.querySelectorAll(".secoCol_3_bgDark");
+
+
+
+    // secondaryColorsSelection
     let keysCol_1_bg_jsAll = document.querySelectorAll(".keysCol_1_bg");
     let keysCol_1_bgDark_jsAll = document.querySelectorAll(".keysCol_1_bgDark");
     // bgColors definition --END
@@ -327,6 +333,72 @@ function themeSwitch1() {
 
             // removes a class from each baseCol element using id           
             idGet.classList.remove("secoCol_2_bgDark");
+            
+            // removes id
+            idGet.removeAttribute("id");
+
+            // sets ele id as atr
+            ele.id=atr;
+        }
+
+
+    }
+
+    // secoCol2
+    if ( secoCol_3_bg_jsAll != null) {
+
+        // for loop to assign id to each element, aswell as giving it a different class.
+        for( i = 0 ; i < secoCol_3_bg_jsAll.length; i++ ) {
+            
+            // defines ele as ...
+            let ele = secoCol_3_bg_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
+            // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
+            let idMake = secoCol_3_bg_jsAll[i].id=col_Id+ i;
+            let idGet = document.getElementById(idMake);
+            
+            // adds a class to each baseCol element using id
+            idGet.classList.add("secoCol_3_bgDark");
+
+            // removes a class from each baseCol element using id           
+            idGet.classList.remove("secoCol_3_bg");
+            
+            // removes id
+            idGet.removeAttribute("id");
+        
+            // sets ele id as atr
+            ele.id=atr;
+        }
+
+
+    }
+
+
+
+
+    // secoCol2Dark
+    if (secoCol_3_bgDark_jsAll != null) {
+
+
+        // for loop to assign id to each element, aswell as giving it a different class.
+        for( i = 0 ; i < secoCol_3_bgDark_jsAll.length; i++ ) {
+            
+            // defines ele as ...
+            let ele = secoCol_3_bgDark_jsAll[i];
+            // saves atr as id atribute
+            let atr = ele.getAttribute("id");
+
+            // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
+            let idMake = secoCol_3_bgDark_jsAll[i].id=col_Id+ i;
+            let idGet = document.getElementById(idMake);
+
+            // adds a class to each baseCol element using id
+            idGet.classList.add("secoCol_3_bg");
+
+            // removes a class from each baseCol element using id           
+            idGet.classList.remove("secoCol_3_bgDark");
             
             // removes id
             idGet.removeAttribute("id");
