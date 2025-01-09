@@ -1,4 +1,4 @@
-document.getElementById("brightnessSwitch_html").addEventListener("click", themeSwitch1)
+document.getElementById("brightnessSwitch_html").addEventListener("click", themeSwitch1);
 
 
 function themeSwitch1() {
