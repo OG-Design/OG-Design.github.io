@@ -24,6 +24,7 @@
     <script src="../HomePageDesign1/js/settings_brightnessSwitch.js" defer></script>
     <!-- <script src="../HomePageDesign1/js/settings_brightnessSwitch3.js" defer></script> -->
     <script src="../HomePageDesign1/js/scriptPositionDataForHeader.js" defer></script>
+    <script src="quizScript.js" defer></script>
 </head>
 <body class="a baseCol_1_bg">
 
@@ -622,7 +623,7 @@
                     <!-- container for li and img -->
                     <div class="simpleBoxes_row secoCol_2_bg simpleBoxes_padding borderRadius_preset">
                         
-                        <form action="" id="quizForm1">
+                        <form id="quizForm1">
 
                             <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset">
                                 <li>
@@ -642,15 +643,19 @@
                                 </li>
 
                                 <li>
-                                    <label for="questionInput4">
+                                    <label for="questionInput3">
                                         <p class="baseCol_1 defPara_font simpleBoxes_margin1">Hvor mye kastet du i fjor av EE avfall?</p> <p class="defIndicator_font secoCol_2 simpleBoxes_margin1">ps:"om du bruker desimal, bruk punktum"</p>
                                     </label>
                                     
-                                    <input id="questionInput4" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
+                                    <input id="questionInput3" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
                                 </li>
 
                             </ol>
-                            
+                            <ul>
+                                <button id="submitQuiz" type="submit">sjekk resultat</button>
+                            </ul>
+
+                            <div id="1"></div>
                             <img class="borderRadius_preset" src="" alt="bilde av materialer">
 
                         </form>
