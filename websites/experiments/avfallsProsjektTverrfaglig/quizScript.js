@@ -37,16 +37,51 @@ function checkAnswers(event) {
     let points = 0;
     
 
+    
+    
+
+    
+    
+    // loop for usrAnswer array length
     for (let i = 0 ; i<usrAnswer.length; i++) {
         console.log(i);
 
         
-
+        // if user answer == correct
         if (usrAnswer[i]==corAnswer[i]) {
             points++;
+
+            
         }
     }
-    console.log(points);
+
+    // debug
+    // console.log(points);
+
+    // document.createElement("div").appendChild().document.getElementById("1").id="pointsDisplayParent";
+
+
+
+    // checks if element exists already, and if it is
+    if ( document.getElementById("pointsUsr") != null ) {
+        document.getElementById("pointsUsr").remove();
+    }
+
+
+    // creates score element for user input
+    let createScoreElement = document.createElement("h1");
+    
+    createScoreElement;
+    createScoreElement.setAttribute("id","pointsUsr");
+    
+    document.getElementById("fåLittPerspektiv_quizSvar").appendChild();
+    
+    document.getElementById("pointsUsr").innerText=points; 
+
+
+    
+
+    
 }
 
 
