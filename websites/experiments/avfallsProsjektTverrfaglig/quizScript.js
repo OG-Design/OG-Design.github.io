@@ -60,27 +60,42 @@ function checkAnswers(event) {
 
     // document.createElement("div").appendChild().document.getElementById("1").id="pointsDisplayParent";
 
-
+    let usr_answerId = "tmp_answrId";
+    let max_correctId = "tmp_correctId";
 
     // checks if element exists already, and if it is
-    if ( document.getElementById("pointsUsr") != null ) {
-        document.getElementById("pointsUsr").remove();
+    if ( document.getElementById(usr_answerId) != null && document.getElementById(max_correctId) != null  ) {
+        document.getElementById(usr_answerId).remove();
+        document.getElementById(max_correctId).remove();
     }
 
 
-    // creates score element for user input
-    let createScoreElement = document.createElement("h1");
-    
-    createScoreElement;
-    createScoreElement.setAttribute("id","pointsUsr");
-    
-    document.getElementById("fåLittPerspektiv_quizSvar").appendChild();
-    
-    document.getElementById("pointsUsr").innerText=points; 
 
+    let pointsElement = document.createElement("h1");
 
+    let pointsElement1 = document.createElement("h1");
+    pointsElement;
+    pointsElement.id=usr_answerId;
+
+    pointsElement1;
+    pointsElement1.id=max_correctId;
+
+    document.getElementById("fåLittPerspektiv_quizSvar").appendChild(pointsElement);
+    document.getElementById(usr_answerId).innerText=points;
     
 
+    document.getElementById("fåLittPerspektiv_quizSvar").appendChild(pointsElement1);
+    document.getElementById(max_correctId).innerText=corAnswer.length;
+
+    // keysCol1
+    if ( document.querySelectorAll(".keysCol_1") != null) { 
+        document.getElementById(usr_answerId).classList.add("keysCol_1");
+        document.getElementById(usr_answerId).classList.remove("keysCol_1Dark");    
+    }
+    if ( document.querySelectorAll(".keysCol_1Dark") != null) {
+        document.getElementById(usr_answerId).classList.add("keysCol_1Dark");
+        document.getElementById(usr_answerId).classList.remove("keysCol_1");
+    }
     
 }
 
