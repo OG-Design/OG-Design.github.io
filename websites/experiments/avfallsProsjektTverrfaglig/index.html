@@ -623,44 +623,71 @@
                     <!-- container for li and img -->
                     <div class="simpleBoxes_row secoCol_2_bg simpleBoxes_padding borderRadius_preset">
                         
-                        <form id="quizForm1">
+                        <ul class="simpleBoxes_ulStyleRemove simpleBoxes_marginNul">
+                            <!-- indicator -->
+                            <li>
+                                <p class="defIndicator_font secoCol_2">Med informasjonen over skal du kunne svare på spørmålene under, lykke til!</p>
+                            </li>
 
-                            <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset">
-                                <li>
-                                    <label for="questionInput1">
-                                        <p class="baseCol_1 defPara_font">Hvor mye tilsvarer 28kg per person totalt når Norges befolkning var CA 5,5 millioner i 2022?</p>
-                                    </label>
+                            <li>
+                                <form id="quizForm1">
+
+                                    <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset simpleBoxes_margin1">
+                                        <li>
+                                            <label for="questionInput1">
+                                                <p class="baseCol_1 defPara_font">Hvor mye tilsvarer 28kg per person totalt når Norges befolkning var CA 5,5 millioner i 2022?</p>
+                                            </label>
+                                            
+                                            <input id="questionInput1" class="secoCol_1_bg borderRadius_preset" type="number" name="" id="questionInput1" placeholder="oppgi svar i tonn" required>
+                                        </li>
+
+                                        <li class="simpleBoxes_marginBottom">
+                                            <label for="questionInput2">
+                                                <p class="baseCol_1 defPara_font">Hvor mye av den totale mengden avfall blir ikke resirkulert?</p>
+                                            </label>
+                                            
+                                            <input id="questionInput2" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i tonn" required>
+                                        </li>
+
+                                        <li>
+                                            <label for="questionInput3">
+                                                <p class="baseCol_1 defPara_font simpleBoxes_margin1">Hvor mye kastet du i fjor av EE avfall?</p> <p class="defIndicator_font secoCol_2 simpleBoxes_margin1">ps:"om du bruker desimal, bruk punktum"</p>
+                                            </label>
+                                            
+                                            <input id="questionInput3" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
+                                        </li>
+
+                                    </ol>
+                                    <div class="simpleBoxes_marginBottom">
+                                        <button id="submitQuiz" type="submit" class="buttonPreset keysCol_2_bg borderRadius_preset simpleBoxes_padding"><p class="defSubTitle_font keysCol_1">sjekk resultat </p></button>
+                                    </div>
+
+                                    <!-- point counter --START -->
+                                    <div id="fåLittPerspektiv_quizSvar">
+                                        <div id="" class="simpleBoxes_row keysCol_1_bg borderRadius_preset simpleBoxes_padding simpleBoxes_marginBottom">
+                                            <h1 class="defTitle_font secoCol_1 defTitle_fontSize-1">Poengsum:</h1>
+                                            <div id="fåLittPerspektiv_quizSvar_poengBruker" class="keysCol_2_bg borderRadius_preset simpleBoxes_padding">
+                                                <h1 id="tmp_answrId" class="defTitle_font secoCol_1 defTitle_fontSize-1">0</h1>
+                                            </div>
+                                            
+                                        </div>
+                                        <div id="" class="simpleBoxes_row keysCol_1_bg borderRadius_preset simpleBoxes_padding">
+                                            <h1 class="defTitle_font secoCol_1 defTitle_fontSize-1">Maks sum:</h1>
+                                            <div id="fåLittPerspektiv_quizSvar_poengMax" class="keysCol_2_bg borderRadius_preset simpleBoxes_padding">
+                                                <h1 id="tmp_maxId" class="defTitle_font secoCol_1 defTitle_fontSize-1">0</h1>
+                                            </div>
+                                        </div>
                                     
-                                    <input id="questionInput1" class="secoCol_1_bg borderRadius_preset" type="number" name="" id="questionInput1" placeholder="oppgi svar i tonn" required>
-                                </li>
+                                    </div>
+                                    <!-- point counter --END -->
 
-                                <li class="simpleBoxes_marginBottom">
-                                    <label for="questionInput2">
-                                        <p class="baseCol_1 defPara_font">Hvor mye av den totale mengden avfall blir ikke resirkulert?</p>
-                                    </label>
-                                    
-                                    <input id="questionInput2" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i tonn" required>
-                                </li>
+                                    <img class="borderRadius_preset" src="" alt="bilde av materialer">
 
-                                <li>
-                                    <label for="questionInput3">
-                                        <p class="baseCol_1 defPara_font simpleBoxes_margin1">Hvor mye kastet du i fjor av EE avfall?</p> <p class="defIndicator_font secoCol_2 simpleBoxes_margin1">ps:"om du bruker desimal, bruk punktum"</p>
-                                    </label>
-                                    
-                                    <input id="questionInput3" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
-                                </li>
+                                </form>
+                            </li>
 
-                            </ol>
-                            <ul>
-                                <button id="submitQuiz" type="submit" class="buttonPreset keysCol_1_bg borderRadius_preset simpleBoxes_padding"><p class="defSubTitle_font keysCol_1">sjekk resultat </p></button>
-                            </ul>
 
-                            <div id="fåLittPerspektiv_quizSvar">
-
-                            </div>
-                            <img class="borderRadius_preset" src="" alt="bilde av materialer">
-
-                        </form>
+                        </ul>
 
                     </div>
                 </li>

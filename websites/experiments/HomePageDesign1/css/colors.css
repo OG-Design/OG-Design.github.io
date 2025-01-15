@@ -42,6 +42,14 @@
 
 }
 
+.keysCol_2_bg {
+
+    /* color */
+    /* background-color: hsl(228, 71%, 53%); */
+    background-color: hsl(200, 60%, 80%);
+
+}
+
 .baseCol_1 {
 
     /* color */
@@ -114,6 +122,14 @@
     /* color */
     /* background-color: hsl(228, 71%, 53%); */
     background-color: hsl(200, 10%, 30%);
+
+}
+
+.keysCol_2_bgDark {
+
+    /* color */
+    /* background-color: hsl(228, 71%, 53%); */
+    background-color: hsl(200, 10%, 10%);
 
 }
 

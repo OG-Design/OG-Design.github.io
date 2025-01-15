@@ -37,6 +37,10 @@ function themeSwitch1() {
     // secondaryColorsSelection
     let keysCol_1_bg_jsAll = document.querySelectorAll(".keysCol_1_bg");
     let keysCol_1_bgDark_jsAll = document.querySelectorAll(".keysCol_1_bgDark");
+
+    let keysCol_2_bg_jsAll = document.querySelectorAll(".keysCol_2_bg");
+    let keysCol_2_bgDark_jsAll = document.querySelectorAll(".keysCol_2_bgDark");
+
     // bgColors definition --END
 
     
@@ -59,6 +63,9 @@ function themeSwitch1() {
 
     let keysCol_1_jsAll = document.querySelectorAll(".keysCol_1");
     let keysCol_1Dark_jsAll = document.querySelectorAll(".keysCol_1Dark");
+    
+
+
     // colors definition --END
 
 
@@ -474,29 +481,27 @@ function themeSwitch1() {
 
     }
 
-
-
-
     // keysCol1
-    if ( keysCol_1_bg_jsAll != null) {
+    if ( keysCol_2_bg_jsAll != null) {
 
         // for loop to assign id to each element, aswell as giving it a different class.
-        for( i = 0 ; i < keysCol_1_bg_jsAll.length; i++ ) {
-        
+        for( i = 0 ; i < keysCol_2_bg_jsAll.length; i++ ) {
+            
+
             // defines ele as ...
-            let ele = keysCol_1_bg_jsAll[i];
+            let ele = keysCol_2_bg_jsAll[i];
             // saves atr as id atribute
             let atr = ele.getAttribute("id");
 
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
-            let idMake = keysCol_1_bg_jsAll[i].id=col_Id+ i;
+            let idMake = keysCol_2_bg_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
             
             // adds a class to each baseCol element using id
-            idGet.classList.add("keysCol_1_bgDark");
+            idGet.classList.add("keysCol_2_bgDark");
 
             // removes a class from each baseCol element using id           
-            idGet.classList.remove("keysCol_1_bg");
+            idGet.classList.remove("keysCol_2_bg");
             
             // removes id
             idGet.removeAttribute("id");
@@ -509,27 +514,26 @@ function themeSwitch1() {
     }
 
     // keysCol1Dark
-    if (keysCol_1_bgDark_jsAll != null) {
+    if (keysCol_2_bgDark_jsAll != null) {
 
 
         // for loop to assign id to each element, aswell as giving it a different class.
-        for( i = 0 ; i < keysCol_1_bgDark_jsAll.length; i++ ) {
+        for( i = 0 ; i < keysCol_2_bgDark_jsAll.length; i++ ) {
         
-
             // defines ele as ...
-            let ele = keysCol_1_bgDark_jsAll[i];
+            let ele = keysCol_2_bgDark_jsAll[i];
             // saves atr as id atribute
             let atr = ele.getAttribute("id");
 
             // defines baseCol_1_bg id, adds i to id to give different id to each element/run.
-            let idMake = keysCol_1_bgDark_jsAll[i].id=col_Id+ i;
+            let idMake = keysCol_2_bgDark_jsAll[i].id=col_Id+ i;
             let idGet = document.getElementById(idMake);
 
             // adds a class to each baseCol element using id
-            idGet.classList.add("keysCol_1_bg");
+            idGet.classList.add("keysCol_2_bg");
 
             // removes a class from each baseCol element using id           
-            idGet.classList.remove("keysCol_1_bgDark");
+            idGet.classList.remove("keysCol_2_bgDark");
             
             // removes id
             idGet.removeAttribute("id");
@@ -540,6 +544,11 @@ function themeSwitch1() {
 
 
     }
+
+
+
+
+    
     // col_bg statements --END
 
 
@@ -821,6 +830,12 @@ if ( secoCol_2Dark_jsAll != null) {
 
 
     }
+
+
+
+
+
+    
     // col statements --END
     
 
