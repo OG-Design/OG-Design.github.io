@@ -236,12 +236,60 @@
         padding: 1rem;
     }
     
-    .simpleBoxes_padding {
-        padding: 1rem;
-    }
     
     .simpleBoxes_padding_text {
         padding-right: .5rem;
+    }
+    .simpleBoxes_padding {
+        padding: .1rem;
+    }
+    
+    .simpleBoxes_paddingTop {
+        padding-top: 1rem;
+    }
+    
+    .simpleBoxes_paddingRight {
+        padding-right: 1rem;
+    }
+    
+    .simpleBoxes_paddingLeft_null {
+        padding-left: 0;
+    }
+    
+    .simpleBoxes_padding1 {
+        padding: 0.1rem;
+    }
+    
+    
+    
+    .simpleBoxes_padding_text {
+        padding-right: .5rem;
+    }
+    
+    .simpleBoxes_marginNull {
+        margin: 0;
+    }
+    
+    .simpleBoxes_margin {
+        margin: 1rem;
+    }
+    
+    .simpleBoxes_margin1 {
+        margin: .5rem;
+    }
+    
+    .simpleBoxes_margin_top2 {
+        margin-top: 1rem;
+    }
+    
+    .simpleBoxes_marginBottom {
+        margin-bottom: 1rem;
+    }
+    .simpleBoxes_marginBottom1 {
+        margin-bottom: 5rem;
+    }
+    .simpleBoxes_gap1 {
+        gap: 1rem;
     }
 
     

@@ -8,7 +8,7 @@ let vekt_2021_husholdning = 2488000;
 let vekt_2022_husholdning = 2203000;
 
 
-let barColors = ["grey"];
+let barColors = ["white"];
 
 new Chart(ctx_baerekraft1, {
 
