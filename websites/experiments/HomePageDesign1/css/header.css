@@ -634,7 +634,7 @@ header .headerTitle h1 {
     font-family: headerDefault;
     font-size: 2rem;
     padding-bottom: 0rem;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
 }
 
 /* headerTitle --END */
@@ -669,6 +669,12 @@ header .headerNav_logoMenu_html {
     
 }
 /* logo nav --END */
+
+.headerNav_overflow {
+    height: 10rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
 
 /* dotMenu nav --START */
 header .headerNav_dotMenu_html {
