@@ -1,6 +1,6 @@
 .simpleBoxes_column {
     /* shape */
-    width: 90%;
+    width: 95%;
     height: fit-content;
     
     /* position child */
@@ -18,7 +18,7 @@
 .simpleBoxes_row {
 
     /* shape */
-    width: 90%;
+    width: 95%;
     height: fit-content;
     
     /* position child */
@@ -119,6 +119,9 @@
 .simpleBoxes_marginBottom1 {
     margin-bottom: 5rem;
 }
+.simpleBoxes_gap1 {
+    gap: 1rem;
+}
 
 .simpleBoxes_pageIndicator {
     /* shape */
@@ -144,6 +147,10 @@
 
 .simpleBoxes_ulStyleDash {
     list-style-type: disc;
+}
+
+.simpleBoxes_ulStyleNumber {
+    list-style-type: decimal;
 }
 
 

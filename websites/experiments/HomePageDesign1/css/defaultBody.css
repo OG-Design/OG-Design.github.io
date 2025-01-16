@@ -81,6 +81,9 @@ html, body {
 .paddingSize0 {
     padding: 1rem;
 }
+.removeUnderline {
+    text-decoration: none;
+}
 
 @media screen and (max-width:600px) {
     
