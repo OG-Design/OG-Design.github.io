@@ -35,7 +35,7 @@
 
 .simpleBoxes_column_text {
     /* shape */
-    width: fit-content;
+    width: 80%;
     height: fit-content;
 
     
@@ -135,6 +135,10 @@
     /* above
     z-index: 0; */
 
+    /* child position */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .simpleBoxes_ulStyleRemove {
@@ -198,7 +202,7 @@
     
     .simpleBoxes_column_text {
         /* shape */
-        width: 100%;
+        width: 60%;
         height: fit-content;
     
         
