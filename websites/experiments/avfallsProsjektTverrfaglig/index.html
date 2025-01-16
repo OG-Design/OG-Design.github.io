@@ -466,7 +466,7 @@
                             <p class="baseCol_1 defTitle_font simpleBoxes_margin1"></p>
                             <p class="baseCol_1 defPara_font">
                                 Vi vet hva som må gjøres, men for å gjøre noe med det så må vi vite hvor vi er, og hvilke tiltak vi som enkelt personer kan gjøre.
-                                 Under ser du et diagram som viser hvor mange tonn som blir kastet av husholdninger.
+                                
                             </p>
 
                             <p class="baseCol_1 defTitle_font simpleBoxes_margin1"></p>
@@ -476,7 +476,7 @@
                             </p>
                         </ul>
 
-                        <div class="chartParent borderRadius_preset">
+                        <div class="chartParent borderRadius_preset simpleBoxes_marginBottom">
 
                             <canvas id="chart_baerekraft_mengdeAvfallUtregnet">
                                 <!-- js -->
@@ -488,12 +488,135 @@
 
                     </div>
 
+
                 </div>
+
+
 
 
             </div>
 
         </article>
+
+        <!-- QUIZ0 --START -->
+
+        <div class="mainBody baseCol_1_bg">
+            <!-- intro generell gjennomgang av baerekraft --START -->
+            <div class="simpleBoxes_column baseCol_2_bg borderRadius_preset">
+                <!-- title --START -->
+                <div class="simpleBoxes_column secoCol_1_bg borderRadius_presetBottom simpleBoxes_padding">
+                    <div class="simpleBoxes_pageIndicator">
+                        <p class="secoCol_1 defIndicator_font">"avfallsProsjektTverrfaglig - Hoved side"</p>
+                        <p class="baseCol_1 defIndicator_font">s. 1</p>
+                    </div>
+                    <!-- <h1 class="baseCol_1 defTitle_font simpleBoxes_padding_text"> Welcome to </h1>
+                    <h1 class="baseCol_1 defTitle_font">OLSEN GRAPHICS</h1> -->
+                    <h1 class="baseCol_1 defTitle_font">Bærekraft & bærekraftig utvikling</h1>
+                    
+                </div>
+                <!-- title --END -->
+            
+
+                <!-- intro paragraph's --START -->
+                <div class="boxes_ee_setWidth_flex_column baseCol_2_bg borderRadius_presetBottom">
+                    <ul class="simpleBoxes_ulStyleRemove boxes_ee_setWidth_flex_column ee_Leftoffset">
+                        <p class="baseCol_1 defTitle_font simpleBoxes_margin1"></p>
+                        <p class="baseCol_1 simpleBoxes_column defPara_font">
+                            
+                        </p>
+
+                        <p class="baseCol_1 defTitle_font simpleBoxes_margin1"></p>
+                        
+                        <p class="baseCol_1 simpleBoxes_column defPara_font">
+                            
+                        </p>
+                    </ul>
+                </div>
+                
+                <!-- baerekraftmål --START -->
+                <div class="boxes_ee_setWidth_flex_column baseCol_2_bg borderRadius_presetBottom simpleBoxes_marginBottom">
+                
+                    
+                    <ul class="simpleBoxes_ulStyleRemove boxes_ee_setWidth_flex_column ee_Leftoffset">
+                        <div class="secoCol_1_bg simpleBoxes_padding borderRadius_preset boxes_ee_setWidth_flex_column">
+                            <div>
+                                
+                                <h1 class="baseCol_1 defSubTitle_font defSubTitle_fontSize0">Rask quiz</h1>
+                                
+                                
+                                <form id="quizForm0">
+
+                                    <ol class="simpleBoxes_paddingRight secoCol_2_bg secoCol_1 borderRadius_preset">
+                                        <li class="">
+                                            <div class="simpleBoxes_row">
+                                                <label for="questionInput_diagram1">
+                                                    <p class="baseCol_1 defPara_font">Diagrammet viser en positiv økning</p>
+                                                </label>
+                                                
+                                                <input id="questionInput_diagram1" class="secoCol_1_bg borderRadius_preset" type="checkbox" name="" placeholder="oppgi svar i tonn">
+                                            </div>
+                                        </li>
+
+                                        <li class="simpleBoxes_marginBottom">
+                                            <label for="questionInput_diagram2">
+                                                <p class="baseCol_1 defPara_font">Hvor mye av den totale mengden avfall blir ikke resirkulert?</p>
+                                            </label>
+                                            
+                                            <input id="questionInput_diagram2" class="secoCol_1_bg borderRadius_preset" type="checkbox" name="" placeholder="oppgi svar i tonn" required>
+                                        </li>
+
+                                        <li>
+                                            <label for="questionInput_diagram3">
+                                                <p class="baseCol_1 defPara_font simpleBoxes_margin1">Hvor mye kastet du i fjor av EE avfall?</p> <p class="defIndicator_font secoCol_2 simpleBoxes_margin1">ps:"om du bruker desimal, bruk punktum"</p>
+                                            </label>
+                                            
+                                            <input id="questionInput_diagram3" class="secoCol_1_bg borderRadius_preset" type="number" name="" placeholder="oppgi svar i kg" required>
+                                        </li>
+
+                                    </ol>
+                                    <div class="simpleBoxes_marginBottom">
+                                        <button id="submitQuiz" type="submit" class="buttonPreset keysCol_2_bg borderRadius_preset simpleBoxes_padding"><p class="defSubTitle_font keysCol_1">sjekk resultat </p></button>
+                                    </div>
+
+                                    <!-- point counter --START -->
+                                    <div id="diagram_quiz">
+                                        <div id="" class="simpleBoxes_row keysCol_1_bg borderRadius_preset simpleBoxes_padding simpleBoxes_marginBottom">
+                                            <h1 class="defTitle_font secoCol_1 defTitle_fontSize-1">Poengsum:</h1>
+                                            <div id="diagram_quiz_svar_bruker" class="keysCol_2_bg borderRadius_preset simpleBoxes_padding">
+                                                <h1 id="tmp_answrId1" class="defTitle_font secoCol_1 defTitle_fontSize-1">0</h1>
+                                            </div>
+                                            
+                                        </div>
+                                        <div id="" class="simpleBoxes_row keysCol_1_bg borderRadius_preset simpleBoxes_padding">
+                                            <h1 class="defTitle_font secoCol_1 defTitle_fontSize-1">Maks sum:</h1>
+                                            <div id="diagram_quiz_svar_max" class="keysCol_2_bg borderRadius_preset simpleBoxes_padding">
+                                                <h1 id="tmp_maxId1" class="defTitle_font secoCol_1 defTitle_fontSize-1">0</h1>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- point counter --END -->
+
+                                    <img class="borderRadius_preset" src="" alt="bilde av materialer">
+
+                                </form>
+                            </div>
+
+                    
+                        </div>
+                
+                    </ul> 
+
+                </div>
+                <!-- baerekraftmål --END -->
+            </div>
+            
+
+        </div>
+
+        <!-- QUIZ0 --END -->
+
+    </div>
         <!-- baerekraftig utvikling --END -->
         <!--  -->
 
