@@ -1,8 +1,33 @@
 document.getElementById("brightnessSwitch_html").addEventListener("click", themeSwitch1);
 
+// let brightnessDark = {
+//     brightnessDark_save = false,
+// }
+
+
+
+// localStorage.setItem('options_brightnessDark', JSON.stringify() );
+
+// function checkBrightness() {
+//     if (brightnessDark == true) {
+//         brightnessDark = false;
+//     } else {
+//         brightnessDark = true;
+//     }
+// }
+
+
+
+
+
 
 function themeSwitch1() {
+
+    // checkBrightness();
     
+
+    localStorage.getItem('options_brightnessDark');
+
     let logoImg_jsBright = document.getElementById("pageLogoImg").src="/img/SVG/OG_LOGO.svg";
     let logoImg_jsDark = document.getElementById("pageLogoImg").src="/img/SVG/OG_LOGO.svg";
     let logoImg_js = document.getElementById("pageLogoImg");
@@ -920,3 +945,5 @@ if ( secoCol_2Dark_jsAll != null) {
 }
 
 // baseCol_1_bg();
+
+// checkBrightness();
