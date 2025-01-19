@@ -458,10 +458,10 @@ header {
 
     /* self position */
     position: sticky;
-    top: -14em;
+    top: -25em;
 
     /* alignment */
-    padding-top: 15em;
+    padding-top: 25em;
 
 
     /* child position */
@@ -842,7 +842,7 @@ header h2 {
 /* imports */
 @font-face {
     font-family: headerDefault;
-    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(/fonts/Pacifico/Pacifico-Regular.ttf);
 
 }
 
