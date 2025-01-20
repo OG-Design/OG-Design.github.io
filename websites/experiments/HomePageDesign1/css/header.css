@@ -679,7 +679,7 @@ header .headerNav_logoMenu_html {
 /* dotMenu nav --START */
 header .headerNav_dotMenu_html {
     /* shape */
-    height: fit-content;
+    height: 25rem;
     min-width: 100%;
     max-width: 100%;
 
@@ -698,7 +698,7 @@ header .headerNav_dotMenu_html {
 
     /* position self */
     position: absolute;
-    top: 18.5em;
+    top: 28.5em;
     right: 0;
     
     
