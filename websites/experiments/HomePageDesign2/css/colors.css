@@ -1,0 +1,7 @@
+:root {
+    --headerbase: hsl(200, 63%, 85%);
+    --baseBG: hsl(200, 10%, 0%);
+    
+    --headertransparent: hsl(0, 0%, 0%, 0);
+}
+

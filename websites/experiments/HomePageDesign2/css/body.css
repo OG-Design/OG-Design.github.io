@@ -1,0 +1,9 @@
+/* body __START */
+body {
+    width: 100%;
+    height: 10000px;
+    margin: 0;
+
+    background-color: black;
+}
+/* body __END  */

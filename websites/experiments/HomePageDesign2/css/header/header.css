@@ -1,0 +1,95 @@
+header {
+    width: 100%;
+    height: 5rem;
+
+    padding-top: 25rem;
+
+    color: var(--baseBG);
+    
+    /* flex */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+
+/* elements with class sticks to specified height */
+.headerstickyElement {
+    /* padding-top: 0; */
+
+    position:sticky;
+
+    justify-self: end;
+
+    /* when element hits 4rem from top it sticks */
+    top:4rem;
+    /* right: 0; */
+
+}
+
+
+#menuButton {
+    /* shape */
+    width: 3rem;
+    height: 1rem;
+
+    transform: translateY(-3rem);
+    
+
+    /* color from colors.css */
+    color: var(--headerbaseBG);
+    background-color: var(--headertransparent);
+
+    /* button styling */
+    border: none;
+
+    /* alignment */
+    margin: 0;
+    padding: 0;
+
+        
+
+}
+
+#menuButton p:hover {
+    transform: scale(1.1);
+}
+
+/* menubutton active */
+#menuButton p:active {
+    transform: scale(1.2);
+}
+
+
+/* fix for menuButton height & offset */
+#menuButton p {
+    
+    
+    
+
+    /* position fix */
+    position: relative;
+    top: -1.2rem;
+    right: 1rem;
+
+    /* text properties */
+    font-size: 4rem;
+    line-height: 1rem;
+    
+    
+
+    color: var(--headerbase);
+
+    /* alignment */
+    padding:0;
+    margin: 0;
+
+    /* animation */
+    transition: .1s;
+}
+
