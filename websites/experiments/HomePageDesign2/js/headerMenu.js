@@ -11,14 +11,14 @@ menu1.style.display="none";
 menuOpenButton.addEventListener("click", menuState);
 
 // close var
-let closeMenu = KeyboardEvent("Escape");
+let closeMenu = document.addEventListener("", removeMenu);
 // listens to body
 
 
 
+// MAY NOT WORK REMOVE PARAM
 
-
-function menuState() {
+function menuState(removeMenu) {
  
     let menu1Style = menu1.style.display;;
 
