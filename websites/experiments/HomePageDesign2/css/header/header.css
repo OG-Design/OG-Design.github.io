@@ -35,10 +35,10 @@ header {
 
 #menuButton {
     /* shape */
-    width: 3rem;
-    height: 1rem;
+    width: 5rem;
+    height: 1.5rem;
 
-    transform: translateY(-3rem);
+    transform: translateY(-3em) translateX(0rem);
     
 
     /* color from colors.css */
@@ -51,18 +51,19 @@ header {
     /* alignment */
     margin: 0;
     padding: 0;
-
+    
         
 
 }
 
+/* openmenubutton animation */
 #menuButton p:hover {
-    transform: scale(1.1);
+    transform: scale(1.2) translateY(-.15rem) translateX(-.35rem);
 }
 
 /* menubutton active */
 #menuButton p:active {
-    transform: scale(1.2);
+    transform: scale(1.1) translateY(-.25rem) translateX(-.35rem);
 }
 
 
@@ -75,7 +76,7 @@ header {
     /* position fix */
     position: relative;
     top: -1.2rem;
-    right: 1rem;
+    right: .175rem;
 
     /* text properties */
     font-size: 4rem;

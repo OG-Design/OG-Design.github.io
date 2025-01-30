@@ -1,4 +1,107 @@
-header ul {
+@font-face {
+    font-family: menubuttonfont;
+    src: url(/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: menutitlefont;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 800;
+}
+
+
+menu {
+    /* shape */
+    width: 45%;
+    height: fit-content;
+    max-height: 25rem;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    /* alignment */
+    margin: 0;
+    padding: .5rem;
+    
+
+    background-color: var(--baseBG2);
+
+    /* position */
+    /* sticks menu to window */
+    position: sticky;
+    top: 6.5rem;
+    transform: translateY(-3.5rem);
+    justify-self: flex-end;
+
+    overflow: scroll;
+    scrollbar-width: none;
+    
+
+}
+
+menu button {
+    /* shape */
+    width: 100%;
+    height: 2rem;
+    
+    /* alignment */
+    margin: .1rem;
+    
+    border: none;
+
+    transition: .1s;
+
+    background-color: var(--baseBG);
+}
+
+/* animations menu button */
+menu button:hover {
+    transform: scale(1.05);
+}
+menu button:active {
+    transform: scale(1.02);
+}
+
+menu button p {
+    /* font */
+    font-family: menubuttonfont;
+    font-size: 1rem;
+    
+    /* alignment */
     margin: 0;
     padding: 0;
+
+    /* color */
+    color: var(--headerbase);
+}
+
+menu div h1 {
+    /* font */
+    font-family: menutitlefont;
+    font-size: 1.2rem;
+
+    /* alignment */
+    padding: 0;
+    margin: .3rem;
+    
+    /* color */
+    color: var(--keyColor);
+}
+
+menu div h2 {
+    /* font */
+    font-family: menutitlefont;
+    font-size: 1.2rem;
+
+    /* alignment */
+    padding: 0;
+    margin: .3rem;
+    
+    /* color */
+    color: var(--secondaryColor);
 }
