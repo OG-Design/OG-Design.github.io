@@ -28,7 +28,7 @@ header {
 
     /* when element hits 4rem from top it sticks */
     top:2.25rem;
-    /* right: 0; */
+    right: 0; 
 
 }
 
