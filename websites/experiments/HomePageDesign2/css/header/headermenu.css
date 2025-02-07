@@ -38,7 +38,7 @@ menu {
     position: sticky;
     top: 5rem;
     transform: translateY(-3.8rem);
-    justify-self: flex-end;
+    align-self: flex-end;
 
     overflow: scroll;
     scrollbar-width: none;
@@ -107,4 +107,12 @@ menu div h2 {
     
     /* color */
     color: var(--secondaryColor);
+}
+
+/*  */
+#settings {
+    color: var(--headerbase);
+}
+#settings select option p{
+    color: var(--headerbase);
 }

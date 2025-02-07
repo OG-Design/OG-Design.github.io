@@ -1,5 +1,5 @@
 // button to open menu
-let menuOpenButton = document.getElementById("menuButton");
+let menuOpenButton = document.getElementById("openmenuButton");
 
 // menu
 let menu1 = document.getElementById("menu1");
@@ -35,7 +35,7 @@ function menuState(removeMenu) {
     // stylechange function
     function stylechangeButton() {
         // button's style var
-        let menuOpenButtonStyle = menuButton.style;
+        let menuOpenButtonStyle = openmenuButton.style;
 
         // if backgroundColor is not equal to ... then change background color to ... else no background color.
         if (menuOpenButtonStyle.backgroundColor!="var(--baseBG2)") {

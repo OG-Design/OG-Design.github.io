@@ -50,7 +50,7 @@
     
     <!-- menu button __START -->
     <div class="headerstickyElement">
-        <button id="menuButton" class="">
+        <button id="openmenuButton" class="">
             <p>...</p>
         </button>
     </div>
@@ -63,7 +63,14 @@
         <button><p>GALLERY</p></button>
         <button><p>EXPERIMENTS</p></button>
         <div><h2>settings</h2></div>
-        <button type="menu"><p>system-theme</p></button>
+        
+        <div style="background-color: var(--baseBG);" id="settings">
+            <p>Site theme</p>
+            <select style="background-color: var(--baseBG1);" name="defaulttheme" id="themeselect">
+                <option value="darktheme"><p>dark theme</p></option>
+                <option value="brighttheme"><p>bright theme</p></option>
+            </select>
+        </div>
     </menu>
     <!-- menu __END   -->
     <!-- header __END -->

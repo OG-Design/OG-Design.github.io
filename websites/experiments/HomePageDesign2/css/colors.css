@@ -2,6 +2,7 @@
     --headerbase: hsl(200, 63%, 85%);
 
     --baseBG: hsl(200, 10%, 25%);
+    --baseBG1: hsl(200, 10%, 35%);
     --baseBG2: hsl(200, 10%, 10%);
     
     --secondaryColor: hsl(200, 30%, 60%);
@@ -10,5 +11,6 @@
 
 
     --headertransparent: hsl(0, 0%, 0%, 0);
+    
 }
 

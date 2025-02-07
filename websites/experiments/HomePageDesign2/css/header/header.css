@@ -16,27 +16,38 @@ header {
 }
 
 
-
+@font-face {
+    font-family: headerstickyElement;
+    src: url(/fonts/cascadia-code/ttf/CascadiaCode.ttf);
+    font-weight: 900;
+}
 
 /* elements with class sticks to specified height */
 .headerstickyElement {
-    /* padding-top: 0; */
+    padding-top: 0;
 
     position:sticky;
 
-    justify-self: end;
+    
 
     /* when element hits 4rem from top it sticks */
     top:2.25rem;
-    right: 0; 
+    align-self: flex-end;
+
+    
 
 }
 
+.headerstickyElement p {
+    font-family: headerstickyElement;
+}
 
-#menuButton {
+
+#openmenuButton {
     /* shape */
     width: 5rem;
     height: 1.5rem;
+    overflow: hidden;
 
     transform: translateY(-3em) translateX(0rem);
     
@@ -52,23 +63,24 @@ header {
     margin: 0;
     padding: 0;
     
+    
         
 
 }
 
-/* openmenubutton animation */
-#menuButton p:hover {
+/* openopenopenmenuButton animation */
+#openmenuButton p:hover {
     transform: scale(1.2) translateY(-.15rem) translateX(-.35rem);
 }
 
-/* menubutton active */
-#menuButton p:active {
+/* openmenuButton active */
+#openmenuButton p:active {
     transform: scale(1.1) translateY(-.25rem) translateX(-.35rem);
 }
 
 
-/* fix for menuButton height & offset */
-#menuButton p {
+/* fix for openmenuButton height & offset */
+#openmenuButton p {
     
     
     
@@ -76,7 +88,7 @@ header {
     /* position fix */
     position: relative;
     top: -1.2rem;
-    right: .175rem;
+    right: 1rem;
 
     /* text properties */
     font-size: 4rem;
