@@ -12,18 +12,27 @@ document.body.appendChild(container);
 async function fremvispaaside() {
     
     
-    
+    /* 
+    data = databasens data i json format
+    kobler seg til express ved lenke .... og PORT ....
+    fetch'er data'en fra lenken
+    */
     const res = await fetch(`http://localhost:${PORT}/person`);	
-    
-    const data = await res.json(users);
+    // konverterer res(database) til JSON.
+    const data = await res.json();
 
-     
-    // lager objekt og fremviser data på siden
-    let createitem = document.createElement("p");
-    
-    createitem.innerHTML = data;
+    // tester om den finner data i databasen
+    // console.log(data[0]);
 
-    container.appendChild(createitem);
+    // for hver person av data lag et liste element med innhold person.fornavn å legger til i html
+    for (let person of data) {
+        // lager en list item som inneholder data fra databasem
+        let listItem = document.createElement("li");
+        listItem.innerText=person.fornavn + ". "+person.etternavn + " : " + person.personnummer;
+        // legger inn i html
+        container.appendChild(listItem);
+    
+    }
 
 }
 

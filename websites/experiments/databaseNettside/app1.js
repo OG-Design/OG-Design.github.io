@@ -1,32 +1,31 @@
 // load modules
 const express = require("express");  // express
 
-// cors
-let cors = require("cors");
-
 // create express app
 const app = express();
 
-app.use(cors({
-    origin: `http://localhost:${PORT}`,
-    AccessControlAllowOrigin: `http://localhost:${PORT}*`
-}));
+const PORT = 3000;
+
+
+var cors = require("cors");
+
+
+
+app.use(cors());
 
 // set up library requirement for database
 const Database = require("better-sqlite3");
-
 // create database object
 const db = new Database("databaser/databaseoverbilpersonogpostadresse.db");
 
 
-const PORT = 3000;
 
 
 // route for personer
 //      table path, (req, res) => {}
 app.get("/person",(req, res) => {
     
-    const users = db.prepare("SELECT 12112213 FROM person").all();
+    const users = db.prepare("SELECT * FROM person").all();
     res.json(users);
     
 });
@@ -40,5 +39,5 @@ app.get("/person",(req, res) => {
 
 
 app.listen(PORT,() => {
-    console.log(`server running: http://localhost:${PORT}`);
+    console.log(`server running: http://localhost:${PORT}/person`);
 });
