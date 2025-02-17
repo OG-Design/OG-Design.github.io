@@ -1,13 +1,37 @@
 :root {
     /* colors */
-    --primary0: hsl(220, 10%, 40%);
-    --primary1: hsl(220, 30%, 70%); 
-    --primary2: hsl(220, 80%, 80%);
+    --primary0: hsl(220, 15%, 50%);
+    --primary1: hsl(220, 40%, 70%); 
+    --primary2: hsl(220, 90%, 90%);
+    --textprimary: hsl(220, 80%, 85%);
+    --textsecondary: hsl(240, 20%, 20%);
 
     /* border */
-    --borderradius: .5rem;
+    --borderradius: .25rem;
 
-    
+    /* animation */
+    --scaleAnimation: scale(1.1);
+    --posAnimation: translate(0rem, -.5rem);
+}
+
+body {
+    background-color: hsl(220, 20%, 20%);
+}
+
+@font-face {
+    font-family: title;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+h1 {
+    font-family: title;
+    font-weight: 600;
+    color: var(--textprimary);
+}
+div {
+    color: var(--textsecondary);
+    font-family: title;
+    font-weight: 400;
 }
 
 .container {
@@ -35,14 +59,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     
     /* style */
     border-radius: var(--borderradius);
     background-color: var(--primary0);
     
-
+    
 
 }
+
+.container1 div {
+    transition: .1s;
+}
+
+.container1 div:hover {
+    
+    transform: var(--scaleAnimation);
+    transform: var(--posAnimation);
+    box-shadow: 5px 10px 32px 0px rgba(0,0,0,0.75);
+}
+
 .liststyle {
     /* shape */
     width: 90%;

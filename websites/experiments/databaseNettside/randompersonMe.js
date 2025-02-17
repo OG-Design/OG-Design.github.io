@@ -48,11 +48,12 @@ async function randomperson() {
                 
             
             // shape card
-            styleCard.width="fit-content";
+            styleCard.width="10rem";
             styleCard.minWidth="10rem";
+            styleCard.height="18rem"
             styleCard.padding="1rem";
             styleCard.margin=".5rem";
-            styleCard.borderRadius="var(--borderradius)";
+            styleCard.borderRadius="var(--borderradius) 2rem";
 
 
             // positionChild card
@@ -90,15 +91,17 @@ async function randomperson() {
             for (let i = 0; i < styleChild.length; i++) {
                 const element = styleChild[i];
                 element.backgroundColor="var(--primary2)";
-                element.borderRadius="var(--borderradius)";
-                element.margin=".5rem"
-                element.padding=".5rem"
+                element.borderRadius="var(--borderradius) 2rem";
+                element.margin=".6rem"
+                element.padding=".7rem"
+                element.height="fit-content";
                 console.log(element);    
             }
             
             
             // PROFILEIMG __START
             profileImgElement.src=profileImg;
+            profileImgElement.style.width="7.5rem";
             card.appendChild(profileImgElement);
             // PROFILEIMG __END
 
