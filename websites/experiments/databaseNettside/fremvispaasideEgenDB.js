@@ -3,14 +3,24 @@
 // import { users } from "app1.js";
 let PORT = 3000;
 
+
+// create a container element
 let container = document.createElement("div");
 
-container.classList.add("container");
+// const containermake = () => {
+function containermake(){
+    container = document.createElement("div");
 
-document.body.appendChild(container);
+    container.classList.add("container");
+
+    document.body.appendChild(container);
+
+}
+
+
+
 
 async function fremvispaaside() {
-    
     
     /* 
     data = databasens data i json format
@@ -28,12 +38,16 @@ async function fremvispaaside() {
     for (let person of data) {
         // lager en list item som inneholder data fra databasem
         let listItem = document.createElement("li");
-        listItem.innerText=person.fornavn + ". "+person.etternavn + " : " + person.personnummer;
+
+        listItem.innerText= person.fornavn + ". "+person.etternavn + " Person nummer: " + person.personnummer;
+        listItem.classList.add("liststyle");        
         // legger inn i html
+        
         container.appendChild(listItem);
     
     }
 
 }
 
+containermake();
 fremvispaaside();
