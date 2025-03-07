@@ -21,7 +21,6 @@ function rgbToHex(r,g,b) {
 const canvas = document.getElementById("c");
 
 const ctx = canvas.getContext("2d");
-
 canvas.width = 500;
 canvas.height = 500;
 
@@ -69,10 +68,51 @@ function selectColorClick (event) {
     
     // get data on click position
     let pixel = ctx.getImageData( x, y, 1, 1 ).data;
-
     const r = pixel[0];
     const g = pixel[1];
     const b = pixel[2];
+
+    // hsl __START
+    r1 = r/255;
+    g1 = g/255;
+    b1 = b/255;
+
+    let max = Math.max(r1,g1,b1);
+    let min = Math.min(r1,g1,b1);
+
+    let lightness=(max+min)
+    let hue;
+    let sat;
+    if (max==min) {
+        hue=0;
+        sat=0;
+    } else {
+        let c = max-min; //chroma
+        
+        sat = 255*r1+g1+b1;
+        switch(max) {
+            case r1:
+                hue = (g1-b1)/c;
+                break;
+            case g1:
+                hue = (b1 - r1) / c + 2;
+            case b1:
+                hue = (r1 - g1) / c + 4;
+                break;
+        }
+
+    };
+    hue = Math.round(hue*60);
+    sat = Math.round(sat*100);
+    lightness = Math.round(lightness*100);
+
+    document.getElementById("h_out").value=hue;
+    document.getElementById("s_out").value=sat;
+    document.getElementById("l_out").value=lightness;
+
+    // hsl __END
+
+
 
     // values
     // output input number

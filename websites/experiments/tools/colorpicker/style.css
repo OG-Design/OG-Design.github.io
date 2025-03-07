@@ -66,6 +66,15 @@ hr {
     align-items: center;
     gap: 1rem;
 }
+#hslContainer:first-child {
+    width: 15rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
 
 input {
     /* color */

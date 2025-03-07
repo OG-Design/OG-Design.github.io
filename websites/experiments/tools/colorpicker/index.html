@@ -25,7 +25,39 @@
 
         <div id="hex"></div>
 
-        <div id="rgbContainer">
+        <div id="hslContainer" class="flexRow">
+
+            <div id="h">
+                <div class="flexRow">
+                    <span>h</span>
+                    <input class="inputnumber" id="h_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="h_in" min="0" max="100" step="1">
+                </div>
+            </div>
+            <div id="s">
+                <div class="flexRow">
+                    <span>s</span>
+                    <input class="inputnumber" id="s_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="h_in" min="0" max="100" step="1">
+                </div>
+            </div>
+            <div id="l">
+                <div class="flexRow">
+                    <span>l</span>
+                    <input class="inputnumber" id="l_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="l_in" min="0" max="100" step="1">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="rgbContainer" class="flexRow">
             <div id="rgbred">
                 <div class="flexRow">
                     <span>r</span>
@@ -53,11 +85,22 @@
                     <input class="slider" type="range" id="b_in" min="0" max="255" step="1">
                 </div>
 
-                <div>
-                    
-                </div>
             </div>
         </div>
+
+
+<!-- 
+        <div id="hslContainer">
+            <form action="">
+                <div>
+                    <div><span><label for="hue">hue</label></span><input form="1" type="number" name="hue" id="huein"></div>
+                    <div><span><label for="sat">saturation</label></span><input form="2" type="number" name="sat" id="satin"></div>
+                    <div><span><label for="lum">lighness</label></span><input form="3" type="number" name="lum" id="lumin"></div>
+                </div>
+                <button type="submit">update</button>
+            </form>
+        </div> -->
+
 
         <div id="colorSwatch"></div>
     </main>
