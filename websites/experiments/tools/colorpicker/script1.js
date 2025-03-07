@@ -1,5 +1,6 @@
 function tohex(c) {
     let hex = c.toString(16);
+    // console.log(hex)
     return hex.length == 1 ? "0" + hex : hex;
     
 }
@@ -16,6 +17,8 @@ const ctx = canvas.getContext("2d");
 canvas.width = 500;
 canvas.height = 500;
 function createcolors () {
+
+    
     const gradientH = ctx.createLinearGradient(0, 0, canvas.width, 0);
     gradientH.addColorStop(0,"red");
     gradientH.addColorStop(1/6, "yellow");
@@ -76,8 +79,11 @@ function selectColorClick (event) {
     // create rectangle shape to show aproximate selection
     ctx.clearRect(x,y-2.25,1,5);
     ctx.clearRect(x-2.25,y,5,1);
-
-    document.getElementById("hex").innerHTML=rgbToHex();
+    // swatch in gradient
+    ctx.fillStyle=`rgb(${r},${g},${b})`;
+    const color = ctx.fillRect(x+5,y+5,20,20);
+    
+    document.getElementById("hex").innerHTML=rgbToHex(r,g,b);
 }
 // color on click __END
 

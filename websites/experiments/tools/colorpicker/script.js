@@ -50,7 +50,7 @@ canvas.addEventListener("click", function(event) {
 
     document.getElementById("colorSwatch").style.backgroundColor=`rgb( ${r}, ${g}, ${b} )`;
 
-    document.getElementById("hex").innerText=rgbToHex();
+    document.getElementById("hex").innerText=rgbToHex(r,g,b);
     console.log()
 
 });
