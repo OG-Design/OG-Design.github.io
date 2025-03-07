@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
+
 
     <link rel="stylesheet" href="./style.css">
+
+    <script src="./script1.js" defer></script>
 
 </head>
 
@@ -18,7 +21,7 @@
     <canvas id="c"></canvas>
     <hr>
     <main>
-        <div id="hex">
+        <!-- <div id="hex">
             
             <span id="hex"></span>
         </div>
@@ -26,12 +29,45 @@
         <span id="hue"></span>
         <span id="sat"></span>
         <span id="light"></span>
-        </div>
-        <div id="rgb">
+        </div>-->
+        <!-- <div id="rgb">
         <span id="r"></span>
         <span id="g"></span>
         <span id="b"></span>
+        </div>  -->
+
+        <div id="hex"></div>
+
+        <div id="rgbContainer">
+            <div id="rgbred">
+                <div class="flexRow">
+                    <span>r</span>
+                    <input class="inputnumber" id="r_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="r_in" min="0" max="255" step="1">
+                </div>
+            </div>
+            <div id="rgbgreen">
+                <div class="flexRow">
+                    <span>g</span>
+                    <input class="inputnumber" id="g_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="g_in" min="0" max="255" step="1">
+                </div>
+            </div>
+            <div id="rgbblue">
+                <div class="flexRow">
+                    <span>b</span>
+                    <input class="inputnumber" id="b_out">
+                </div>
+                <div class="sliderContainer flexRow">
+                    <input class="slider" type="range" id="b_in" min="0" max="255" step="1">
+                </div>
+            </div>
         </div>
+
         <div id="colorSwatch"></div>
     </main>
 </body>

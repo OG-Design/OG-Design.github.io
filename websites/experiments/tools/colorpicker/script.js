@@ -47,12 +47,11 @@ canvas.addEventListener("click", function(event) {
     document.getElementById("r").innerText=`R: ${r}`;
     document.getElementById("g").innerText=`G: ${g}`;
     document.getElementById("b").innerText=`B: ${b}`;
-    // document.body.backgroundColor = rgbToHex(r, g, b);
 
     document.getElementById("colorSwatch").style.backgroundColor=`rgb( ${r}, ${g}, ${b} )`;
 
-    document.getElementById("hex").innerText=rgbToHex(r,g,b);
+    document.getElementById("hex").innerText=rgbToHex();
     console.log()
 
-})
+});
 
