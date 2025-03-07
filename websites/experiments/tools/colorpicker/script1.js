@@ -100,7 +100,6 @@ function selectColorClick (event) {
 
 // color on input change __START
 function inputrgb() {
-    
-    console.log(rin.value,gin.value,bin.value)
+
 }
 // color on input change __END
