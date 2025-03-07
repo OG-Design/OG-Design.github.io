@@ -81,7 +81,7 @@ function selectColorClick (event) {
     ctx.clearRect(x-2.25,y,5,1);
     // swatch in gradient
     ctx.fillStyle=`rgb(${r},${g},${b})`;
-    const color = ctx.fillRect(x+5,y+5,20,20);
+    const color = ctx.fillRect(x+5,y+5,80,80);
     
     document.getElementById("hex").innerHTML=rgbToHex(r,g,b);
 }
