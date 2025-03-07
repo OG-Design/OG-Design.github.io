@@ -1,3 +1,11 @@
+// inputs
+const rin = document.getElementById("r_in");
+const gin = document.getElementById("g_in");
+const bin = document.getElementById("b_in");
+
+document.querySelector("main").addEventListener("click",inputrgb)
+
+
 function tohex(c) {
     let hex = c.toString(16);
     // console.log(hex)
@@ -16,6 +24,9 @@ const ctx = canvas.getContext("2d");
 
 canvas.width = 500;
 canvas.height = 500;
+
+let lightness = 255;
+
 function createcolors () {
 
     
@@ -32,7 +43,7 @@ function createcolors () {
 
     const gradientV = ctx.createLinearGradient(0, 0, 0, canvas.height);
     gradientV.addColorStop(0, "rgba(255, 255, 255, 0)");
-    gradientV.addColorStop(1, "rgba(255, 255, 255, 1)");
+    gradientV.addColorStop(1, `rgba(${lightness}, ${lightness}, ${lightness}, 1`);
 
     ctx.fillStyle = gradientV;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -69,9 +80,9 @@ function selectColorClick (event) {
     document.getElementById("g_out").value=g;
     document.getElementById("b_out").value=b;
     // input output slider
-    document.getElementById("r_in").value=r;
-    document.getElementById("g_in").value=g;
-    document.getElementById("b_in").value=b;
+    rin.value=r;
+    gin.value=g;
+    bin.value=b;
     
     
     
@@ -87,3 +98,9 @@ function selectColorClick (event) {
 }
 // color on click __END
 
+// color on input change __START
+function inputrgb() {
+    
+    console.log(rin.value,gin.value,bin.value)
+}
+// color on input change __END
