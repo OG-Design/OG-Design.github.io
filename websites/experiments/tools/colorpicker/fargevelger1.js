@@ -1,5 +1,9 @@
 let hue = 0;
+let hueMin = 0;
+let hueMax = 360;
 let sat = 100;
+let satMin = 0;
+let satMax = 100;
 let lum = 50;
 
 
@@ -65,8 +69,8 @@ draw();
 
 // hue __START
 hue=0;
-let hueMin = 0;
-let hueMax = 360;
+hueMin = 0;
+hueMax = 360;
 
 let labelHue = document.createElement("div");
 labelHue.innerHTML="hue";
@@ -94,11 +98,6 @@ hueSliderid.style.accentColor=`hsla(${hue},100%,50%,1)`;
 
 hueSliderid.addEventListener("input", hueSliderUpdate);
 // hue slider __END
-
-
-
-
-
 
 
 
@@ -143,6 +142,10 @@ function hueSliderUpdate() {
     // previewSwatch color update
     st1.backgroundColor=`hsla( ${hue} , ${sat}% , ${lum}%, 1 )`;
 
+    // set satSlider hue
+    let satSliderid = document.getElementById("satSlider");
+    satSliderid.style.accentColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+
 }
 
 
@@ -163,14 +166,103 @@ function hueNumIdUpdate() {
 
     // previewSwatch color update
     st1.backgroundColor=`hsla( ${hue} , ${sat}% , ${lum}%, 1 )`;
+
+    // set satSlider hue
+    let satSliderid = document.getElementById("satSlider");
+    satSliderid.style.accentColor=`hsla(${hue},${sat}%,${lum}%,1)`;
 }
 // hue __END
 
 
 
 
+function saturation() {
+    sat = 100;
+
+    let labelSat = document.createElement("div");
+    labelSat.innerHTML="sat";
+    document.body.appendChild(labelSat);
+
+    // create hueSlider
+    let satSlider = document.createElement("input");
+    // properties
+    satSlider.type="range";
+    satSlider.min=satMin;
+    satSlider.max=satMax;
+    satSlider.defaultValue=satMax;
+    satSlider.style.width="100%" 
+
+    // add to body
+    document.body.appendChild(satSlider);
+    satSlider.id="satSlider";
 
 
+    const satSliderid = document.getElementById("satSlider"); 
+
+    // slider color
+    satSliderid.style.accentColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+
+    satSliderid.addEventListener("input", satSliderUpdate);
+    // sat slider __END
+
+
+
+
+
+    // hue numinput __START
+    let satNumIn = document.createElement("input");
+    // properties
+    satNumIn.type="number"; 
+    satNumIn.min=satMin;
+    satNumIn.max=satMax;
+    satNumIn.defaultValue=satMax;
+
+
+    const satNumId = "satNum";
+    satNumIn.id = satNumId  
+
+    // add hueNumIn to body
+    document.body.appendChild(satNumIn)
+
+    satNumIn.addEventListener("input", satNumIdUpdate);
+    // hue numinput __END
+
+
+}
+
+function satSliderUpdate() {
+
+    let satSliderid = document.getElementById("satSlider");
+    let satNumid = document.getElementById("satNum");
+
+
+    sat = satSliderid.value;
+    satNumid.value = sat;
+
+    // slider color
+    satSliderid.style.accentColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+
+    // update preview swatch
+    let st1 = document.getElementById("previewSwatch");
+    st1.style.backgroundColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+
+}
+function satNumIdUpdate() {
+    
+    let satSliderid = document.getElementById("satSlider");
+    let satNumid = document.getElementById("satNum");
+
+
+    sat = satNumid.value;
+    satSliderid.value = sat;
+
+    // slider color
+    satSliderid.style.accentColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+    // update preview swatch
+    let st1 = document.getElementById("previewSwatch");
+    st1.style.backgroundColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+}
+saturation()
 
 
 
@@ -183,6 +275,7 @@ const colorPreviewSwatch = document.createElement("div");
 // style swatch __START
 const stylePreviewSwatch = colorPreviewSwatch.style;
 const st1 = stylePreviewSwatch;
+colorPreviewSwatch.id="previewSwatch"
 
 // shape
 st1.width = "50px";
