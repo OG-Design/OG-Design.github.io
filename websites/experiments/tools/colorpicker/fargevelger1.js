@@ -5,6 +5,8 @@ let sat = 100;
 let satMin = 0;
 let satMax = 100;
 let lum = 50;
+let lumMin = 0;
+let lumMax = 100;
 
 
 // canvas create and append __START
@@ -264,7 +266,90 @@ function satNumIdUpdate() {
 }
 saturation()
 
+function luminence() {
+    lum = 50;
 
+    let labelLum = document.createElement("div");
+    labelLum.innerHTML="lum";
+    document.body.appendChild(labelLum);
+
+    // create hueSlider
+    let lumSlider = document.createElement("input");
+    // properties
+    lumSlider.type="range";
+    lumSlider.min=lumMin;
+    lumSlider.max=lumMax;
+    lumSlider.defaultValue=lum;
+    lumSlider.style.width="100%" 
+
+    // add to body
+    document.body.appendChild(lumSlider);
+    lumSlider.id="lumSlider";
+
+
+    const lumSliderid = document.getElementById("lumSlider"); 
+
+    // slider color
+    lumSliderid.style.accentColor=`hsla(${hue},${satMin}%,${lum}%,1)`;
+
+    lumSliderid.addEventListener("input", lumSliderUpdate);
+    // sat slider __END
+
+
+
+
+
+    // hue numinput __START
+    let lumNumIn = document.createElement("input");
+    // properties
+    lumNumIn.type="number"; 
+    lumNumIn.min=lumMin;
+    lumNumIn.max=lumMax;
+    lumNumIn.defaultValue=lum;
+
+
+    const lumNumId = "lumNum";
+    lumNumIn.id = lumNumId  
+
+    // add hueNumIn to body
+    document.body.appendChild(lumNumIn)
+
+    lumNumIn.addEventListener("input", lumNumUpdate);
+    // hue numinput __END
+
+
+}
+luminence()
+
+function lumSliderUpdate() {
+    let lumSliderid = document.getElementById("lumSlider");
+    let lumNumid = document.getElementById("lumNum");
+
+
+    lum = lumSliderid.value;
+    lumNumid.value = lum;
+
+    // slider color
+    lumSliderid.style.accentColor=`hsla(${hue},${satMin}%,${lum}%,1)`;
+    // update preview swatch
+    let st1 = document.getElementById("previewSwatch");
+    st1.style.backgroundColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+}
+
+function lumNumUpdate() {
+    let lumSliderid = document.getElementById("lumSlider");
+    let lumNumid = document.getElementById("lumNum");
+
+
+    lum = lumNumid.value;
+    lumSliderid.value = lum;
+
+    // slider color
+    lumSliderid.style.accentColor=`hsla(${hue},${satMin}%,${lum}%,1)`;
+    // update preview swatch
+    let st1 = document.getElementById("previewSwatch");
+    st1.style.backgroundColor=`hsla(${hue},${sat}%,${lum}%,1)`;
+}
 
 
 
@@ -292,3 +377,7 @@ st1.backgroundColor=`hsla( ${hue} , ${sat}% , ${lum}% )`;
 
 document.body.appendChild(colorPreviewSwatch);
 // colorPreviewSwatch __END
+
+
+
+
