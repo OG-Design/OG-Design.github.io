@@ -1,3 +1,13 @@
+/* IMPORTS */
+@import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+@import url(/fonts/Rokkitt/Rokkitt-Italic-VariableFont_wght.ttf);
+@import url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+
+
+:root {
+    --TextColorLowContrast: hsla(0,0%,50%,1);
+    --TitleTextColor: hsla(225,80%,85%,1);
+}
 /* default properties html, body --START */
 html, body {
     /* position */
@@ -72,10 +82,6 @@ ul, ol {
 
 /* font/s --START*/
 
-/* IMPORTS */
-@import url(/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
-@import url(/fonts/Rokkitt/Rokkitt-Italic-VariableFont_wght.ttf);
-@import url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
 
 /* font face/s */
 @font-face {
@@ -112,10 +118,10 @@ ul, ol {
 /* font/s --END */
 
 /* default texts --START */
-h1, h2, h3, h4, h5, h6, p, a, ul {
+h2, h3, h4, h5, h6, a, ul {
 
     /* style */
-    color: hsl(0, 0%, 100%);
+    /* color: var(--TitleTextColor); */
     list-style: none;
 
 }
@@ -138,7 +144,7 @@ h3 {
 p   {
 
     /* shape */
-    font-size: 1.5em;
+    font-size: 1em;
 
     font-family: DefaultNormal;
 }
@@ -277,10 +283,10 @@ footer a {
 
     
     /* default texts --START */
-    h1, h2, h3, h4, h5, h6, p, a{
+    h2, h3, h4, h5, h6, p, a{
 
         /* style */
-        color: hsl(0, 0%, 100%);
+        color: var(--TitleTextColor);
         list-style: none;
 
     }
@@ -304,11 +310,14 @@ footer a {
     p   {
 
         /* shape */
-        font-size: 1.5em;
+        font-size: 1rem;
 
         font-family: "RokkittNormal";
     }
 
+    .lowContrast {
+        color: var(--TextColorLowContrast);
+    }
 
 
     a {
