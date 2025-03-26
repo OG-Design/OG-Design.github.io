@@ -118,28 +118,30 @@ ul, ol {
 /* font/s --END */
 
 /* default texts --START */
-h2, h3, h4, h5, h6, a, ul {
+h2, h3, h4, h5, h6, p, a{
 
     /* style */
-    /* color: var(--TitleTextColor); */
+    color: var(--TitleTextColor);
     list-style: none;
 
 }
 
 h1 {
-    font-family: Pacifico;
-    font-size: 4em;
-    margin: 0;
+    font-family: "Pacifico";
+    font-size: 2.5em;
 }
 
 h2 {
-    font-family: "DefaultNormal";
-    font-size: 3em;
+    font-family: "RokkittBold";
+    font-size: 2em;
 }
+
 
 h3 {
     font-size: 2em;
+    
 }
+
 
 p   {
 
@@ -221,7 +223,9 @@ footer a {
     color: hsl(0, 0%, 25%);
 }
 
-
+.lowContrast {
+    color: var(--TextColorLowContrast);
+}
 
 
 
