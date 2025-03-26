@@ -47,20 +47,22 @@
         <!-- main --START -->
             <main>
                 <div class="previewBox">
-                    <ol>
+                    <ol style="width: 98%;">
+                        <!-- script to display gameFrame --START -->
                         <script defer>
                             function displayIframe() {
                                 console.log("iframe game started");
 
-                                document.getElementsById("oppskriften").style.display="true";
+                                document.getElementById("oppskriften").style.display="block";
                             };
                         </script>
+                        <!-- script to display gameFrame --END -->
                         <li class="borderStandard">
                             <a href="/websites/games/InteraktivHistorie050325/Oppskriften.html">
                                 <h2 class="pWeight">Oppskriften</h2>
                             </a>
-                            <button id="oppskriften" onclick="displayIframe()" style="display: none; width: 1200px; height: fit-content;">play</button>
-                            <iframe src="/websites/games/InteraktivHistorie050325/Oppskriften.html" frameborder="0"></iframe>
+                            <button id="oppskriftenButton" onclick="displayIframe()">play on page</button>
+                            <iframe id="oppskriften" src="/websites/games/InteraktivHistorie050325/Oppskriften.html" frameborder="0" style="display: none; width: inherit; min-height: fit-content; height: 550px; "></iframe>
                             <p class="lowContrast">interactive story: 'Norwegian'</p>
                             
                         </li>

@@ -7,6 +7,10 @@
 :root {
     --TextColorLowContrast: hsla(0,0%,50%,1);
     --TitleTextColor: hsla(225,80%,85%,1);
+    --btnColor1: hsla(225, 15%, 30%, 1);
+    --btnColor1Press: hsla(225, 15%, 10%, 1);
+    --btnTextColor1:hsla(225, 50%, 70%, 1);
+    --borderStandard: .25rem;
 }
 /* default properties html, body --START */
 html, body {
@@ -167,7 +171,7 @@ a {
 
 ol li {
 
-    
+    width: inherit;
     
     /* alignment */
     margin: 0;
@@ -209,8 +213,15 @@ ol a {
 
 button {
     
+    border-radius: var(--borderStandard);
     border-style: none;
-    background-color: hsla(0, 0%, 0%, 0);
+    background-color: var(--btnColor1);
+    color: var(--btnTextColor1);
+}
+button:active {
+    border-radius: var(--borderStandard);
+    border-style: none;
+    background-color: var(--btnColor1Press);
 
 }
 
