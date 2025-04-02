@@ -1,0 +1,38 @@
+.playbutton {
+    
+    /* shape */
+    width: 7rem;
+    height: 3rem;
+
+    border-radius: var(--borderStandard);
+    border:none;
+
+    /* color */
+    background-color: var(--btnColor1);
+    color: var(--TextColorLowContrast);    
+
+
+    font-size: 1rem;
+
+}
+
+.playbutton:active {
+    animation-duration: .1s;
+    animation-name: playButtonAnimation;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes playButtonAnimation {
+    0%{
+        transform: scale(1);
+    }
+    70%{
+        
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

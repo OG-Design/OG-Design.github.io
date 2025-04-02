@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./register.js" defer></script>
+
+</head>
+
+
+<body>
+    <main>
+        <form onsubmit="registerUser(event)">
+            <ul>
+                <li>
+                    <label for="email">e-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username" required autocomplete="username">
+                </li>
+                <li>
+                    <label for="firstname">firstname</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </li>
+                <li>
+                    <label for="firstname">lastname</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" required autocomplete="current-password">
+                </li>
+                <li>
+                    <button type="submit">register</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+</html>

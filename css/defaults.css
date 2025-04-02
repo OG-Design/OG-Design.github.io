@@ -211,7 +211,7 @@ ol a {
 
 /* default button properties --START */
 
-button {
+/* button {
     
     border-radius: var(--borderStandard);
     border-style: none;
@@ -223,7 +223,7 @@ button:active {
     border-style: none;
     background-color: var(--btnColor1Press);
 
-}
+} */
 
 /* default button properties --END */
 
