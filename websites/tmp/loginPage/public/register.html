@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./register.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <ul>
+                <li>
+                    <label for="email">e-mail</label>
+                    <!-- change to email after debug -->
+                    <input type="text" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username" required autocomplete="username">
+                </li>
+                <li>
+                    <label for="firstname">firstname</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </li>
+                <li>
+                    <label for="firstname">lastname</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" required autocomplete="current-password">
+                </li>
+                <li>
+                    <button type="submit">register</button>
+                    <button onclick="window.location.replace('./login.html')">login</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+</html>
