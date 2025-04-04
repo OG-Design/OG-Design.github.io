@@ -7,7 +7,7 @@ async function logoutUser(event) {
 
     if (response.ok) {
         alert("Logout success");
-        window.location.href = '../public/login.html';
+        window.location.href = '/login.html';
     } else {
         alert("Logout failed");
     }
