@@ -1,6 +1,61 @@
-body {
+@font-face {
+    font-family: label;
+    src: url(./fonts/Noto/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: btn;
+    src: url(./fonts/Noto/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
+    font-weight: 600;
+}
+
+:root {
+    /* color */
+    --color-primary: hsla(220, 30%, 70%, 1);
+    --color-primary-1:hsla(220, 20%, 50%, 1);
+    --color-secondary: hsla(220, 50%, 90%, 1);
+    --color-secondary-txt: hsla(220, 20%, 50%, 1);
+    --color-secondary-1: hsla(220, 40%, 80%, 1);
+    --color-tertiary: hsla(220, 50%, 50%, 1);
+    --color-tertiary-txt: hsla(220, 50%, 55%, 1);
+
+    /* antialiase */
+    -webkit-font-smoothing:antialiased;
+
+    /* shadow */
+    --box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.15);
+
+}
+
+body, html {
+    /* shape */
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
     background-color: black;
     color: white;
+}
+
+main {
+    /* shape */
+    width: 100%;
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-primary-1);
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    box-shadow: var(--box-shadow);
 }
 
 ul {
@@ -17,4 +72,34 @@ li {
     justify-content: space-between;
     align-items: start;
 
+}
+
+label {
+    color: var(--color-tertiary-txt);
+
+    font-family: label;
+    font-weight: 500;
+}
+
+.btn {
+    /* shape */
+    width:10rem;
+    height:3rem;
+    border: none;
+
+    margin: .1rem;
+
+    /* style */
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-txt);
+    
+    box-shadow: var(--box-shadow);
+
+    font-family: btn;
+
+    transition: .2s;
+
+}
+.btn:active {
+    background-color: var(--color-secondary-1);
 }

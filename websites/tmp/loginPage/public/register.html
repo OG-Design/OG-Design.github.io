@@ -5,39 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loginregister.css">
     <script src="./register.js" defer></script>
 </head>
 <body>
     <main>
-        <form id="form">
-            <ul>
-                <li>
-                    <label for="email">e-mail</label>
-                    <!-- change to email after debug -->
-                    <input type="text" name="email" id="email" required>
-                </li>
-                <li>
-                    <label for="username">username</label>
-                    <input type="text" name="username" id="username" required autocomplete="username">
-                </li>
-                <li>
-                    <label for="firstname">firstname</label>
-                    <input type="text" name="firstname" id="firstname" required>
-                </li>
-                <li>
-                    <label for="firstname">lastname</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                </li>
-                <li>
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" required autocomplete="current-password">
-                </li>
-                <li>
-                    <button type="submit">register</button>
-                    <button onclick="window.location.replace('./login.html')">login</button>
-                </li>
-            </ul>
-        </form>
+        <section  class="loginregister">
+            <form id="form">
+                <ul>
+                    <li>
+                        <label for="email">E-mail</label>
+                        <!-- change to email after debug -->
+                        <input type="text" name="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required autocomplete="username">
+                    </li>
+                    <li>
+                        <label for="firstname">Firstname</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </li>
+                    <li>
+                        <label for="firstname">Lastname</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required autocomplete="current-password">
+                    </li>
+                    <li>
+                        <button class="btn" type="submit">Register</button>
+                        <button class="btn" onclick="window.location.replace('./login.html')">Login</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="look">
+
+        </section>
     </main>
 </body>
 </html>

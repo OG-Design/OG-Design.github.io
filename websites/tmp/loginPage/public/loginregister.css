@@ -1,0 +1,73 @@
+#formLogin {
+    width: 100%;
+    height: 100%;
+}
+.loginregister {
+    /* shape */
+    width: 50%;
+    height: 100%;
+
+
+    /* style */
+    background-color: var(--color-primary);
+    z-index: +1;
+}
+
+.look {
+    /* shape */
+    width: 50%;
+    height: 100%;
+}
+.loginregister ul {
+    /* shape */
+    width: 100%;
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin: 0;
+}
+
+.loginregister li {
+    /* shape */
+    width: 80%;
+    height: fit-content;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    /* style */
+    background-color: var(--color-secondary-1);
+    
+    padding: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    
+    
+}
+
+.loginregister input {
+    /* shape */
+    height: 1rem;
+    width: 10rem;
+
+    /* style */
+    background-color: var(--color-secondary);
+
+    border: none;
+
+    box-shadow: var(--box-shadow);
+}

@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loginregister.css">
 
     <script src="./login.js" defer></script>
 </head>
 <body>
-    <form id="formLogin">
-        <ul>
-            <li>
-                <label for="email">email</label>
-                <input type="text" name="email" id="email" required autocomplete="username">
-            </li>
-            <li>
-                <label for="password">password</label>
-                <input type="password" name="password" id="password" required autocomplete="current-password">
-            </li>
-            <li>
-                <button type="submit">login</button>
-                <button onclick="window.location.replace('./register.html')">register</button>
-            </li>
-    </form>
+    <main>
+        <section class="loginregister">
+            <form id="formLogin">
+                <ul>
+                    <li>
+                        <label for="email">email</label>
+                        <input placeholder="your@mail.example" type="text" name="email" id="email" required autocomplete="username">
+                    </li>
+                    <li>
+                        <label for="password">password</label>
+                        <input placeholder="securePassword=¤%" type="password" name="password" id="password" required autocomplete="current-password">
+                    </li>
+                    <li>
+                        <button class="btn" type="submit">login</button>
+                        <button class="btn" onclick="window.location.replace('./register.html')">register</button>
+                    </li>
+            </form>
+        </section>
+        <section class="look">
+            
+        </section>
+        
+        
+    </main>
 </body>
 </html>
