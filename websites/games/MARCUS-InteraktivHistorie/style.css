@@ -1,0 +1,60 @@
+body{
+
+    width:100%;
+    
+    margin:0;
+    padding:0;
+}
+    
+tw-passage{
+
+}
+
+img{
+    image-rendering: pixelated;
+}
+
+
+
+
+#waowe{
+    top:0;
+    left:0;
+    position: absolute;
+
+    width: 200px;
+    transform: scaleX(-1);
+    
+    
+    
+    
+    position:absolute;
+    
+}
+
+.waoweWalk {
+    animation:forwards;
+    animation-delay: .5s;
+    animation-duration: 4s;
+    animation-name: walk;
+}
+
+@keyframes walk {
+    0%{
+    top:0;
+    left:0;
+    }
+    100%{
+    top:0;
+    left:50%;
+    animation-play-state: paused;
+    visibility: visible;
+    position:absolute;
+    }
+}
+
+
+    
+.s {
+    
+}
