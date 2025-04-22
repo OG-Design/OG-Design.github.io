@@ -94,9 +94,11 @@ faktisk meget: &#39;&#39;[[rik av blomster]], [[krystall-rik]].&#39;&#39;
 
 (set: $rikAvBlomster to &#39;false&#39;)
 (set: $krystallRik to &#39;false&#39;)
+(set: $krystall to &#39;false&#39;)
 (set: $spade to &#39;false&#39;)
 (set: $død to &#39;false&#39;)
 (set: $mangeKrystaller to &#39;false&#39;)
+(set: $hakke to &#39;false&#39;)
 
 &lt;style&gt;
 tw-story {
@@ -140,6 +142,7 @@ background-size: contain;
 
 &lt;/style&gt;
 (set: $krystallRik to &#39;true&#39;)
+(set: $krystall to &#39;true&#39;)
 Du må ut for å finne alle ressursene du trenger for å lage te-en, men hva skal du ta med deg?
 
 [[Bøtte og hakke|gå ut døren med hakke]]
@@ -207,9 +210,11 @@ background-size: contain;
 }
 
 &lt;/style&gt;
-
+(set: $krystall to &#39;true&#39;)
 (set: $hakke to &#39;true&#39;)
-
+(if: $hakke is &#39;true&#39;)[
+&lt;script&gt;console.log(&quot;hakke=true&quot;)&lt;/script&gt;
+]
 Du må finne det rette område for å finne krystaller, du møter på 3 veier
 
 [[sti gjennom skogen]]
@@ -261,20 +266,30 @@ background-size: contain;
 
 &lt;/style&gt;
 
-(if: $krystall is &#39;true&#39;)[
-(if: $hakke is true)[
+
+(live: 2s)[
+(stop:)
+(if: $hakke is &#39;true&#39;)[ 
 (set: $død to &#39;true&#39;)
+
+&lt;script&gt;console.log(&quot;hakke is true, død is set to true&quot;)&lt;/script&gt;
+
 Du finner mange blomster, men det var jo ikke det du så etter
+
 [[Dra tilbake og prøv en av de andre stiene|gå ut døren med hakke]]
+
 ]
 ]
+
+
+
 (if: $spade is &#39;true&#39;)[
 Du finner et par løvetanner, dette var ikke akkuratt det du så etter...
 
 (live: 2s)[
 (stop:)
 Men du kommer på at det er en av ingrediensene i en annen helbredende drikke!
-Du har jo med det spaden også, dette blir lett!
+Du har jo med deg spaden også, dette blir lett!
 Men det er ikke nokk her...
 [[se etter flere|leit etter en til]]
 ]
@@ -290,7 +305,21 @@ Men det er ikke nokk her...
 ]
 
 
-</tw-passagedata><tw-passagedata pid="10" name="en liten vannmasse" tags="vann" position="900,925" size="100,100">Du har dratt langt ut på vannet, så ser du at båten synker.
+</tw-passagedata><tw-passagedata pid="10" name="en liten vannmasse" tags="vann" position="900,925" size="100,100">&lt;style&gt;
+tw-story {
+
+    padding-left:0;
+    padding-right:0;
+    background-image: url(&#39;./vanndam.jpg&#39;);
+    background-repeat: no-repeat;
+	background-size: contain;
+
+}
+
+&lt;/style&gt;
+
+
+Du har dratt langt ut på vannet, så ser du at båten synker.
 
 (live: 5s)[
 Du kommer på at du ikke kan svømme å du drukner! 
